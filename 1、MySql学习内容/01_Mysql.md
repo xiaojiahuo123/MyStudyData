@@ -116,37 +116,66 @@
 
 ### 4.1.1 创建数据库
 
-> **create database 数据库名称**
+> ```mysql
+> create database 数据库名称; //创建新数据库
+> ```
 >
-> create database if not exists 数据库名称
+> ```MYSQL
+> create database if not exists 数据库名称; //创建数据库前查询该库应该不存在
+> //如果要避免自己新建的数据库已经存在，则：
+> ```
 >
+> ```mysql
+> CREATE DATABASE IF NOT EXISTS MySqlStudy_one;
+> ```
+>
+> ```mysql
 > CREATE DATABASE  数据库名 CHARACTER SET 字符集(utf8mb4) COLLATE  排序规则(utf8mb4_0900_ai_ci)； 
+> ```
+>
+> 
 
 ### 4.1.2 查询数据库
 
-> 查看当前数据库服务器中的所有数据库
->
+> ```mysql
+> #查看当前数据库服务器中的所有数据库
 > **show databases;**
->
-> 查看前面创建的mydb2数据库的定义信息
->
+> 
+> #查看前面创建的mydb2数据库的定义信息
 > **show  create  database mydb2;**
-> 查看当前使用的数据库
+> 
+> #查看当前使用的数据库
 > **select database();**
+> 
 > #查看指定库下所有表
 > **SHOW TABLES FROM 数据库名;**
+> ```
+>
+> 
 
 ### 4.1.3 修改数据库
 
+> ```mysql
 > alter database  数据库名称 character set 字符集 collate 排序规则
+> ```
+>
+> 
 
 ### 4.1.4 删除数据库
 
+> ```mysql
 > drop database [if exists] 数据库名称
+> ```
+>
+> 
 
 ### 4.1.5 切换数据库
 
+> ```mysql
 > use 数据库名称
+> ```
+>
+> 
 
 ## 4.2 数据类型及运算符
 
@@ -192,46 +221,68 @@
 
 ### 4.2.2 Mysql运算符
 
-- 算术运算符:不等于
-  - !=
-  - <>
+- - ```mysql
+    算术运算符:不等于
+    
+    - !=
+    - <>
+    ```
+  
+    
 
 ## 4.3 操作数据库表
 
 ### 4.3.1 创建表
 
+> ```mysql
 > create table  表名(
->
+> 
 > ​	列名  数据类型  [约束],
->
+> 
 > ​	列名  数据类型  [约束],
->
+> 
 > ​	列名  数据类型  [约束]
->
+> 
 > )
+> ```
+>
+> 
 
 ### 4.3.2 查看表
 
+> ```mysql
 > show tables from 数据库  #查询当前数据库中所有表
->
+> 
 > desc[describe] 表名: 查询表结构
+> ```
+>
+> 
 
 ### 4.3.3 修改表
 
-- 修改表中列
+- ```mysql
+  - 修改表中列
+  
+    - 添加一列:alter table 表名 add 新列名  新类型  [first|after  列名]
+    - 修改表中的列类型: alter table 表名 modify  列名  新类型
+    - 删除表中的列:alter table 表名  drop 列名
+    - 修改列名:alter table 表名  change 原列名  新列名   新列名类型 
+  
+  - 修改表名
+  
+    > alter table 原表名 rename 新表名
+  ```
 
-  - 添加一列:alter table 表名 add 新列名  新类型  [first|after  列名]
-  - 修改表中的列类型: alter table 表名 modify  列名  新类型
-  - 删除表中的列:alter table 表名  drop 列名
-  - 修改列名:alter table 表名  change 原列名  新列名   新列名类型 
+  
 
-- 修改表名
-
-  > alter table 原表名 rename 新表名
 
 ### 4.3.4 删除表
 
+> ```mysql
 > drop table 表名
+> ```
+>
+> 
 
 # 5. Mysql客户端工具
 
