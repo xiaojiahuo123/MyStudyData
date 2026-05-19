@@ -50,11 +50,11 @@
 
 ### 2.2.2 window启动mysql服务
 
-![](.\image\image-20241227101748001.png)
+![image-20241227101748001](01_Mysql.assets\image-20241227101748001.png)
 
 ## 2.3 Mysql服务连接
 
-![](.\image\image-20241227105011725.png)
+![image-20241227105011725](01_Mysql.assets\image-20241227105011725.png)
 
 ### 2.3.1 客户端
 
@@ -67,7 +67,7 @@
 
 - window命令行: mysql -u用户名   -p密码
 
-  ![](.\image\image-20241227102317268.png)
+  ![image-20241227102317268](01_Mysql.assets\image-20241227102317268.png)
 
 # 3. SQL类型
 
@@ -116,66 +116,37 @@
 
 ### 4.1.1 创建数据库
 
-> ```mysql
-> create database 数据库名称; //创建新数据库
-> ```
+> **create database 数据库名称**
 >
-> ```MYSQL
-> create database if not exists 数据库名称; //创建数据库前查询该库应该不存在
-> //如果要避免自己新建的数据库已经存在，则：
-> ```
+> create database if not exists 数据库名称
 >
-> ```mysql
-> CREATE DATABASE IF NOT EXISTS MySqlStudy_one;
-> ```
->
-> ```mysql
 > CREATE DATABASE  数据库名 CHARACTER SET 字符集(utf8mb4) COLLATE  排序规则(utf8mb4_0900_ai_ci)； 
-> ```
->
-> 
 
 ### 4.1.2 查询数据库
 
-> ```mysql
-> #查看当前数据库服务器中的所有数据库
+> 查看当前数据库服务器中的所有数据库
+>
 > **show databases;**
-> 
-> #查看前面创建的mydb2数据库的定义信息
+>
+> 查看前面创建的mydb2数据库的定义信息
+>
 > **show  create  database mydb2;**
-> 
-> #查看当前使用的数据库
+> 查看当前使用的数据库
 > **select database();**
-> 
 > #查看指定库下所有表
 > **SHOW TABLES FROM 数据库名;**
-> ```
->
-> 
 
 ### 4.1.3 修改数据库
 
-> ```mysql
 > alter database  数据库名称 character set 字符集 collate 排序规则
-> ```
->
-> 
 
 ### 4.1.4 删除数据库
 
-> ```mysql
 > drop database [if exists] 数据库名称
-> ```
->
-> 
 
 ### 4.1.5 切换数据库
 
-> ```mysql
 > use 数据库名称
-> ```
->
-> 
 
 ## 4.2 数据类型及运算符
 
@@ -217,72 +188,50 @@
   | [Enum]() | 65535  | 定义多个可选值,每次只能选择一个 |
   | [Set]()  | 64     | 定义多个可选值,每次可以选择多个 |
 
-![image-20241227114938942](.\image\image-20241227114938942.png)
+![image-20241227114938942](01_Mysql.assets\image-20241227114938942.png)
 
 ### 4.2.2 Mysql运算符
 
-- - ```mysql
-    算术运算符:不等于
-    
-    - !=
-    - <>
-    ```
-  
-    
+- 算术运算符:不等于
+  - !=
+  - <>
 
 ## 4.3 操作数据库表
 
 ### 4.3.1 创建表
 
-> ```mysql
 > create table  表名(
-> 
-> ​	列名  数据类型  [约束],
-> 
-> ​	列名  数据类型  [约束],
-> 
-> ​	列名  数据类型  [约束]
-> 
-> )
-> ```
 >
-> 
+> ​	列名  数据类型  [约束],
+>
+> ​	列名  数据类型  [约束],
+>
+> ​	列名  数据类型  [约束]
+>
+> )
 
 ### 4.3.2 查看表
 
-> ```mysql
 > show tables from 数据库  #查询当前数据库中所有表
-> 
-> desc[describe] 表名: 查询表结构
-> ```
 >
-> 
+> desc[describe] 表名: 查询表结构
 
 ### 4.3.3 修改表
 
-- ```mysql
-  - 修改表中列
-  
-    - 添加一列:alter table 表名 add 新列名  新类型  [first|after  列名]
-    - 修改表中的列类型: alter table 表名 modify  列名  新类型
-    - 删除表中的列:alter table 表名  drop 列名
-    - 修改列名:alter table 表名  change 原列名  新列名   新列名类型 
-  
-  - 修改表名
-  
-    > alter table 原表名 rename 新表名
-  ```
+- 修改表中列
 
-  
+  - 添加一列:alter table 表名 add 新列名  新类型  [first|after  列名]
+  - 修改表中的列类型: alter table 表名 modify  列名  新类型
+  - 删除表中的列:alter table 表名  drop 列名
+  - 修改列名:alter table 表名  change 原列名  新列名   新列名类型 
 
+- 修改表名
+
+  > alter table 原表名 rename 新表名
 
 ### 4.3.4 删除表
 
-> ```mysql
 > drop table 表名
-> ```
->
-> 
 
 # 5. Mysql客户端工具
 
@@ -292,7 +241,7 @@
 
 > 安装路径:非中文
 
-![image-20241227142941631](.\image\image-20241227142941631.png)
+![image-20241227142941631](01_Mysql.assets\image-20241227142941631.png)
 
 # 6. DML详解(重点)
 
@@ -422,23 +371,451 @@ SELECT * FROM t_emp WHERE salary <> 40000;
   
   ```
 
-  
+
+### 7.2.4 分支条件查询
+
+```sql
+-- 查询员工工资,显示工资等级(sal>=4000:A   sal>=3000:B  sal>=2000:C sal<2000:D)
+
+SELECT 
+	empno,
+	ename,
+	CASE
+		WHEN sal >= 4000 THEN 'A'
+		WHEN sal >= 3000 THEN 'B'
+		WHEN sal >= 2000 THEN 'C'
+		ELSE 'D'
+	END AS '工资等级'
+FROM 
+	emp
+```
+
+### 7.2.4 字段控制查询
+
+- 去除重复数据
+
+  ```sql
+  -- 去除重复数据
+  -- 查询员工工资(月薪情况:去除重复数据)
+  SELECT DISTINCT sal FROM emp;
+  ```
+
+- ifnull()函数应用
+
+  ```sql
+  -- ifnull()练习
+  -- 查询员工年薪(sal*12+comm)
+  SELECT empno,ename,sal*12+IFNULL(comm,0) FROM emp;
+  ```
 
 ## 7.3 单表分组查询(重点)
 
+### 7.3.1 聚合函数
+
+| 聚合函数 | 说明                     |
+| -------- | ------------------------ |
+| SUM()    | 求所有行中单列结果的总和 |
+| AVG()    | 平均值                   |
+| MAX()    | 最大值                   |
+| MIN()    | 最小值  null当做0        |
+| COUNT()  | 求总数  null不计数       |
+
+### 7.3.2 分组查询
+
+> 语法: group  by  列名(分组)  having  条件(分组)
+>
+> ```sql
+> select  列名列表
+> from  表名
+> where 条件
+> group by 列名
+> having 条件(分组后)
+> ```
+>
+> 作用: 查询条件中包含"各个","每个"等字样时,使用分组查询
+
+- 分组查询案例
+
+  ```sql
+  -- 查询各部门的平均工资
+  SELECT deptno '部门编号',AVG(sal) AS '平均工资'
+  FROM emp
+  WHERE 1=1
+  GROUP BY deptno
+  
+  -- 查询各个部门、各个岗位的人数
+  SELECT deptno '部门编号',COUNT(sal) AS '部门人数'
+  FROM emp
+  WHERE 1=1
+  GROUP BY deptno,job
+  ```
+
+  
+
+![]()
+
+- 分组中条件
+
+  - where:解决普通条件
+
+  - having:解决聚合函数作为条件
+
+    - 案例
+
+      ```sql
+      -- 查询工资总和大于9000的部门编号以及工资和
+      SELECT deptno,SUM(sal)
+      FROM emp
+      WHERE 1=1
+      GROUP BY deptno
+      HAVING SUM(sal) > 9000
+      ```
+
+      
+
+    ![image-20241228102201271](01_Mysql.assets\image-20241228102201271.png)
+
 ## 7.4 单表排序查询(重点)
+
+> 语法: order  by  列名  asc(升序)|desc(降序)
+>
+> 作用: 排序
+>
+> 案例
+>
+> ```sql
+> -- 查询所有学生记录，按年龄升序排序
+> SELECT sid,sname,age,gender 
+> FROM stu
+> ORDER BY age ASC
+> 
+> -- 查询所有雇员，按月薪降序排序，如果月薪相同时，按编号升序排序
+> SELECT * 
+> FROM emp
+> ORDER BY sal DESC,empno ASC
+> ```
 
 ## 7.5 单表分页查询(重点)
 
+### 7.5.1 为什么分页
+
+- 提高用户体验度
+- 减低服务器压力
+
+### 7.5.2 如何实现分页
+
+> - 分页实现是方言,不同数据库有不同实现方式
+>
+> - mysql数据库分页
+>
+>   - limit  n,m
+>   - n:查询起始下标,下标从0开始
+>   - m:每页显示条数
+>
+> - 案例
+>
+>   ```sql
+>   -- 分页查询(每页显示5条)
+>   SELECT * FROM stu
+>   -- 第一页
+>   SELECT * FROM stu LIMIT 0,5
+>   -- 第2页
+>   SELECT * FROM stu LIMIT 5,5
+>   -- 第3页
+>   SELECT * FROM stu LIMIT 10,5
+>   ```
+
 ## 7.6 单表查询执行顺序
 
-## 7.7 多表查询(见10)
+### 7.6.1 单表查询语法
+
+> select 列名列表
+>
+> from 表名
+>
+> where 条件
+>
+> group by  列名(分组)
+>
+> having 条件(分组后)
+>
+> order  by   列名(排序)    [asc|desc降序]
+>
+> limit  n,m
+
+### 7.6.2 查询顺序
+
+```sql
+版本一
+[4]select 列名列表
+[1]from 表名
+[2]where 条件
+[3]group by  列名(分组)
+[5]having 条件(分组后)
+[6]order  by   列名(排序)    [asc|desc降序]
+[7]limit  n,m
+版本二(AI)
+[5]select 列名列表
+[1]from 表名
+[2]where 条件
+[3]group by  列名(分组)
+[4]having 条件(分组后)
+[6]order  by   列名(排序)    [asc|desc降序]
+[7]limit  n,m
+```
+
+![image-20241228111841009](01_Mysql.assets\image-20241228111841009.png)
+
+## 7.7  函数扩展
+
+### 7.7.1 时间函数
+
+| 获取当前时间函数   | 描述                                   |
+| ------------------ | :------------------------------------- |
+| SYSDATE() \| NOW() | 当前系统时间（日、月、年、时、分、秒） |
+| CURDATE()          | 获取当前日期                           |
+| CURTIME()          | 获取当前时间                           |
+
+| 提取时间数据  | 描述                                |
+| ------------- | :---------------------------------- |
+| WEEK(DATE)    | 获取指定日期为一年中的第几周        |
+| YEAR(DATE)    | 获取指定日期的年份                  |
+| HOUR(TIME)    | 获取指定时间的小时值                |
+| MINUTE(TIME)  | 获取时间的分钟值                    |
+| WEEKDAY(date) | 注意，周1是0，周2是1，。。。周日是6 |
+| QUARTER(date) | 返回日期对应的季度，范围为1～4      |
+
+| 时间运算函数                      | 描述                              |
+| --------------------------------- | :-------------------------------- |
+| DATEDIFF(DATE1,DATE2)             | 获取DATE1 和 DATE2 之间相隔的天数 |
+| ADDDATE(date,INTERVAL expr  type) | 计算DATE 加上 N 个单位后的日期    |
+| SUBDATE(date,INTERVAL expr  type) | 计算DATE 减去 N 天后的日期        |
+
+| 时间格式函数          | 描述                          |
+| --------------------- | :---------------------------- |
+| DATE_FORMAT(date,fmt) | 按照字符串fmt格式化日期date值 |
+
+| %Y   | 4位数字表示年份                                             | %y     | 表示两位数字表示年份                                        |
+| ---- | ----------------------------------------------------------- | ------ | ----------------------------------------------------------- |
+| %M   | 月名表示月份（January,....）                                | %m     | 两位数字表示月份（01,02,03。。。）                          |
+| %b   | 缩写的月名（Jan.，Feb.，....）                              | %c     | 数字表示月份（1,2,3,...）                                   |
+| %D   | 英文后缀表示月中的天数（1st,2nd,3rd,...）                   | %d     | 两位数字表示月中的天数(01,02...)                            |
+| %e   | 数字形式表示月中的天数（1,2,3,4,5.....）                    |        |                                                             |
+| %H   | 两位数字表示小数，24小时制（01,02..）                       | %h和%I | 两位数字表示小时，12小时制（01,02..）                       |
+| %k   | 数字形式的小时，24小时制(1,2,3)                             | %l     | 数字形式表示小时，12小时制（1,2,3,4....）                   |
+| %i   | 两位数字表示分钟（00,01,02）                                | %S和%s | 两位数字表示秒(00,01,02...)                                 |
+| %W   | 一周中的星期名称（Sunday...）                               | %a     | 一周中的星期缩写（Sun.，Mon.,Tues.，..）                    |
+| %w   | 以数字表示周中的天数(0=Sunday,1=Monday....)                 |        |                                                             |
+| %j   | 以3位数字表示年中的天数(001,002...)                         | %U     | 以数字表示年中的第几周，（1,2,3。。）其中Sunday为周中第一天 |
+| %u   | 以数字表示年中的第几周，（1,2,3。。）其中Monday为周中第一天 |        |                                                             |
+| %T   | 24小时制                                                    | %r     | 12小时制                                                    |
+| %p   | AM或PM                                                      | %%     | 表示%                                                       |
+
+### 7.7.2 字符串函数
+
+| 函数                            | 用法                                                         |
+| ------------------------------- | ------------------------------------------------------------ |
+| CONCAT(S1,S2,......,Sn)         | 连接S1,S2,......,Sn为一个字符串                              |
+| CONCAT_WS(s, S1,S2,......,Sn)   | 同CONCAT(s1,s2,...)函数，但是每个字符串之间要加上s           |
+| CHAR_LENGTH(s)                  | 返回字符串s的字符数                                          |
+| LENGTH(s)                       | 返回字符串s的字节数，和字符集有关                            |
+| INSERT(str, index , len, instr) | 将字符串str从第index位置开始，len个字符长的子串替换为字符串instr |
+| UPPER(s) 或 UCASE(s)            | 将字符串s的所有字母转成大写字母                              |
+| LOWER(s)  或LCASE(s)            | 将字符串s的所有字母转成小写字母                              |
+| LEFT(s,n)                       | 返回字符串s最左边的n个字符                                   |
+| RIGHT(s,n)                      | 返回字符串s最右边的n个字符                                   |
+| LPAD(str, len, pad)             | 用字符串pad对str最左边进行填充，直到str的长度为len个字符     |
+| RPAD(str ,len, pad)             | 用字符串pad对str最右边进行填充，直到str的长度为len个字符     |
+| LTRIM(s)                        | 去掉字符串s左侧的空格                                        |
+| RTRIM(s)                        | 去掉字符串s右侧的空格                                        |
+| TRIM(s)                         | 去掉字符串s开始与结尾的空格                                  |
+| TRIM(【BOTH 】s1 FROM s)        | 去掉字符串s开始与结尾的s1                                    |
+| TRIM(【LEADING】s1 FROM s)      | 去掉字符串s开始处的s1                                        |
+| TRIM(【TRAILING】s1 FROM s)     | 去掉字符串s结尾处的s1                                        |
+| REPEAT(str, n)                  | 返回str重复n次的结果                                         |
+| REPLACE（str, " ", ""）         | 用字符串b替换字符串str中所有出现的字符串a                    |
+| STRCMP(s1,s2)                   | 比较字符串s1,s2                                              |
+| SUBSTRING(s,index,len)          | 返回从字符串s的index位置其len个字符                          |
+
+### 7.7.3 数值函数
+
+| 函数          | 用法                                 |
+| ------------- | ------------------------------------ |
+| ABS(x)        | 返回x的绝对值                        |
+| CEIL(x)       | 返回大于x的最小整数值                |
+| FLOOR(x)      | 返回小于x的最大整数值                |
+| MOD(x,y)      | 返回x/y的模                          |
+| RAND()        | 返回0~1的随机值                      |
+| ROUND(x,y)    | 返回参数x的四舍五入的有y位的小数的值 |
+| TRUNCATE(x,y) | 返回数字x截断为y位小数的结果         |
+| SQRT(x)       | 返回x的平方根                        |
+| POW(x,y)      | 返回x的y次方                         |
+
+### 7.7.4 其他函数
+
+| 函数          | 用法                                    |
+| ------------- | --------------------------------------- |
+| database()    | 返回当前数据库名                        |
+| version()     | 返回当前数据库版本                      |
+| user()        | 返回当前登录用户名                      |
+| password(str) | 返回字符串str的加密版本，41位长的字符串 |
+| md5(str)      | 返回字符串str的md5值，也是一种加密方式  |
+
+### 7.7.5 MYSQL8窗口函数
+
+```sql
+-- mysql8版本窗口函数
+SELECT empno,AVG(sal) OVER()  FROM  emp;
+```
+
+## 7.8 多表查询(见10)
 
 # 8. 约束
 
+## 8.1 实体完整性约束
+
+### 8.1.1 主键约束
+
+> 语法:PRIMARY KEY
+>
+> 特点: 唯一，标识表中的一行数据，此列的值不可重复，且不能为 NULL
+
+### 8.1.2 唯一约束
+
+> 语法:unique
+>
+> 特点:唯一，标识表中的一行数据，不可重复，可以为 NULL
+
+### 8.1.3 自动增长列
+
+> 语法:auto_increment
+>
+> 特点:自动增长,只能为int(整型)类型设置自增,每次增加1
+
+## 8.2 域完整性约束
+
+### 8.2.1 非空约束
+
+> 语法:not null
+>
+> 特点:设置非空约束的列,不允许为空
+
+### 8.2.2 默认值约束
+
+> 语法:default
+>
+> 特点:设置默认值列,当列为null时,设置默认值
+
+### 8.2.3 检查约束
+
+> 语法:check
+>
+> 特点:设置检查约束,案例如下
+>
+> ```sql
+> CREATE TABLE t_teachers(
+> 	t_id INT PRIMARY KEY AUTO_INCREMENT,
+> 	t_name VARCHAR(20) un`t_emp`,
+> 	t_age INT DEFAULT 18,
+> 	t_gender CHAR(2),
+> 	CHECK(t_gender IN ('男','女'))	
+> )
+> ```
+
+## 8.3 引用完整性约束（主外键约束）
+
+> 语法：CONSTRAINT 引用名 FOREIGN KEY（列名） REFERENCES 被引用表名(列名)]()
+>
+> - 语法二:ALTER TABLE 外键表 ADD CONSTRAINT 约束名称 FOREIGN KEY(外键) REFERENCES 主表(主键);
+>
+> - 详解：FOREIGN KEY 引用外部表的某个列的值，新增数据时，约束此列的值必须是引用表中存在的值。
+> - 特点
+>   - 主表不能随意删除
+>   - 从表不能随意添加&修改
+
 # 9. 表与表之间关系
 
+## 9.1 表之间对应关系
+
+- 一对一
+
+  - 夫妻
+  - 国内合法公民与身份证
+  - 私人物品
+
+- 一对多
+
+  - 员工与部门
+  - 学校与学生
+  - 班级与学生
+
+  > 在[多的一方]添加[一的一方]id即可
+
+  ![image-20241228154011780](01_Mysql.assets\image-20241228154011780.png)
+
+- 多对多
+
+  - 学生与老师(尚硅谷)
+
+  - 公交车与乘客
+
+  - ...
+
+    > 多对多表关系中,如何建立表的对应关系?
+    >
+    > 答:需要创建第三方关联表,案例如下:
+
+    ![image-20241228154832523](01_Mysql.assets\image-20241228154832523.png)
+
+  ![image-20241228153618734](01_Mysql.assets\image-20241228153618734.png)
+
 # 10. 多表连接查询(重点)
+
+## 10.1 纵向连接查询
+
+> 合并结果集:UNION 与 UNION  ALL
+>
+> - UNION:合并结果集,去除重复数据
+> - UNION ALL:合并结果集,不去除重复数据
+>
+> 案例
+>
+> ```sql
+> CREATE TABLE a(
+>    aid INT,
+>    aname VARCHAR(10)
+> );
+> CREATE TABLE b(
+>    bid INT,
+>    bname VARCHAR(10)
+> );
+> 
+> INSERT INTO a VALUES(1,'aaaa'),(2,'bbbb'),(3,'cccc');
+> INSERT INTO b VALUES(4,'aaaa'),(2,'bbbb'),(3,'cccc');
+> 
+> SELECT aid,aname FROM a
+> UNION ALL
+> SELECT bid,bname FROM b;
+> ```
+
+## 10.2 内连接
+
+> - 语法
+>
+>   ```sql
+>   -- 方式一
+>   select 列名列表
+>   from t1 inner join t2 
+>   on t1.id=t2.id(主外键关系) 
+>   -- 方式二
+>   select 列名列表
+>   from t1,t2 
+>   where t1.id=t2.id(主外键关系) 
+>   ```
+>
+> - 特点
+>
+>   - 内连接查询数据:当主键或外键数据为null时,不能查询该数据(**数据丢失**)
 
 # 11. 事务(重点)
 

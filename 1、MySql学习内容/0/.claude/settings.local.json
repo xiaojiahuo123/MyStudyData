@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(ssh *)"
+      "Bash(ssh *)",
+      "Read(//e/tmp/**)",
+      "Bash(tar czf *)"
     ]
   }
 }
