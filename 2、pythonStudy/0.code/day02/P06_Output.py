@@ -19,12 +19,12 @@
 # str1 = "num1= %d,num2= %.3f " % (num1,num2)
 # print(str1)
 
-# num1 = 10
-# num2 = 3.14
-# num3 = False
-# （2）字符串.format()----不设置指定位置，按默认顺序
-# str = "num1={},num2={},num3={}".format(num1, num2, num3)
-
+num1 = 10
+num2 = 3.14
+num3 = False
+#（2）字符串.format()----不设置指定位置，按默认顺序
+str = "num1={},num2={},num3={}".format(num1, num2, num3)
+print(str)
 # （2）字符串.format()----设置指定位置，不能和方式1混合使用
 # str = "num1={0},num2={2},num3={1}".format(num1, num3,num2)
 

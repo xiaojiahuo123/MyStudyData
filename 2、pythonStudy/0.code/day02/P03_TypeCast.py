@@ -3,13 +3,13 @@
     该案例演示了类型转换
 """
 # 自动类型转换
-num1 = 1
-num2 = 0.5
-print(type(num1), type(num2))
-
-num3 = num1 + num2
-print(num3)
-print(type(num3))
+# num1 = 1
+# num2 = 0.5
+# print(type(num1), type(num2))
+#
+# num3 = num1 + num2
+# print(num3)
+# print(type(num3))
 
 # num1 = 5
 # num2 = 1
@@ -29,8 +29,9 @@ print(type(num3))
 # print(num1)
 # print(type(num1))
 # float(x)	将x转换为一个浮点数
-# num1 = float("5.0")
+# num1 = float("5")
 # print(type(num1))
+# print(num1)
 # complex(real[,imag])	创建一个实部为real，虚部为imag的复数
 # num1 = complex(2,3)
 # print(num1)
@@ -43,7 +44,7 @@ str1 = "hello world"
 # print(repr(str1))
 
 # eval(x)	执行x字符串表达式，并返回表达式的值
-# print(eval("2+3"))
+print(eval("2+3"))
 
 # ord(x)	将一个字符转换为它的ASCII整数值
 
