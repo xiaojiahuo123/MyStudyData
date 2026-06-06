@@ -21,7 +21,7 @@
 
 # ~~~~~~~~~~~赋值运算符~~~~~~~~~~~~~~~~
 # =	赋值
-num1 = 10
+# num1 = 10
 # +=	加法赋值
 # num1 += 5  # ==>num1 = num1 + 5
 # -=	减法赋值
@@ -98,7 +98,7 @@ num1 = 10
 # print(f"{num1:3}原码 : {num1:08b}")
 # print(f"{num1:3}取反 : {(1 << 8) - 1 ^ num1:08b}，得到结果的补码")
 # print(f"{~num1:3}原码 : {~num1:08b}，计算出结果的原码")
-#
+
 #
 
 
@@ -204,3 +204,7 @@ for i in sys.path:
     print(i) #没有问题
 """
 # import sys;for i in sys.path:;print(i) # 报错
+
+import sys
+for i in sys.path:
+    print(i) #没有问题

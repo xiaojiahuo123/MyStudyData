@@ -12,20 +12,26 @@
             如果是“英语-美式键盘”，打印“英语-美式键盘”
 """
 # 定义状态
-state = 0b001
-if state & 0b100 == 0b100:
-    print("~~~大写状态~~~")
-else:
-    print("~~~小写状态~~~")
-    if state & 0b010 == 0b010:
-        print("~~~简体中文-微软拼音~~~")
-        if state & 0b001 == 0b001:
-            print("简体中文-微软拼音==>中文")
-        else:
-            print("简体中文-微软拼音==>英文")
-    else:
-        print("~~~英语-美式键盘~~~")
+# state = 0b001
+# if state & 0b100 == 0b100:
+#     print("~~~大写状态~~~")
+# else:
+#     print("~~~小写状态~~~")
+#     if state & 0b010 == 0b010:
+#         print("~~~简体中文-微软拼音~~~")
+#         if state & 0b001 == 0b001:
+#             print("简体中文-微软拼音==>中文")
+#         else:
+#             print("简体中文-微软拼音==>英文")
+#     else:
+#         print("~~~英语-美式键盘~~~")
 
 
-
-
+# status = 0b0010
+# if status == 1:
+#     print("进入1")
+# else:
+#     if status == 0:
+#         print("进入2")
+#     else:
+#         print("进入3")
