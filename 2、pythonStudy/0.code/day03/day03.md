@@ -1,6 +1,6 @@
 # Day 03 学习笔记
 
-## 1、运算符
+# 一、运算符
 
 ### 1.1 逻辑运算符
 
@@ -304,3 +304,7 @@ print(f"{~num1:3}原码 : {~num1:08b}，计算出结果的原码")
 | 11 | `not` | 逻辑非 |
 | 12 | `and` | 逻辑与 |
 | 13 | `or` | 逻辑或 |
+
+# 二、控制语句
+
+if if elseif else ，while循环，while else ， matchcase(类似JAva中的Shwit case) ， 三目运算符 ，
