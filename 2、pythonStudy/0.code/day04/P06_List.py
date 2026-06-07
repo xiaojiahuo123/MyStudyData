@@ -86,9 +86,10 @@ list1 = [100,200,300,400,500]
 #     print(i,list1[i])
 
 # 通过enumerate直接遍历出下标和值
-# for i,item in enumerate(list1):
-#     print(i,item)
+for i,item in enumerate(list1):
+    print(i,item)
 
+list1.pop()
 
 # 从列表中删除元素
 # 通过del语句删除列表元素
@@ -96,8 +97,8 @@ list1 = [100,200,300,400,500]
 
 # list1.insert(3,300)
 #删除第一次出现的x
-# print(list1.remove(300))
-# print(list1.pop(3))
+print(list1.remove(300))
+print(list1.pop(3))
 
 # list2 =[100,200,300,[500,600,700]]
 
@@ -120,6 +121,11 @@ list1 = [100,200,300,400,500]
 # list4 = [(i,j) for i in list2 for j in list3]
 # print(list4)
 
+
+# list1 = [100, 200, 300, 400, 500]
+#
+# for i, val in enumerate(list1):  # ✅ 同时获取索引和值
+#     print(i, val)
 
 # zip 拉链函数
 list2 = [1,2,3,4]
