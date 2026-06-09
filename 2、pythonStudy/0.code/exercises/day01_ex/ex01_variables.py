@@ -96,15 +96,22 @@ print(f"{'*' * 28}")
 a = [1, 2, 3]
 b = a           # b 和 a 指向同一个列表对象
 b.append(4)
-print(f"a = {a}")   # 预测: ____
-print(f"b = {b}")   # 预测: ____
-print(f"a is b: {a is b}")  # 预测: ____
+print(f"a = {a}")   # 预测: ____1,2,3,4
+print(f"b = {b}")   # 预测: ____1,2,3,4
+print(f"a is b: {a is b}")  # 预测: ____TRUE
 
 # 解释为什么 a 也变成了 [1, 2, 3, 4]？
 # 提示: Python 的变量是"标签"而不是"盒子"
 # 参考源码: Objects/listobject.c 中 PyListObject 的定义
 #           列表对象在堆上分配，变量名只是对它的引用
-
+# typedef struct { 这是python中list的c源码，
+#     Py_ssize_t allocated; 已分配的元素数量
+#     PyObject *ob_item[]; 指向堆上分配的元素数组的指针
+# } _PyListArray;
+# // 简化的伪代码
+# PyObject *list_a = PyList_New(3);  // 在堆上创建
+# PyObject *list_b = list_a;          // 只是指针赋值
+# Py_INCREF(list_b);                  // 增加引用计数
 
 # ============================================================
 #                    第三部分: 深入理解题
@@ -119,12 +126,12 @@ print("=" * 50)
 # 预测以下代码的输出
 a = 256
 b = 256
-print(f"a is b (256): {a is b}")   # 预测: ____
+print(f"a is b (256): {a is b}")   # 预测: ____TRUE
 
 a = 257
 b = 257
-print(f"a is b (257): {a is b}")   # 预测: ____ (在同一行赋值时CPython可能优化)
-
+print(f"a is b (257): {a is b}")   # 预测: ___TRUE_ (在同一行赋值时CPython可能优化)
+# print(f"a is b (257): {a is b}")输出为TRUE，这是 另一个机制 ： CPython 编译器的常量去重优化 ， 不是小整数池
 # 为什么 256 和 257 的行为不同？
 # 参考源码: Objects/longobject.c 中的 small_ints 数组
 # Python 启动时预创建了 -5 到 256 的整数对象
@@ -134,11 +141,11 @@ print(f"a is b (257): {a is b}")   # 预测: ____ (在同一行赋值时CPython�
 # Python 会对某些字符串进行驻留(缓存复用)
 a = "hello"
 b = "hello"
-print(f"'hello' is 'hello': {a is b}")  # 预测: ____
+print(f"'hello' is 'hello': {a is b}")  # 预测: ____true
 
 a = "hello world!"
 b = "hello world!"
-print(f"'hello world!' is 'hello world!': {a is b}")  # 预测: ____
+print(f"'hello world!' is 'hello world!': {a is b}")  # 预测: ____true
 
 a = "".join(["h", "e", "l", "l", "o"])
 b = "hello"
@@ -146,13 +153,17 @@ print(f"join结果 is 'hello': {a is b}")  # 预测: ____
 
 # 思考: 哪些字符串会被驻留？为什么 Python 要这样做？
 # 参考源码: Objects/unicodeobject.c 中的 PyUnicode_InternInPlace
-
+""""
+- 编译期优化 ：Python 编译器在解析源代码时，会创建一个 常量池 存储所有字符串字面量
+- 常量去重 ：相同内容的字符串字面量只存储一次，后续使用时复用同一个对象
+- 字节码生成 ：生成的字节码使用 LOAD_CONST index 指令加载常量，相同字符串共享同一个索引
+"""
 
 # ----- 题10: id() 与内存地址 -----
 # id() 返回对象的内存地址（CPython中就是内存地址）
-a = 100
+a = 100  # a 是指向小整数池的指针
 b = 100
-c = a
+c = a  #不创建新对象 ，只是复制指针,修改 c 不会影响 a（因为整数是不可变的）,如果 c = 200,只是c 现在指向另一个对象，a 仍然指向 100
 print(f"id(a) = {id(a)}")
 print(f"id(b) = {id(b)}")
 print(f"id(c) = {id(c)}")
@@ -160,8 +171,10 @@ print(f"id(a) == id(b): {id(a) == id(b)}")
 print(f"id(a) == id(c): {id(a) == id(c)}")
 
 # 思考: 为什么 c = a 之后，id(c) 和 id(a) 相同？
-# 这说明 Python 赋值操作的本质是什么？
-
+# 这说明 Python 赋值操作的本质是什么？  id()是获取变量的内存地址，a is b 是判断 a 和 b 是否指向同一个对象
+"""
+这里，我认为是100属于小整数池的范围，所以a、b、c三个变量指向的是堆上的同一个地址，所以用id(）方法三者相同
+"""
 
 # ----- 题11: 可变对象 vs 不可变对象 -----
 # 整数、字符串是不可变对象，列表是可变对象
@@ -182,11 +195,15 @@ print(f"修改后 id(lst) = {id(lst)}")
 
 # ----- 题12: 变量命名规则 -----
 # 以下哪些变量名是合法的？先预测，再运行验证
-# valid_name = 1      # 预测: ____
-# 2name = 1           # 预测: ____
-# _private = 1        # 预测: ____
-# my-name = 1         # 预测: ____
-# class = 1           # 预测: ____
-# myName = 1          # 预测: ____
-# __init__ = 1        # 预测: ____
-# name@ = 1           # 预测: ____
+# valid_name = 1      # 预测: ____TRUE
+# 2name = 1           # 预测: ____FLASE
+# _private = 1        # 预测: ____TRUE
+# my-name = 1         # 预测: ____flase,-减号不能用
+# class = 1           # 预测: ____flase,class是python关键字
+# myName = 1          # 预测: ____TRUE
+# __init__ = 1        # 预测: ____TRUE
+# name@ = 1           # 预测: ____FALSE,@是非法的
+# 变量命名规则总结：
+# - 只能包含字母、数字、下划线
+# - 不能以数字开头
+# - 不能是Python关键字

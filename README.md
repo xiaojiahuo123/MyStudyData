@@ -34,42 +34,94 @@
 
 ### 2. MySQL 学习
 
-- **day01**: SQL基础语法
-- **day02**: 函数、约束、分组查询、多表连接查询、排序分页
+| 章节 | 内容 |
+|------|------|
+| day01 | SQL基础语法 |
+| day02 | 函数、约束、分组查询、多表连接查询、排序分页 |
 
 ### 3. Python 学习
 
 | 章节 | 内容 |
 |------|------|
 | **day01** | 变量、f-string格式化、Hello World |
-| **day02** | 数字类型、进制转换、数据类型、类型转换、编码解码、输入输出、简单计算器 |
+| **day02** | 数字类型、进制转换、数据类型、类型转换、编码解码、输入输出、简单计算器、int()和float()实现原理 |
+| **day03** | 运算符（算术、关系、逻辑、位运算）、条件语句（if/elif/else/match-case）、循环语句（while）、位运算加法实现 |
+| **day04** | 序列（列表、元组、字符串）、for循环、range()函数、嵌套循环、break/continue、列表操作、enumerate() |
+
+#### Python 学习特色内容
+
+- **源码分析**：包含 Python 3.13.13 源码阅读
+- **实现原理**：深入理解 int()、float() 等内置函数的底层实现
+- **练习题**：每个章节配有练习题巩固知识
+- **数据类型**：掌握数字、字符串、列表等核心数据类型
 
 ## 📁 项目结构
 
 ```
 MyStudyData/
-├── 0、JAVA学习内容/        # Java学习笔记
-├── 0.1、JAVA/mian/       # Java代码示例
-│   ├── src/              # 源代码目录
-│   └── JAVA学习内容/      # 笔记文档
-├── 1.1、Mysql/           # MySQL学习内容
-└── 2、pythonStudy/       # Python学习内容
-    ├── 0.code/           # Python代码示例
-    └── 1.doc/            # Python学习文档
+├── 0.1、JAVA/                      # Java学习内容
+│   ├── mian/                       # Java代码示例
+│   │   ├── src/                    # 源代码目录
+│   │   └── JAVA学习内容/            # 笔记文档
+│   └── JAVA学习内容/                # Java学习笔记
+│
+├── 1.1、Mysql/                     # MySQL学习内容
+│   ├── day01/                      # day01 SQL基础
+│   └── day02/                      # day02 函数与查询
+│
+├── 1、MySql学习内容/               # MySQL笔记
+│
+└── 2、pythonStudy/                  # Python学习内容
+    ├── 0.code/                     # Python代码示例
+    │   ├── day01/                  # day01代码
+    │   ├── day02/                  # day02代码
+    │   │   ├── int_implementation.md   # int()实现原理
+    │   │   └── float_implementation.md  # float()实现原理
+    │   ├── day03/                  # day03代码
+    │   ├── day04/                  # day04代码
+    │   ├── exercises/               # 练习题
+    │   │   ├── day01_ex/            # day01练习题
+    │   │   ├── day02_ex/            # day02练习题
+    │   │   └── day03_ex/            # day03练习题
+    │   └── python3.13.13/           # Python源码阅读
+    │       ├── Objects/             # 对象实现（listobject.c等）
+    │       ├── Include/             # 头文件
+    │       ├── Python/              # Python核心
+    │       └── Lib/                 # 标准库
+    │
+    └── 1.doc/                      # Python学习文档
+        ├── day01.md                 # day01文档
+        └── day02.md                 # day02文档
 ```
 
 ## 🛠️ 技术栈
 
 - **Java**: JDK 8+
-- **Python**: Python 3.6+
+- **Python**: Python 3.6+ / Python 3.13.13（源码阅读）
 - **MySQL**: 8.0+
 
 ## 📝 学习目标
 
-- 掌握 Java 面向对象编程
-- 熟练使用 MySQL 数据库
-- 掌握 Python 基础语法和常用库
-- 持续学习，不断积累
+- ✅ 掌握 Java 面向对象编程
+- ✅ 熟练使用 MySQL 数据库
+- ✅ 掌握 Python 基础语法和常用库
+- ✅ 深入理解 Python 底层实现（源码阅读）
+- 🔄 持续学习，不断积累
+
+## 📖 Python 源码学习方法
+
+### 推荐阅读顺序
+
+1. **数据类型**：`listobject.c`、`longobject.c`、`floatobject.c`
+2. **字符串**：`unicodeobject.c`
+3. **核心机制**：`object.c`、`typeobject.c`
+4. **内存管理**：`gc.c`
+
+### 学习资源
+
+- 源码位置：`2、pythonStudy/0.code/python3.13.13/`
+- 内置函数：`Python/bltinmodule.c`
+- 对象定义：`Include/cpython/*.h`
 
 ---
 

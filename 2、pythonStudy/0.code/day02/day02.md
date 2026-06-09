@@ -10,6 +10,18 @@ day02学习内容:
 
 原码、反码、补码，正数的三码一致，负数的原码是二进制的最左边为1，反码是0边1，1变0，补码是反码（二进制）加1
 
+###### 二进制加法
+
+```python
+#公式：
+a + b = (a ^ b) + ((a & b) << 1)
+- a ^ b = 不考虑进位的加法结果
+- (a & b) << 1 = 进位值（左移表示进位到高位）
+- 两者相加就是最终结果
+```
+
+a + b = (a ^ b) + ((a & b) << 1)
+
 ##### 2、数据类型
 
 数据类型，int float bool String 复数 ，type（）函数判断数据是什么类型， isinstance(num1, bool)  判断变量的类型，type() 不会认为子类是一种父类类型，isinstance() 会认为子类是一种父类类型。
@@ -68,3 +80,73 @@ print(str3)
 输入和输出，以及输出的格式化使用format
 
 其中format()已经在day01文档中解释
+
+bool是int的子类
+
+![](.\images\2.png)
+
+对于int()函数，
+
+```python
+# Python 伪代码演示 int() 的工作原理
+def my_int(s: str, base: int) -> int:
+    result = 0
+    for char in s:
+        # 将字符转换为对应的数字
+        if char.isdigit():
+            digit = int(char)
+        else:
+            digit = 10 + ord(char.lower()) - ord('a')
+        
+        # 核心算法
+        result = result * base + digit
+    
+    return result
+
+# 测试
+print(my_int("12", 16))   # 18
+print(my_int("1A", 16))   # 26
+print(my_int("1010", 2))  # 10
+```
+
+python中的int没有长度的限制，不会溢出
+
+```python
+# 整数相加时的扩展逻辑
+PyObject *
+PyLong_Add(PyObject *v, PyObject *w)
+{
+    PyLongObject *a, *b, *result;
+    Py_ssize_t size_a, size_b, size;
+    
+    # 获取两个数的位数
+    size_a = Py_SIZE(a);
+    size_b = Py_SIZE(b);
+    
+    # 计算结果需要的位数
+    size = Py_MAX(size_a, size_b) + 1;  # +1 用于进位
+    
+    # 分配新的数组空间
+    result = _PyLong_New(size);
+    
+    # 执行加法运算...
+}
+
+C语言 int 有限制的原因 ：
+
+- 使用固定大小的内存（通常4字节）
+
+- 受硬件和操作系统限制
+
+- 超过范围会发生溢出（未定义行为）
+
+Python int 无限制的原因 ：
+
+- 使用 可变长度数组 存储
+
+- 位数不够时自动扩展
+
+- 只受可用内存限制
+
+- 理论上可以表示任意大的整数C语言 int 有限制的原因 ：
+```
