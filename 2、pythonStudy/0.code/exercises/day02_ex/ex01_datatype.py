@@ -70,7 +70,7 @@ binary = 0b101010
 octal = 0o52
 hexa = 0x2A
 # TODO: 验证这四个值相等
-if bin(dec) == binary :
+if bin(dec) == binary :  # ！bin(dec) 返回的是字符串 "0b101010"，而 binary 是整数 42，类型不同永远不相等
     print("dec 和 binary相等")
 else:print("NO")
 if oct(dec) == octal :
@@ -79,6 +79,7 @@ else:print("NO")
 if hex(dec) == hexa :
     print("dec 和 hexa")
 else:print("NO")
+print(dec == binary == octal == hexa)
 # ============================================================
 #                    第二部分: 进阶题
 # ============================================================
@@ -147,6 +148,7 @@ print(f"True > False: {True > False}")        # ____true
 nums = [1, 0, 3, 0, 5, 0, 7]
 # TODO: 用一行代码统计非零元素个数 (提示: sum + bool转换)
 count = sum(num != 0 for num in nums)  # 替换为你的代码
+count = sum(bool(num) for num in nums)  # bool(0)=False=0, bool(其他)=True=1  claude展示优化方式
 print(f"非零元素个数: {count}")  # 期望: 4
 
 
@@ -222,7 +224,11 @@ print(f"修改后: id={id(a)}, type={type(a)}, value={a}")
 lst = [1, 2, 3]
 print(f"修改前: id={id(lst)}, type={type(lst)}, value={lst}")
 lst.append(4)
+list1 = lst
 print(f"修改后: id={id(lst)}, type={type(lst)}, value={lst}")
+print(f"修改后: id={id(list1)}, type={type(list1)}, value={list1}") # 从这里能看出列表的直接赋值只是让list1也指向了lst
+list1 = lst.copy()
+print(f"修改后: id={id(list1)}, type={type(list1)}, value={list1}") # 使用copy()方法后是创建了一个新的列表
 # id 变了吗？说明什么？
 # 地址没有变化，说明是直接对原本的对象进行的修改，也就证明了列表是可变的
 
@@ -238,4 +244,14 @@ print(f"eval('2 + 3'): {eval('2 + 3')}")
 print(f"eval('2 ** 10'): {eval('2 ** 10')}")
 
 # 注意: eval/exec 只能用于学习，生产环境有安全风险！
-# 思考: 为什么 eval() 不安全？
+# 思考: 为什么 eval() 不安全？  没想通
+# eval 会执行任意 Python 表达式
+#user_input = "__import__('os').system('rm -rf /')"  # 恶意输入！
+#eval(user_input)  # 直接执行了删除命令！
+
+# exec 更危险，能执行任意代码块
+#exec("import os; os.system('format C:')")  # Windows 格式化磁盘！
+
+# 本质：eval() / exec()
+# 把字符串当作代码执行，如果字符串来自用户输入，攻击者可以执行任意系统命令。这就是"代码注入"
+# 漏洞。生产环境中永远不要对不可信的输入使用eval()。

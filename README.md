@@ -46,7 +46,7 @@
 | **day01** | 变量、f-string格式化、Hello World |
 | **day02** | 数字类型、进制转换、数据类型、类型转换、编码解码、输入输出、简单计算器、int()和float()实现原理 |
 | **day03** | 运算符（算术、关系、逻辑、位运算）、条件语句（if/elif/else/match-case）、循环语句（while）、位运算加法实现 |
-| **day04** | 序列（列表、元组、字符串）、for循环、range()函数、嵌套循环、break/continue、列表操作、enumerate() |
+| **day04** | 序列（列表、元组、字符串）、for循环、range()函数、嵌套循环、break/continue、列表操作、enumerate()、循环中的变量作用域 |
 
 #### Python 学习特色内容
 

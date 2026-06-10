@@ -21,30 +21,66 @@ print("=" * 50)
 
 # TODO: 用 range 生成并打印以下序列:
 # [0, 1, 2, 3, 4]
-
+# range() 返回的是一个 range 对象，不是列表，直接打印不会显示元素。
+# - ange 对象 ：节省内存，按需生成元素（懒加载）
+# - 列表 ：立即生成所有元素，占用完整内存
+nums = list(range(0, 5))
+print(nums)
 
 # [5, 6, 7, 8, 9]
-
+nums = list(range(5, 10))
+print(nums)
 
 # [2, 4, 6, 8, 10]
-
+nums = list(range(2, 11,2))
+print(nums)
 
 # [10, 8, 6, 4, 2]
-
+nums = list(range(10, 1,-2))
+print(nums)
 
 # ----- 题2: 求和 -----
 # TODO: 计算 1+2+3+...+100 (用 for 循环)
-
+nums = range(1, 101)
+count = 0
+for i in nums:
+    count += i
+print(count)
 
 # TODO: 计算 1-100 中所有奇数的和
-
+nums = range(1, 101)
+count = 0
+for i in nums:
+    if i & 1 != 0 :
+        count += i
+print(count)
 
 # TODO: 计算 1-100 中所有能被3整除但不能被5整除的数的和
-
+nums = range(1, 101)
+count = 0
+for i in nums:
+    if i % 3 == 0 and i % 5 != 0 :
+        count += i
+print(count)
 
 # ----- 题3: 计数 -----
 # TODO: 统计 1-1000 中有多少个质数
-
+# 质数（素数） ：大于1的自然数，除了1和它本身外，不能被其他自然数整除。
+count = 0
+for num in range(2, 1001):
+    if num == 2:
+        count += 1
+    elif num % 2 == 0:
+        continue
+    else:
+        is_prime = True
+        for i in range(3, int(num**0.5) + 1, 2):
+            if num % i == 0:
+                is_prime = False
+                break
+        if is_prime:
+            count += 1
+print(f"1-1000 中有 {count} 个质数")
 
 # ============================================================
 #                    第二部分: 进阶题
@@ -63,7 +99,11 @@ print("=" * 50)
 # ***
 # ****
 # *****
-
+nums = range(1, 6)
+for i in nums:
+    for j in range(1, i+1):
+        print("*", end="")
+    print()
 
 # (2) 倒直角三角形 (右上)
 # *****
@@ -71,6 +111,8 @@ print("=" * 50)
 # ***
 # **
 # *
+for i in range(5, 0, -1):
+    print("*" * i)
 
 
 # (3) 等腰三角形
@@ -79,6 +121,16 @@ print("=" * 50)
 #   *****
 #  *******
 # *********
+# nums = range(1, 10,2)
+# for i in nums:
+#     for j in range(1, i+1):
+#         print("*", end="")
+#     print()
+for i in range(1, 10, 2):
+    # 打印空格
+    print(" " * ((9 - i) // 2), end="")
+    # 打印星号
+    print("*" * i)
 
 
 # (4) 菱形 (选做)
@@ -91,6 +143,16 @@ print("=" * 50)
 #   *****
 #    ***
 #     *
+# 上半部分：1, 3, 5, 7, 9
+for i in range(1, 10, 2):
+    print(" " * ((9 - i) // 2), end="")
+    print("*" * i)
+
+# 下半部分：7, 5, 3, 1
+for i in range(7, 0, -2):
+    print(" " * ((9 - i) // 2), end="")
+    print("*" * i)
+
 
 
 # ----- 题5: 质数相关 -----
@@ -149,21 +211,25 @@ print(f"len(r): {len(r)}")
 # enumerate 同时获取索引和值
 fruits = ["apple", "banana", "cherry"]
 # TODO: 用 enumerate 打印 "0: apple", "1: banana", "2: cherry"
-
+for i,value in enumerate(fruits):
+    print(i, value)
 
 # zip 同时遍历多个序列
 names = ["小明", "小红", "小刚"]
 scores = [85, 92, 78]
 # TODO: 用 zip 打印 "小明: 85分", "小红: 92分", "小刚: 78分"
-
+list1 = zip(names, scores)
+for name, score in list1:
+    print(f"{name} : {score}")
 
 # zip 的长度以最短的为准
 a = [1, 2, 3, 4, 5]
 b = ["a", "b", "c"]
-print(f"zip 长度不同: {list(zip(a, b))}")
+print(f"zip 长度不同: {list(zip(a, b))}")  # 以 b 的长度为准
 
 # itertools.zip_longest 以最长的为准
-from itertools import zip_longest
+from itertools import zip_longest, count  # 以 a 为准
+
 print(f"zip_longest: {list(zip_longest(a, b, fillvalue='?'))}")
 
 
