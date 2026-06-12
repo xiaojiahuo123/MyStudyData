@@ -1,7 +1,6 @@
 """
     该案例演示了字典基本操作
 """
-"""
 # 创建字典对象
 dict1 = {}
 dict2 = dict()
@@ -17,8 +16,8 @@ print(dict3,type(dict3))
 print(dict4,type(dict4))
 print(dict5,type(dict5))
 print(dict6,type(dict6))
-"""
-"""
+
+
 # 访问字典元素
 dict1 = {"name": "Alice", "age": 18, "gender": "male"}
 print(dict1["name"])
@@ -31,8 +30,8 @@ print(dict1.get("age"))
 print(dict1.get("gender"))
 print(dict1.get("add")) # # 如果没有对应的key,返回None
 print(dict1.get("add","beijing")) # # 如果没有对应的key,返回None
-"""
-"""
+
+
 # 向字典中添加元素以及对元素进行修改
 dict1 = {"name": "Alice", "age": 18, "gender": "male"}
 dict1["age"] = 20
@@ -46,10 +45,10 @@ print("name" in dict1)
 print("Alice" in dict1)
 # 获取字典长度
 print(len(dict1))
-"""
+
 
 dict1 = {"swk":"六小龄童","bj":"马德华","shs":"闫怀礼","ts":"迟重瑞"}
-"""
+
 # 遍历出字典的所有key
 keys = dict1.keys()
 print(keys)
@@ -59,7 +58,7 @@ for key in keys:
 # 遍历出字典的所有value
 values = dict1.values()
 print(values)
-print(type(values))
+print(f"values数据类型为 : {type(values)}")
 for val in values:
     print(val)
 # 对k-v同时进行遍历--方式1
@@ -74,7 +73,7 @@ print(items)
 print(type(items))
 for item in items:
     print(item)
-"""
+
 
 # 删除字典元素
 # del dict1["swk"]
@@ -95,10 +94,10 @@ dict1.update(dict2)
 print(dict1)
 
 
-# dict.setdefault(key[,default])	获取字典中key对应value，可设置默认值。若key不存在于字典中，将会添加key并将value设为默认值
+# dict.setdefault(key[,default])	# 获取字典中key对应value，可设置默认值。若key不存在于字典中，将会添加key并将value设为默认值
 
-# dict2.setdefault("zr","aaaa")
-# print(dict2)
+dict2.setdefault("zr","aaaa")
+print(dict2)
 
 # dict.fromkeys(seq[,default])	以序列seq中元素做字典的key创建一个新字典，可设置value的默认值
 

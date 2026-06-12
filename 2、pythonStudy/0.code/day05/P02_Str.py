@@ -20,19 +20,19 @@ print(str1[:5])
 print(str1[:])
 print(str1[::-1])
 """
-"""
+
 # 字符串相加
 str1 = "hello"
 str2 = "world"
 print(str1,id(str1))
 # 不可变
-# str1[1] = "a"
+#  str1[1] = "a"
 str3 = str1 + str2
 print(str3,id(str3))
 
 # 字符串乘法
 print("~"*100)
-"""
+
 """
 # 判断字符是否在字符串中
 str1 = "hello"

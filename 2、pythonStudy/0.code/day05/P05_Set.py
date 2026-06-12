@@ -1,7 +1,7 @@
 """
     该案例演示set基本操作
 """
-"""
+
 # 创建set集合
 set1 = {100,200,300}
 set2 = set(range(10))
@@ -11,7 +11,7 @@ set3 = set()
 print(set1,type(set1))
 print(set2,type(set2))
 print(set3,type(set3))
-"""
+
 """
 # 添加和删除元素
 # {0, 2, 4, 6, 8, 10, 12, 14, 16, 18}
