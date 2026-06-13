@@ -173,3 +173,25 @@ freq = {x: lst.count(x) for x in lst}
 print(freq)
 ```
 
+### 字符串驻留
+
+```python
+# ----- 题13: 字符串驻留（Interning） [选做] -----
+# 知识点: 字符串驻留机制、is vs ==
+# Python 会缓存一些字符串，使相同内容的字符串指向同一对象
+a = "hello"
+b = "hello"
+print(f"a is b: {a is b}")       # ____true
+
+a = "hello world!"
+b = "hello world!"
+print(f"a is b: {a is b}")       # ___true_
+
+a = "hello123"
+b = "hello123"
+print(f"a is b: {a is b}")       # ____true
+
+# 规则: 只包含字母、数字、下划线的字符串会被自动驻留
+# 永远用 == 比较字符串值，不要用 is
+```
+

@@ -18,9 +18,18 @@ exercises/
 │   ├── ex01_operators.py      # 算术/逻辑/位/成员运算符、短路、优先级
 │   └── ex02_control_flow.py   # if/match-case/while/for、递归、迭代器
 │
-└── day04_ex/
-    ├── ex01_loop.py           # range深入、嵌套循环、图形打印、质数
-    └── ex02_list.py           # 列表操作、推导式、内存机制、排序、深浅拷贝
+├── day04_ex/
+│   ├── ex01_loop.py           # range深入、嵌套循环、图形打印、质数
+│   └── ex02_list.py           # 列表操作、推导式、内存机制、排序、深浅拷贝
+│
+├── day05_ex/
+│   ├── ex01_collections.py    # 字典嵌套、max()/min()、lambda、集合运算、f-string表格
+│   ├── ex01_collections_answer.py  # day05 练习答案
+│   ├── ex02_strings_deep.py   # 字符串切片、方法、不可变性、编码
+│   └── ex02_strings_deep_answer.py # 字符串练习答案
+│
+├── AI_EXERCISE_GUIDE.md       # AI 练习生成指南
+└── README.md                  # 练习说明
 ```
 
 ## 难度分级
