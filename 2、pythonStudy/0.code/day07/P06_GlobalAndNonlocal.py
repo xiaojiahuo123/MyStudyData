@@ -1,22 +1,22 @@
 """
     该案例演示了global和nonlocal关键字
 """
-"""
+
 # 通过 += 操作赋值，会报错，认为局部变量还未定义
-var1 = 10
-def func():
-    var1 += 10 ==> var1 = var1 + 10
-    print(var1)
-func()
-"""
-"""
+# var1 = 10
+# def func():
+#     var1 += 10 ==> var1 = var1 + 10
+#     print(var1)
+# func()
+
+
 var1 = 10
 def func():
     var1 = 20
     print(f"局部作用域中的var1={var1}")
 func()
 print(f"全局作用域中的var1={var1}")
-"""
+
 """
 var1 = 10
 def func():

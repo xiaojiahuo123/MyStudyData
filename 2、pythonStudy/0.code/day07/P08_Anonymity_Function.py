@@ -38,7 +38,7 @@ print(cal(20, 10, lambda a,b: a - b))
 print(cal(20, 10, lambda a,b: a * b))
 print(cal(20, 10, lambda a,b: a / b))
 """
-"""
+
 # 有三名学生的姓名和年龄，按年龄排序。
 student_list = [{"name": "zhang3", "age": 36},
                 {"name": "li4", "age": 14},
@@ -49,7 +49,7 @@ student_list = [{"name": "zhang3", "age": 36},
 # student_list.sort(key= getKey)
 student_list.sort(key= lambda stu: stu["age"])
 print(student_list)
-"""
+
 """
 # map() 函数对序列中元素逐一处理。
 list1 = [0, 1, 3, 7, 9]

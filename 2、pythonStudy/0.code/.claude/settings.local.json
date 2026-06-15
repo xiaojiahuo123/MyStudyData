@@ -3,7 +3,8 @@
     "allow": [
       "Bash(ls *)",
       "Bash(powershell *)",
-      "Bash(echo \"exit: $?\")"
+      "Bash(echo \"exit: $?\")",
+      "Bash(python *)"
     ]
   }
 }
