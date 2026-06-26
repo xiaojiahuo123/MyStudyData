@@ -14,8 +14,8 @@ class ChineseStudent(Student):
         super().__init__(name, age)
         self.grade = grade
 
-    # def eat(self):
-    #     print(f"{self.name}用筷子吃饭")
+    def eat(self):  # python中的重写直接重写，没有专门的注解
+        print(f"{self.name}用筷子吃饭")
 
 zwj = ChineseStudent("zwj",20,"一年级")
 zwj.eat()

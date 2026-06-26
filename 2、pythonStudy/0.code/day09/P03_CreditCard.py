@@ -11,7 +11,7 @@ class CreditCard:
     def password(self):
         return self.__password
 
-    @password.setter
+    @password.setter  # 没有 setter 时：直接赋值，无法验证，有 setter 时：赋值时会触发 setter 方法
     def password(self,password):
         if password != "888888":
             print("密码输入有误")
@@ -36,4 +36,5 @@ c1 = CreditCard("mzl")
 c1.password = "666666"
 c1.password = "888888"
 c1.balance = -100
+c1.balance = 100
 

@@ -38,7 +38,7 @@ class Car:
 
 wf = Student("wf",20)
 xb = BoyFriend("wxb",25)
-wf.bf = xb
+wf.bf = xb  # 直接把xb这个对象传进去了
 print(str(wf))
 
 su7 = Car("su7","红色")
