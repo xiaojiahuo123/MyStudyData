@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="7ED9780D-23F8-469f-90EF-BF8EBD2F2864" name="R2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-E9-20-8A" com_port="2001" bootmode="0" cx="518.000000" cy="125.000000" edit_left="545" edit_top="179">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="EE6B0AF6-21C4-4894-9C2A-CA123DFD1BF9" name="R1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-9A-3C-36" com_port="2000" bootmode="0" cx="147.000000" cy="127.000000" edit_left="174" edit_top="181">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="EE6B0AF6-21C4-4894-9C2A-CA123DFD1BF9" destDeviceID="7ED9780D-23F8-469f-90EF-BF8EBD2F2864">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="217.183136" srcBoundRect_Y="153.767212" srcOffset_X="-17.000000" srcOffset_Y="10.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="501.816864" tarBoundRect_Y="152.232788" tarOffset_X="-31.000000" tarOffset_Y="11.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="196" top="183" right="301" bottom="203" content="10.1.1.1/24" fontname="Consolas" fontstyle="0" editsize="120" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="424" top="181" right="520" bottom="200" content="10.1.1.2/24" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="140" top="101" right="199" bottom="121" content="客户端" fontname="Consolas" fontstyle="0" editsize="120" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="516" top="101" right="575" bottom="121" content="服务端" fontname="Consolas" fontstyle="0" editsize="120" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="297" top="72" right="410" bottom="94" content="SSH安全配置" fontname="Consolas" fontstyle="0" editsize="130" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
