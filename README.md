@@ -53,6 +53,7 @@
 | day08 | 面向对象基础（类定义、`__init__`、`self`）、实例方法/类方法/静态方法 |
 | day09 | 封装（私有属性、`@property`）、继承（单继承、多继承、`super()`）、多态 |
 | day10 | 异常处理（try/except/else/finally）、自定义异常、with语句 |
+| day11 | 模块与包（`import`、`__all__`、包的结构）、面向对象综合练习 |
 
 ### 4. 网络安全 学习
 
@@ -66,6 +67,13 @@
 | Day6 | MISC安全基础与隐写 |
 | Day7 | Misc综合安全与考核 |
 
+#### 网络安全补充知识
+
+| 文档 | 内容 |
+|------|------|
+| HTTP协议详解 | HTTP报文结构、请求方法、状态码、连接管理、HTTPS、安全头 |
+| Ubuntu22.04 syslog日志 | Ubuntu系统日志配置与分析 |
+
 #### 网络安全实操内容
 
 - SSH实验（路由器SSH登录配置、抓包分析）
@@ -74,7 +82,8 @@
 - 三层交换机VLAN路由实验（VLAN划分、三层路由）
 - 基本ACL/高级ACL配置实验
 - UDP Flood防护实验
-- eNSP网络仿真操作
+- HTTP协议实验（报文构造、本地HTTP服务器/客户端、抓包分析）
+- Session攻防实验（Session概念、Session劫持演示、Session存储机制）
 
 ## 项目结构
 
@@ -105,26 +114,28 @@ MyStudyData/
 │
 ├── 2、pythonStudy/                  # Python学习内容
 │   ├── 0.code/                     # Python代码示例
-│   │   ├── day01/                  # day01代码
-│   │   ├── day02/                  # day02代码（int/float实现原理）
-│   │   ├── day03/                  # day03代码
-│   │   ├── day04/                  # day04代码
-│   │   ├── day05/                  # day05代码（max函数实现原理）
-│   │   ├── day06/                  # day06代码（浅拷贝与深拷贝）
-│   │   ├── day07/                  # day07代码（递归、闭包）
-│   │   ├── day08/                  # day08代码（面向对象）
-│   │   ├── day09/                  # day09代码（封装、继承、多态）
-│   │   ├── day10/                  # day10代码（异常处理）
-│   │   ├── exercises/              # 练习题
+│   │   ├── day01/                  # day01 变量与格式化
+│   │   ├── day02/                  # day02 数字类型、类型转换、编码解码
+│   │   ├── day03/                  # day03 运算符、条件语句、循环语句
+│   │   ├── day04/                  # day04 序列（列表、元组、字符串）
+│   │   ├── day05/                  # day05 字符串方法、集合、字典
+│   │   ├── day06/                  # day06 函数、参数、深浅拷贝
+│   │   ├── day07/                  # day07 递归、闭包、匿名函数、文件操作
+│   │   ├── day08/                  # day08 面向对象基础（类、self、方法）
+│   │   ├── day09/                  # day09 封装、继承、多态
+│   │   ├── day10/                  # day10 异常处理、自定义异常、with语句
+│   │   ├── day11/                  # day11 模块与包（import、包结构、__all__）
+│   │   ├── exercises/              # 练习题（day01-day11，含答案）
 │   │   └── python3.13.13/          # Python 3.13.13源码阅读
-│   │       ├── Objects/            # 对象实现（listobject.c等）
+│   │       ├── Objects/            # 对象实现（listobject.c、dictobject.c等）
 │   │       ├── Include/            # 头文件
 │   │       ├── Python/             # Python核心
 │   │       ├── Lib/                # 标准库
 │   │       └── Misc/               # 其他文件
 │   │
 │   └── 1.doc/                      # Python学习文档
-│       ├── day01-day08.md          # 各章节文档
+│       ├── day01-day08.md          # 各章节文档（day04含列表推导式）
+│       ├── max函数实现原理.md       # max()源码分析
 │       └── python3.13.13/          # 源码文档备份
 │
 └── 3、网络安全/                     # 网络安全学习内容
@@ -135,13 +146,18 @@ MyStudyData/
     │   ├── Day4_竞赛与攻防基础.md
     │   ├── Day5_Web安全基础2-3.md
     │   ├── Day6_MISC安全基础与隐写.md
-    │   └── Day7_Misc综合安全与考核.md
+    │   ├── Day7_Misc综合安全与考核.md
+    │   ├── HTTP协议详解.md          # HTTP协议专题
+    │   └── Ubuntu22_04_syslog日志.md # Ubuntu日志系统
     │
-    └── 实操/                        # eNSP实操和实验
-        ├── day01/                   # 基本ACL、高级ACL实验
+    └── 实操/                        # 实操和实验
+        ├── 0706/                   # HTTP协议与Session实验
+        │   ├── http/               # HTTP报文构造、本地服务器/客户端、抓包
+        │   └── session/            # Session概念、劫持演示、存储机制
+        ├── day01/                  # 基本ACL、高级ACL实验
+        ├── 6月29日上午上课实验/      # SSH、TCP-SYN、VLAN、Telnet实验
         ├── 第1题网络拓扑/            # 交换机拓扑
-        ├── 第2题网络拓扑/            # 路由器拓扑
-        └── 6月29日上午上课实验/      # SSH、TCP-SYN、VLAN实验
+        └── 第2题网络拓扑/            # 路由器拓扑
 ```
 
 ## 技术栈
@@ -161,11 +177,13 @@ MyStudyData/
 
 ### 网络安全学习
 - 掌握常见应用层协议的工作原理（HTTP/HTTPS、FTP、DNS、SSH）
+- 深入理解HTTP协议（报文结构、请求方法、状态码、连接管理、安全机制）
 - 学会使用SSH安全连接网络设备
 - 理解TCP/UDP攻击原理及防护方法（SYN Flood、UDP Flood）
 - 掌握三层交换机VLAN配置和ACL访问控制
 - 学会使用Wireshark进行流量分析
 - 掌握Linux系统安全检测和加固方法
+- 理解Session机制与常见攻击手法
 
 ## Python 源码学习方法
 

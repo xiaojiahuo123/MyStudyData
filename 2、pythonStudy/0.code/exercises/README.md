@@ -28,6 +28,10 @@ exercises/
 │   ├── ex02_strings_deep.py   # 字符串切片、方法、不可变性、编码
 │   └── ex02_strings_deep_answer.py # 字符串练习答案
 │
+├── day11_ex/
+│   ├── ex01_comprehensive_11days.py        # day01-day11 综合练习
+│   └── ex01_comprehensive_11days_answer.py # 综合练习答案
+│
 ├── AI_EXERCISE_GUIDE.md       # AI 练习生成指南
 └── README.md                  # 练习说明
 ```

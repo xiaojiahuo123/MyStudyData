@@ -262,6 +262,77 @@ print(list1[1][1])    # 5                 获取第二个子列表的第二个�
 print(list1[2][-1])   # 9                 获取第三个子列表的最后一个元素
 ```
 
+### 5.2.14 列表推导式
+
+列表推导式（List Comprehension）是 Python 中创建列表的简洁方式，可以用一行代码替代多行 `for` 循环。
+
+**基本语法**：`[表达式 for 变量 in 可迭代对象]`
+
+```python
+# 传统 for 循环
+squares = []
+for x in range(5):
+    squares.append(x ** 2)
+print(squares)  # [0, 1, 4, 9, 16]
+
+# 列表推导式（等价写法，更简洁）
+squares = [x ** 2 for x in range(5)]
+print(squares)  # [0, 1, 4, 9, 16]
+```
+
+**带条件过滤**：`[表达式 for 变量 in 可迭代对象 if 条件]`
+
+```python
+scores = [88, 59, 92, 76, 45, 100, 67]
+
+# 筛选及格成绩
+passed = [s for s in scores if s >= 60]
+print(passed)  # [88, 92, 76, 100, 67]
+
+# 筛选偶数
+nums = [1, 2, 3, 4, 5, 6]
+evens = [n for n in nums if n % 2 == 0]
+print(evens)  # [2, 4, 6]
+```
+
+**带 if-else 表达式**（注意位置不同）：`[值1 if 条件 else 值2 for 变量 in 可迭代对象]`
+
+```python
+nums = [1, 2, 3, 4, 5]
+
+# 偶数标记为"偶"，奇数标记为"奇"
+labels = ["偶" if n % 2 == 0 else "奇" for n in nums]
+print(labels)  # ['奇', '偶', '奇', '偶', '奇']
+
+# 将负数变为0，正数保留
+nums2 = [3, -1, 4, -2, 5]
+result = [n if n > 0 else 0 for n in nums2]
+print(result)  # [3, 0, 4, 0, 5]
+```
+
+**嵌套列表推导式**：
+
+```python
+# 将二维列表展开为一维
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+flat = [num for row in matrix for num in row]
+print(flat)  # [1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+
+**字符串处理**：
+
+```python
+# 提取字符串中的数字
+text = "abc123def456"
+digits = [c for c in text if c.isdigit()]
+print(digits)  # ['1', '2', '3', '4', '5', '6']
+
+# 转大写
+words = ["hello", "world"]
+upper_words = [w.upper() for w in words]
+print(upper_words)  # ['HELLO', 'WORLD']
+```
+
 ---
 
 ## 5.3 循环中的变量作用域
