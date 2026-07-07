@@ -405,7 +405,88 @@ HTTPS:  客户端 ←──加密──→ 服务器
 | CSRF | 伪造用户请求执行操作 | Token 验证、Referer 检查 |
 | HTTP 响应头注入 | 注入恶意头部信息 | 过滤用户输入 |
 
-### 9.2 安全响应头
+### 9.2 重要请求头的安全意义
+
+**X-Forwarded-For**
+
+```
+X-Forwarded-For: 127.0.0.1
+```
+
+```
+作用：标识客户端的真实 IP 地址
+原理：当请求经过代理/负载均衡时，每一层代理会在该头部追加客户端 IP
+格式：X-Forwarded-For: 客户端IP, 代理1IP, 代理2IP
+
+示例流程：
+客户端(192.168.1.100) → Nginx(10.0.0.1) → Apache(10.0.0.2) → Web应用
+最终头部：X-Forwarded-For: 192.168.1.100, 10.0.0.1, 10.0.0.2
+```
+
+```
+在 Web 攻击中的作用：
+
+1. IP 伪造绕过
+   - 攻击者发送：X-Forwarded-For: 127.0.0.1
+   - 如果服务器信任该头部，会误认为请求来自本地
+   - 绕过基于 IP 的访问控制（如只允许 localhost 访问的管理后台）
+
+2. IP 限制绕过
+   - 网站对同一 IP 做了频率限制或黑名单封禁
+   - 攻击者伪造不同的 X-Forwarded-For 值绕过限制
+
+3. 日志污染
+   - 伪造 IP 导致服务器日志记录虚假来源，干扰安全审计
+
+防护措施：
+- 服务器不要直接信任 X-Forwarded-For 头部
+- 从右向左解析，跳过已知代理 IP，取第一个可信 IP
+- 在 Nginx 中配置：proxy_set_header X-Real-IP $remote_addr
+```
+
+**Referer**
+
+```
+Referer: https://www.example.com/home
+```
+
+```
+作用：标识当前请求是从哪个页面跳转过来的
+原理：浏览器自动在请求中附加来源页面的 URL（拼写错误是历史原因）
+
+示例：
+用户在 https://www.example.com/home 点击链接跳转到 /about
+浏览器发送：Referer: https://www.example.com/home
+```
+
+```
+在 Web 攻击中的作用：
+
+1. CSRF 攻击绕过
+   - 很多网站用 Referer 验证请求来源，判断是否为合法请求
+   - 攻击者可以通过以下方式伪造或隐藏 Referer：
+     a. 利用 <meta name="referrer" content="no-referrer"> 标签
+     b. 利用 data: URL 或 javascript: URL 发起请求（部分浏览器不发送 Referer）
+     c. HTTPS → HTTP 跳转时，浏览器不发送 Referer（协议降级）
+     d. 自定义 Referer-Policy 响应头控制
+
+2. 敏感信息泄露
+   - URL 中可能包含敏感参数：
+     https://example.com/transfer?token=abc123&to=hacker
+   - Referer 被发送到第三方资源时，第三方可以看到完整 URL
+   - 包含 token、用户名等敏感信息
+
+3. 来源伪造
+   - 攻击者构造页面让受害者点击，Referer 指向合法网站
+   - 绕过简单的 Referer 来源检查
+
+防护措施：
+- 使用 CSRF Token 而非仅依赖 Referer 验证
+- 设置 Referrer-Policy: strict-origin-when-cross-origin（只发送源信息，不发送完整路径）
+- 敏感操作不要放在 URL 参数中
+```
+
+### 9.3 安全响应头
 
 ```http
 # 防止点击劫持
@@ -424,7 +505,7 @@ Strict-Transport-Security: max-age=31536000; includeSubDomains
 Content-Security-Policy: default-src 'self'
 ```
 
-### 9.3 Cookie 安全属性
+### 9.4 Cookie 安全属性
 
 ```http
 Set-Cookie: session_id=abc123; Path=/; HttpOnly; Secure; SameSite=Strict

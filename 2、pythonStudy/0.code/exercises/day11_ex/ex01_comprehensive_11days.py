@@ -119,15 +119,38 @@ text = " Python, java, PYTHON, go, python "
 
 def analyze_words(raw_text):
     # TODO: 完成这里
-    
-    pass
+######################################################
+    # 这是我最开始的错误答案
+    # # text.count()
+    # counts = {}
+    # cont = 0
+    # counts_test = raw_text.split(",")
+    # print(counts_test)  # 证明已经是返回为元组
+    # # for word in counts_test:
+    # for word in counts_test:
+    #     print(f"word此时是:{word}")
+    #     count = counts_test.count(word)
+    #     counts[word] = count
+    # return counts
+######################################################
+    counts = {}
+    words_tuple = tuple(word.strip().lower() for word in raw_text.split(",") if word.strip())
+    #strip().lower()是先去掉首尾空格，再转换为小写,不能缺少，不然会带着空格，那么就没办法去重
+    #这里是用了生成器表达式，因为他只会惰性求值所以使用元组的构造函数 tuple() 将其转换为元组，除此之外还可以这样:
+    # words = [word.lower() for word in raw_text.split(",") if word.strip()]
+    for word in words_tuple:
+        counts[word] = counts.get(word, 0) + 1  # 这里的get(word, 0)是字典获取对应建的值的方法，获取键值对用item
+    unique_words = set(counts)  # 转为set去重
+    return counts,unique_words,words_tuple
+    # pass
 
 
 # 验证:
-# counts, unique_words, words_tuple = analyze_words(text)
-# print(counts)        # 预期: {'python': 3, 'java': 1, 'go': 1}
-# print(unique_words)  # 预期: {'python', 'java', 'go'}
-# print(words_tuple)   # 预期: ('python', 'java', 'python', 'go', 'python')
+# counts = analyze_words(text)
+counts, unique_words, words_tuple = analyze_words(text)
+print(counts)        # 预期: {'python': 3, 'java': 1, 'go': 1}
+print(unique_words)  # 预期: {'python', 'java', 'go'}
+print(words_tuple)   # 预期: ('python', 'java', 'python', 'go', 'python')
 
 print("题5: 请完成单词统计")
 print()
@@ -162,12 +185,36 @@ raw_records = [
 
 def parse_records(lines):
     # TODO: 完成这里
+    records = []
+    for line in lines:
+        count = 0
+        if not line.strip():
+            continue
+
+        patrs = [patr.strip() for patr in line.split(",")]
+        if len(patrs) != 4:  # 这里因为是在循环内，每个records都是单独的元组
+            raise ValueError(f"这段字段{patrs}的长度不为4，出现异常!")
+        # 分数和day转为int
+        name, day, score, tags = patrs
+        day = int(day)
+        score = int(score)
+        tages_list = list(tags.strip().split("|"))
+        records.append({
+            "name": name,
+            "day": day,
+            "score": score,
+            "tags": tages_list,
+            # "tags": [tag.strip() for tag in tags.split("|") if tag.strip()]
+        })
+        # print(records)
+    return records
     pass
 
 
 # 验证:
-# records = parse_records(raw_records)
-# print(records[0])
+records = parse_records(raw_records)
+print(f"records={records}")
+print(records[0])
 # 预期: {'name': '张三', 'day': 1, 'score': 88, 'tags': ['变量', 'f-string']}
 
 print("题6: 请完成记录解析")
@@ -186,12 +233,37 @@ print()
 
 def summarize_by_student(records):
     # TODO: 完成这里
+    test_dcit={}
+    for record in records:
+        item = test_dcit.setdefault(record["name"],{
+            # 之所以这里days以及其他元素都是列表的格式，是因为要统计每个学生的的学习情况，所以要保存每个学生的day、score、tags
+            # 主要是因为同一个学生有多条学习记录存在的可能
+            "days":[],
+            "score":[],
+            "tags":[]
+        })
+        item["days"].append(record.get("day"))
+        # {} 是用来 创建 字典的，而 [] 是用来 访问 字典或列表元素的，Python 中访问字典只能用 []
+        item["score"].append(record.get("score"))
+        item["tags"].extend(record.get("tags"))
+        # extend() 方法用于在列表末尾添加多个元素，元素必须是可迭代对象（如列表、元组、字符串等）
+        # 这里用 extend() 方法来扩展 tags 列表，将 record["tags"] 中的元素添加到 item["tags"] 中
+    result = {}
+    for name, item in test_dcit.items():
+            result[name] = {
+                "days": sorted(item["days"], key=lambda x: x),  # 排序，两个参数，需要排序的对象以及排序规则，默认是升序排序
+                "avg": round(sum(item["score"]) / len(item["score"]), 1),
+                "max": max(item["score"]),
+                "tags": set(item["tags"]),
+            }
+    return result
     pass
 
 
 # 验证:
-# summary = summarize_by_student(parse_records(raw_records))
-# print(summary["张三"])
+summary = summarize_by_student(records)
+# summary = summarize_by_student(records)
+print(summary["张三"])
 # 预期: {'days': [1, 3], 'avg': 83.5, 'max': 88, 'tags': {'变量', 'f-string', '运算符', '控制流'}}
 
 print("题7: 请完成学生汇总")
@@ -214,8 +286,8 @@ def make_report(title, *items, author="AI", **meta):
 
 
 # 验证:
-# args = ("day01", "day02", "day03")
-# kwargs = {"author": "student", "version": "v1.0", "passed": True}
+args = ("day01", "day02", "day03")
+kwargs = {"author": "student", "version": "v1.0", "passed": True}
 # report = make_report("阶段复习", *args, **kwargs)
 # print(report)
 # 预期:

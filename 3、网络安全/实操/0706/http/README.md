@@ -9,6 +9,8 @@
 | `http_client.py` | 手写 HTTP 客户端（基于 socket） |
 | `http_capture.py` | HTTP 抓包代理工具 |
 | `http_capture_test.py` | 配合抓包工具的测试脚本 |
+| `01_post_manual.py` | 手动 socket 构造 POST 请求（CTF 获取 flag） |
+| `02_post_http_client.py` | 用 http.client 发送 POST 请求（简洁版） |
 
 ## 使用顺序
 
@@ -42,6 +44,22 @@ python http_capture.py
 # 终端 2：发送测试请求
 python http_capture_test.py
 ```
+
+### 5. CTF POST 请求实战
+
+```bash
+# socket 手动构造（能看到完整的原始报文）
+python 01_post_manual.py
+
+# http.client 简洁版（适合快速改参数）
+python 02_post_http_client.py
+```
+
+关键点：
+- GET 参数写在请求路径里：`POST /?a=love HTTP/1.1`
+- POST 参数写在请求体里：`b=ctf`
+- 必须设置 `Content-Type: application/x-www-form-urlencoded`
+- `Content-Length` 必须精确等于 body 的字节长度
 
 ## HTTP 协议核心要点
 
