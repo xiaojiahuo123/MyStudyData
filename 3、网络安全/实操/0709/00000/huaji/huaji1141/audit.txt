@@ -1,0 +1,23 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Thu Jul 09 17:11:35 2026
+Invocation: foremost.exe -v -a -i E:\Code\MyStudyData\3、网络安全\实操\0709\00000\huaji\huaji.JPG -o E:\Code\MyStudyData\3、网络安全\实操\0709\00000\huaji/huaji1141 
+Output directory: E:\Code\MyStudyData\3、网络安全\实操\0709\00000\huaji\huaji1141
+Configuration file: E:\Code\WangLuoAnQuan\foremost分离文件_一把梭\foremost分离文件_一把梭\foremost.conf
+------------------------------------------------------------------
+File: E:\Code\MyStudyData\3、网络安全\实操\0709\00000\huaji\huaji.JPG
+Start: Thu Jul 09 17:11:35 2026
+Length: 42 KB (8601120864387246795 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000084.zip 	      239 B 	      43484 	 
+Finish: Thu Jul 09 17:11:35 2026
+
+1 FILES EXTRACTED
+	
+zip:= 1
+------------------------------------------------------------------
+
+Foremost finished at Thu Jul 09 17:11:35 2026

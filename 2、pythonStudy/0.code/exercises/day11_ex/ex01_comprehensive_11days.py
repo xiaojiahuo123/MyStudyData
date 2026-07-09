@@ -282,14 +282,21 @@ print()
 
 def make_report(title, *items, author="AI", **meta):
     # TODO: 完成这里
-    pass
+    result = {}
+    result["title"] = title
+    result["items"] = list(items)
+    result["author"] = author
+    # meta = meta.pop("author")
+    result["meta"] = meta
+    # print(f"执行了:{result}")
+    return result
 
 
 # 验证:
 args = ("day01", "day02", "day03")
 kwargs = {"author": "student", "version": "v1.0", "passed": True}
-# report = make_report("阶段复习", *args, **kwargs)
-# print(report)
+report = make_report("阶段复习", *args, **kwargs)
+print(report)
 # 预期:
 # {
 #   'title': '阶段复习',
@@ -312,11 +319,11 @@ deep = copy.deepcopy(plan)
 shallow["days"].append(4)
 deep["days"].append(5)
 
-print(plan["days"])       # ____
-print(shallow["days"])    # ____
-print(deep["days"])       # ____
-print(plan is shallow)    # ____
-print(plan["days"] is shallow["days"])  # ____
+print(plan["days"])       # ____[1,2,3,4]
+print(shallow["days"])    # ____[1,2,3,4]
+print(deep["days"])       # ____[1,2,3,5]
+print(plan is shallow)    # ____flase
+print(plan["days"] is shallow["days"])  # ____true
 
 print()
 
@@ -331,15 +338,24 @@ print()
 
 def make_score_counter(start=0):
     # TODO: 完成这里
-    pass
+    total = start
 
+    def add_score(score):
+        nonlocal total
+        total += score
+        return total
+
+    def get_total():
+        return total
+
+    return add_score, get_total
 
 # 验证:
-# add_score, get_total = make_score_counter(10)
-# print(add_score(5))    # 预期: 15
-# print(add_score(20))   # 预期: 35
-# print(get_total())     # 预期: 35
-# print(add_score.__closure__)  # 能看到闭包 cell
+add_score, get_total = make_score_counter(10)
+print(add_score(5))    # 预期: 15
+print(add_score(20))   # 预期: 35
+print(get_total())     # 预期: 35
+print(add_score.__closure__)  # 能看到闭包 cell
 
 print("题10: 请完成闭包计分器")
 print()
@@ -354,11 +370,15 @@ nums = [1, 2, 3, 4, 5, 6]
 
 def even_square_sum(nums):
     # TODO: 完成这里
+    reduced = filter(lambda x: x % 2 == 0, nums)
+    env_nums= list(map(lambda x: x * x, reduced))
+    reduced_result = reduce(lambda x, y: x + y, env_nums)
+    return reduced_result
     pass
 
 
 # 验证:
-# print(even_square_sum(nums))  # 预期: 56，因为 2**2 + 4**2 + 6**2 = 56
+print(even_square_sum(nums))  # 预期: 56，因为 2**2 + 4**2 + 6**2 = 56
 
 print("题11: 请完成高阶函数练习")
 print()
@@ -385,16 +405,32 @@ print("=" * 50)
 
 class Student:
     # TODO: 完成这里
-    pass
+    school = "Python训练营"
+    # _scores:[]
+    def __init__(self, name):
+        self.name = name
+        self._scores = []
 
+    def add_score(self, score):
+        '''这是添加分数的函数'''
+        if score > 100 and score < 0:
+            raise ValueError(f"输入的分数值异常!{score}")
+        self._scores.append(score)
+
+    @property
+    def avg(self):
+        return sum(self._scores) / len(self._scores)
+
+    def __str__(self):
+        return f"{self.name}, {self.avg}"
 
 # 验证:
-# stu = Student("张三")
-# stu.add_score(88)
-# stu.add_score(79)
-# print(stu.school)  # 预期: Python训练营
-# print(stu.avg)     # 预期: 83.5
-# print(stu)         # 预期: 张三: 83.5
+stu = Student("张三")
+stu.add_score(88)
+stu.add_score(79)
+print(stu.school)  # 预期: Python训练营
+print(stu.avg)     # 预期: 83.5
+print(stu)         # 预期: 张三: 83.5
 
 print("题12: 请完成 Student 类")
 print()
@@ -410,27 +446,53 @@ print()
 
 class Exercise:
     # TODO: 完成这里
-    pass
+    # title = ""
+    def __init__(self, title):
+        self.title = title
+
+    def run(self):
+        pass
+
 
 
 class PredictExercise(Exercise):
     # TODO: 完成这里
+    # def __init__(self, name):
+    #     self.name = name
+
+    def run(self):
+        return f"预测题: {self.title}"
     pass
 
 
 class TodoExercise(Exercise):
     # TODO: 完成这里
+    # def __init__(self, name):
+    #     self.name = name
+
+    def run(self):
+        return f"TODO题:{self.title}"
+# 1. 先在 PredictExercise 中找 __init__
+#    → 找不到
+
+# 2. 沿着继承链向上找父类 Exercise 的 __init__
+#    → 找到了
+
+# 3. 执行 Exercise.__init__(self, "预测输出")
+#    → self.title = "预测输出"
+#    → 这个 self 是 PredictExercise 的实例，不是 Exercise 的实例
     pass
 
 
 def run_all(exercises):
     # TODO: 完成这里
+    return [exercise.run() for exercise in exercises]
     pass
 
 
 # 验证:
-# items = [PredictExercise("预测输出"), TodoExercise("实现函数")]
-# print(run_all(items))
+items = [PredictExercise("预测输出"), TodoExercise("实现函数")]
+print(run_all(items))
 # 预期: ['预测题: 预测输出', 'TODO题: 实现函数']
 
 print("题13: 请完成继承与多态练习")
@@ -452,14 +514,25 @@ class EmptySummaryError(Exception):
 
 def save_summary(summary, file_path):
     # TODO: 完成这里
-    pass
+    if not isinstance(summary, dict) or not summary:
+        raise EmptySummaryError("summary 必须是非空字典")
+
+    path = Path(file_path)  # class Path(PathBase, PurePath)，此处path是Python 的 路径对象，这里只是创建了一个路径对象
+    # ，没有打开文件也不会创建文件
+    try:
+        with path.open("w", encoding="utf-8") as file:  #这里路径对象调用open()方法，打开文件（不存在的话会创建文件）
+            #  file就是文件对象，通过 file 操作文件
+            json.dump(summary, file, ensure_ascii=False, indent=2)
+    except TypeError as exc:
+        raise ValueError("summary 中存在无法 JSON 序列化的对象") from exc
+    return str(path)
 
 
 # 验证:
-# summary = {"张三": {"days": [1, 3], "avg": 83.5, "max": 88}}
-# path = Path("summary_demo.json")
-# print(save_summary(summary, path))
-# print(path.read_text(encoding="utf-8"))
+summary = {"张三": {"days": [1, 3], "avg": 83.5, "max": 88}}
+path = Path("summary_demo.json")
+print(save_summary(summary, path))
+print(path.read_text(encoding="utf-8"))
 
 print("题14: 请完成异常与文件写入")
 print()

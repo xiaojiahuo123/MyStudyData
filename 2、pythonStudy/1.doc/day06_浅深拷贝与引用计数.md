@@ -242,6 +242,47 @@ print(deep)      # [1, [99, 3], 4]
 
 ---
 
+## **字典解包（**\**kwargs）与显式参数的优先级
+
+当使用 `**kwargs` 解包传参时，Python 优先匹配显式参数，剩余的才进入 `**kwargs`。
+
+```python
+def make_report(title, *items, author="AI", **meta):
+    return {
+        "title": title,
+        "items": list(items),
+        "author": author,  # ← 显式参数，会被外部优先匹配
+        "meta": meta,      # ← 只有不匹配的才进这里
+    }
+
+kwargs = {"author": "student", "version": "v1.0", "passed": True}
+make_report("测试", "item1", **kwargs)
+# 结果:
+# {
+#   "title": "测试",
+#   "items": ["item1"],
+#   "author": "student",     ← 匹配到显式参数 author，不会进 meta
+#   "meta": {
+#       "version": "v1.0",   ← 找不到显式参数，进 meta
+#       "passed": True       ← 找不到显式参数，进 meta
+#   }
+# }
+```
+
+### 执行流程
+
+```
+**kwargs 解包:
+  author="student"  → 匹配到显式参数 author ✅ → 不进 meta
+  version="v1.0"    → 无显式参数叫 version     → 进入 **meta
+  passed=True       → 无显式参数叫 passed      → 进入 **meta
+```
+
+### 一句话
+
+**解包时 Python 先填显式参数，剩下的才给 `**kwargs`。** 如果外部字典的 key 和函数显式参数名相同，该值会被显式参数截获，不会出现在最终的 `**kwargs` 中。
+---
+
 ## 6.8 引用计数（Reference Counting）
 
 ### 6.8.1 什么是引用计数

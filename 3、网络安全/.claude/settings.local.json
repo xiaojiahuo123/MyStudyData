@@ -5,7 +5,15 @@
       "Bash(where python *)",
       "Bash(where pip *)",
       "Bash(pip list *)",
-      "Bash(python *)"
+      "Bash(python *)",
+      "Bash(curl -s http://49.232.142.230:19959/?language=__TRACKED_VAR__)",
+      "Bash(sed -n 's/.*<pre>\\\\\\(.*\\\\\\)<\\\\/pre>.*/\\\\1/p')",
+      "Bash(curl -sI \"http://49.232.142.230:19959/?language=en\")",
+      "WebFetch(domain:20d5aaaf5218158a690d9006.http-ctf2.dasctf.com)",
+      "Bash(curl *)",
+      "Bash(python3 -c ' *)",
+      "WebFetch(domain:124.221.18.25)",
+      "Bash(powershell *)"
     ]
   }
 }

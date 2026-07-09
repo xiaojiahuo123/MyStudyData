@@ -4,7 +4,8 @@
       "Bash(ls *)",
       "Bash(powershell *)",
       "Bash(echo \"exit: $?\")",
-      "Bash(python *)"
+      "Bash(python *)",
+      "Read(//c/Users/79849/AppData/Local/OpenAI/Codex/runtimes/cua_node/**)"
     ]
   }
 }
