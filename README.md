@@ -54,7 +54,7 @@
 | day09 | 封装（私有属性、`@property`）、继承（单继承、多继承、`super()`）、多态 |
 | day10 | 异常处理（try/except/else/finally）、自定义异常、with语句 |
 | day11 | 模块与包（`import`、`__all__`、包的结构）、面向对象综合练习 |
-| day12 | 迭代器与生成器（Iterable/Iterator、yield）、作用域与装饰器 |
+| day12 | 浅拷贝与深拷贝、迭代器（Iterable/Iterator）、生成器（yield/send）、作用域（LEGB）、闭包、装饰器 |
 
 ### 4. 网络安全 学习
 
@@ -78,6 +78,7 @@
 | 反序列化漏洞 | PHP序列化格式、魔术方法（`__construct/destruct/wakeup/sleep`）、POP链 |
 | 命令注入绕过 | 空格过滤（$IFS等）、文件过滤（通配符/Base64）、读取过滤（tac/head替代cat） |
 | Ubuntu22.04 syslog日志 | Ubuntu系统日志配置与分析 |
+| 7月9日内容 | MISC隐写（摩斯密码、Whitespace隐写、LSB隐写）、ZIP破解（CRC32碰撞爆破、已知明文攻击、伪加密） |
 
 #### 网络安全实操内容
 
@@ -134,7 +135,7 @@ MyStudyData/
 │   │   ├── day09/                  # day09 封装、继承、多态
 │   │   ├── day10/                  # day10 异常处理、自定义异常、with语句
 │   │   ├── day11/                  # day11 模块与包（import、包结构、__all__）
-│   │   ├── day12/                  # day12 迭代器、生成器、闭包、装饰器
+│   │   ├── day12/                  # day12 浅拷贝/深拷贝、迭代器、生成器、作用域、闭包、装饰器
 │   │   ├── exercises/              # 练习题（day01-day11，含答案）
 │   │   └── python3.13.13/          # Python 3.13.13源码阅读
 │   │       ├── Objects/            # 对象实现（listobject.c、dictobject.c等）
@@ -152,6 +153,7 @@ MyStudyData/
 │       ├── day06_浅深拷贝与引用计数.md       # 浅拷贝/深拷贝、引用计数、循环引用
 │       ├── day07_作用域与高阶函数.md         # global/nonlocal、lambda、map/filter/reduce
 │       ├── day08_类与面向对象.md            # 类定义、self/__init__、类/静态方法、__slots__
+│       ├── max函数实现原理.md              # max()底层实现原理
 │       └── python3.13.13/          # 源码文档备份
 │
 └── 3、网络安全/                     # 网络安全学习内容
@@ -169,6 +171,9 @@ MyStudyData/
     │   ├── 7月8日.md                # SQL注入、反序列化、PHP魔术方法
     │   ├── 7月9日内容.md             # MISC隐写、ZIP破解
     │   ├── 盲注爆破.py               # SQL布尔盲注自动化脚本
+    │   ├── Acsll.py                  # ASCII编码解码工具
+    │   ├── SQL注入绕过空格过滤获取flag.md  # SQL注入空格过滤绕过实战
+    │   ├── 手动构造HTTP请求获取flag.md    # HTTP请求构造实战
     │   └── Ubuntu22_04_syslog日志.md # Ubuntu日志系统
     │
     └── 实操/                        # 实操和实验
