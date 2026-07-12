@@ -2,6 +2,7 @@
     该案例演示了迭代器
 """
 from collections.abc import Iterable, Iterator
+from operator import index
 
 """
 # 演示大部分容器类型都是可以通过for进行遍历的，我们称其为可迭代类型(Iterable)
@@ -56,13 +57,15 @@ print(next(it))
 
 for item in it:
     print(item)
-
+print('================================================================')
+print("=============================分割================================")
+print("================================================================")
 # 自定义迭代器  实现容器中元素的反转功能
 class Reverse:
     # data表示要迭代的数据
     def __init__(self, data):
         self.data = data
-        self.index = len(data)
+        self.index = len(data) + 1
 
     # 如果是迭代器 必须实现iter方法
     def __iter__(self):
@@ -73,13 +76,15 @@ class Reverse:
             raise StopIteration
         else:
             self.index -= 1
-            return self.data[self.index]
+            # 如果要正向
+            # return self.data[len(self.data) - self.index]
+            return self.data[self.index -1 ]
 
 rev = Reverse([1,3,5,7,9])
 print(next(rev))
 print(next(rev))
 print(next(rev))
 print(next(rev))
-# print(next(rev))
+print(next(rev))
 # print(next(rev)) # 越界，没有那么多
 

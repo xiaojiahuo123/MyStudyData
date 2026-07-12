@@ -310,7 +310,9 @@ say_hello()
 # 输出: 函数执行前 → Hello! → 函数执行后
 ```
 
-### 7.3 多层装饰器
+### 7.3 多层装饰器详解
+
+#### 基本示例
 
 ```python
 def bold(func):
@@ -332,7 +334,122 @@ def greet():
 print(greet())  # <b><i>Hello</i></b>
 ```
 
-> 装饰器从下往上装饰，从上往下执行：先 `italic` 装饰，再 `bold` 装饰。
+#### 执行顺序详解
+
+**关键规则：从下往上装饰，从外往内执行**
+
+```python
+@get_int      # 第二层装饰（外层）
+@get_abs      # 第一层装饰（内层）
+def func(n):
+    return sqrt(n)
+```
+
+**装饰阶段（从下往上）：**
+```python
+# 等价于：
+func = get_abs(func)    # 第一步：用 get_abs 装饰原始 func
+func = get_int(func)    # 第二步：用 get_int 装饰已被 abs 装饰的 func
+# 类似 ：func = get_int(get_abs(func)) ,外面一层装饰器接收的是内部一层装饰器返回的结果
+# 上层的装饰器接收的是下面一层装饰器执行的结果，虽然是最外层最先执行，但是他是最后执行完毕并释放的
+```
+
+**调用阶段（从外往内）：**
+```
+func(-4)
+   │
+   ▼
+get_int.inner(-4)           # 最外层：等待结果返回后转 int
+   │ f 指向 get_abs.inner
+   ▼
+get_abs.inner(-4)           # 内层：先取绝对值
+   │ f 指向原始 sqrt 函数
+   │ n = abs(-4) = 4
+   │ res = sqrt(4) = 2.0
+   ▼
+返回 2.0 到 get_int.inner
+   │ res = int(2.0) = 2
+   ▼
+返回最终结果 2
+```
+
+**完整代码示例：**
+```python
+from math import sqrt
+
+# 第一层装饰 --- 加求绝对值功能
+def get_abs(f):
+    def inner(n):
+        n = abs(n)          # 先取绝对值
+        res = f(n)          # 调用被装饰的函数
+        return res
+    return inner
+
+# 第二层装饰 --- 将结果转换为整数
+def get_int(f):
+    def inner(n):
+        res = f(n)          # 调用被装饰的函数（即 get_abs.inner）
+        res = int(res)      # 将结果转为整数
+        return res
+    return inner
+
+@get_int
+@get_abs
+def func(n):
+    return sqrt(n)
+
+print(func(-4))  # 输出：2
+# 执行流程：-4 → abs(-4)=4 → sqrt(4)=2.0 → int(2.0)=2
+```
+
+#### 三层装饰器示例
+
+```python
+def decorator_a(func):
+    def wrapper():
+        print("A前")
+        result = func()
+        print("A后")
+        return result
+    return wrapper
+
+def decorator_b(func):
+    def wrapper():
+        print("B前")
+        result = func()
+        print("B后")
+        return result
+    return wrapper
+
+def decorator_c(func):
+    def wrapper():
+        print("C前")
+        result = func()
+        print("C后")
+        return result
+    return wrapper
+
+@decorator_a
+@decorator_b
+@decorator_c
+def say_hello():
+    print("Hello!")
+
+say_hello()
+```
+
+输出：
+```
+A前
+B前
+C前
+Hello!
+C后
+B后
+A后
+```
+
+> 理解：装饰像套娃，执行像洋葱（从外到内，再从内到外）。
 
 ### 7.4 带参装饰器
 
@@ -354,6 +471,47 @@ def say(msg):
 
 say("hello")
 # 输出: hello × 3 次
+```
+
+#### 带参装饰器的执行过程
+
+```python
+@repeat(3)
+def say(msg):
+    print(msg)
+
+# 等价于：
+# 第一步：repeat(3) 返回 decorator 函数
+# 第二步：decorator(say) 返回 wrapper 函数
+# 最终：say = wrapper
+```
+
+#### 带参装饰器完整示例
+
+```python
+import functools
+
+def log(level):                           # 第一层：接收装饰器参数
+    def decorator(func):                  # 第二层：接收被装饰函数
+        @functools.wraps(func)           # 保留原函数信息
+        def wrapper(*args, **kwargs):    # 第三层：替代原函数
+            print(f"[{level}] 调用函数: {func.__name__}")
+            result = func(*args, **kwargs)
+            print(f"[{level}] 函数返回: {result}")
+            return result
+        return wrapper
+    return decorator
+
+@log("INFO")
+def add(a, b):
+    """两数相加"""
+    return a + b
+
+print(add(3, 5))
+# 输出：
+# [INFO] 调用函数: add
+# [INFO] 函数返回: 8
+# 8
 ```
 
 ### 7.5 类装饰器

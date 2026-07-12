@@ -55,6 +55,7 @@
 | day10 | 异常处理（try/except/else/finally）、自定义异常、with语句 |
 | day11 | 模块与包（`import`、`__all__`、包的结构）、面向对象综合练习 |
 | day12 | 浅拷贝与深拷贝、迭代器（Iterable/Iterator）、生成器（yield/send）、作用域（LEGB）、闭包、装饰器 |
+| day13 | 并发与并行、多进程（Process/Pool/Queue通信）、多线程（Thread/ThreadPoolExecutor/线程安全/Lock） |
 
 ### 4. 网络安全 学习
 
@@ -79,6 +80,7 @@
 | 命令注入绕过 | 空格过滤（$IFS等）、文件过滤（通配符/Base64）、读取过滤（tac/head替代cat） |
 | Ubuntu22.04 syslog日志 | Ubuntu系统日志配置与分析 |
 | 7月9日内容 | MISC隐写（摩斯密码、Whitespace隐写、LSB隐写）、ZIP破解（CRC32碰撞爆破、已知明文攻击、伪加密） |
+| 7月10日内容 | 流量分析（Wireshark数据提取、协议分析）、WebShell后门分析（蚁剑WebShell、open_basedir绕过、Shellshock漏洞利用） |
 
 #### 网络安全实操内容
 
@@ -94,6 +96,8 @@
 - ZIP破解（CRC32碰撞爆破、已知明文攻击、伪加密）
 - SQL注入实战（联合注入、报错注入、布尔盲注自动化）
 - PHP反序列化漏洞利用（POP链构造）
+- 流量分析实战（Wireshark数据提取、协议分析）
+- WebShell后门分析（蚁剑WebShell结构、open_basedir绕过、多策略命令执行）
 
 ## 项目结构
 
@@ -136,6 +140,7 @@ MyStudyData/
 │   │   ├── day10/                  # day10 异常处理、自定义异常、with语句
 │   │   ├── day11/                  # day11 模块与包（import、包结构、__all__）
 │   │   ├── day12/                  # day12 浅拷贝/深拷贝、迭代器、生成器、作用域、闭包、装饰器
+│   │   ├── day13/                  # day13 多进程、多线程、进程池、线程池、线程安全
 │   │   ├── exercises/              # 练习题（day01-day11，含答案）
 │   │   └── python3.13.13/          # Python 3.13.13源码阅读
 │   │       ├── Objects/            # 对象实现（listobject.c、dictobject.c等）
@@ -185,6 +190,9 @@ MyStudyData/
         │   ├── LSB/                # LSB图片隐写
         │   ├── ZIPbaopo.py         # CRC32碰撞爆破ZIP
         │   └── jsfuck例题/         # JSFuck编码
+        ├── 0710/                   # 流量分析与WebShell实操
+        │   ├── 04/                 # Wireshark流量分析（窃听风云.pcap）
+        │   └── 05/                 # WebShell后门分析与流量分析
         ├── 7月8日/                 # PHP反序列化实操
         ├── day01/                  # 基本ACL、高级ACL实验
         ├── dirsearch-master/       # 目录扫描工具
@@ -205,6 +213,7 @@ MyStudyData/
 - 掌握 Java 面向对象编程
 - 熟练使用 MySQL 数据库
 - 掌握 Python 基础语法和面向对象编程
+- 掌握 Python 多进程与多线程编程（Process/Thread/Pool/线程安全）
 - 深入理解 Python 底层实现（源码阅读）
 
 ### 网络安全学习
@@ -219,6 +228,7 @@ MyStudyData/
 - 掌握SQL注入原理与实战（联合注入、报错注入、布尔盲注、自动化爆破）
 - 理解PHP反序列化漏洞原理（魔术方法、POP链构造）
 - 掌握MISC常见题型（隐写、编码、ZIP破解、流量分析）
+- 理解WebShell后门原理（open_basedir绕过、多策略命令执行、Shellshock漏洞利用）
 
 ## Python 源码学习方法
 
