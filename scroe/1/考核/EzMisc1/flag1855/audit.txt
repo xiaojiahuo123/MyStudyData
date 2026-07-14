@@ -1,0 +1,21 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Fri Jul 10 16:02:09 2026
+Invocation: foremost.exe -v -a -i E:\Code\MyStudyData\scroe\1\考核\EzMisc1\flag.txt -o E:\Code\MyStudyData\scroe\1\考核\EzMisc1/flag1855 
+Output directory: E:\Code\MyStudyData\scroe\1\考核\EzMisc1\flag1855
+Configuration file: E:\Code\WangLuoAnQuan\foremost分离文件_一把梭\foremost分离文件_一把梭\foremost.conf
+------------------------------------------------------------------
+File: E:\Code\MyStudyData\scroe\1\考核\EzMisc1\flag.txt
+Start: Fri Jul 10 16:02:09 2026
+Length: 58 KB (8576351066436724948 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+Finish: Fri Jul 10 16:02:09 2026
+
+0 FILES EXTRACTED
+	
+------------------------------------------------------------------
+
+Foremost finished at Fri Jul 10 16:02:09 2026

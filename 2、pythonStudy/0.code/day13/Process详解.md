@@ -46,6 +46,7 @@ if __name__ == '__main__':
 | `is_alive()` | 判断子进程是否还在运行 |
 | `terminate()` | 强制终止子进程（发送 SIGTERM 信号） |
 | `kill()` | 强制杀死子进程（发送 SIGKILL 信号） |
+| `close()` | 释放进程对象持有的资源（Python 3.7+），close 后再调用 start/join 会报 ValueError |
 
 ### 2.2 常用属性
 
@@ -55,6 +56,7 @@ if __name__ == '__main__':
 | `name` | 进程名称 |
 | `daemon` | 是否为守护进程 |
 | `exitcode` | 子进程的退出码（运行中为 `None`，正常退出为 `0`） |
+| `sentinel` | 进程的原生句柄（Linux: 文件描述符，Windows: 进程句柄），可用于 `select.select()` 等待多个进程 |
 
 ### 2.3 模块级函数
 
@@ -168,6 +170,44 @@ if __name__ == '__main__':
 
 ---
 
+
+### 5.1 子类化注意事项
+
+**必须调用 `super().__init__()`**：
+
+```python
+class Worker(multiprocessing.Process):
+    def __init__(self, task_id):
+        super().__init__()  # ✅ 必须先调用父类初始化
+        self.task_id = task_id  # ✅ 之后再添加自定义属性
+        
+    def run(self):
+        print(self.task_id)  # ✅ 可以访问
+```
+
+**常见错误**：
+
+```python
+# ❌ 忘记调用 super().__init__()
+class BadWorker(multiprocessing.Process):
+    def __init__(self, task_id):
+        # 忘记 super().__init__()，会导致各种奇怪问题
+        self.task_id = task_id
+```
+
+**Process 对象不能 pickle**：
+
+```python
+# ❌ 在 spawn 模式下，Process 对象不能跨进程传递
+def spawn_another(p):
+    p.start()  # 会报错
+
+# ✅ 应该传递构造参数，在目标进程内创建
+def spawn_another(task_id):
+    p = Worker(task_id)
+    p.start()
+```
+
 ## 6. Windows vs Linux：进程创建方式
 
 ### 6.1 启动方式对比
@@ -234,6 +274,27 @@ if __name__ == '__main__':
 ```
 
 ---
+
+
+### 6.5 使用 Context 指定启动方法
+
+```python
+import multiprocessing as mp
+
+# 查看当前启动方法
+print(mp.get_start_method())  # Windows: 'spawn', Linux: 'fork'
+
+# 使用 context 方式（不影响全局设置）
+ctx = mp.get_context('spawn')
+p = ctx.Process(target=worker)  # 这个进程强制用 spawn
+
+# 全局设置（影响所有后续创建的进程）
+mp.set_start_method('spawn')
+```
+
+**使用场景**：
+- Linux 上需要安全的进程隔离时，强制使用 `spawn`
+- 需要与特定启动方法兼容的库交互时
 
 ## 7. 进程生命周期
 
@@ -337,3 +398,5 @@ if __name__ == '__main__':
 | Linux | 默认 `fork`，复制父进程内存（高效但有风险） |
 | 自定义进程 | 继承 `Process`，重写 `run()` 方法 |
 | 守护进程 | `daemon=True`，主进程退出时自动终止 |
+
+

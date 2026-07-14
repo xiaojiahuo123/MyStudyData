@@ -1,4 +1,4 @@
-# AI 出题规范文档
+﻿# AI 出题规范文档
 
 本文件供 AI 出题时参考，确保练习质量一致、风格统一。
 
@@ -345,6 +345,9 @@ d = {[1,2]: "list_key"}
 | day06 | 函数参数（必须/关键字/默认值/*args/**kwargs/解包传参）、参数传递（值传递vs引用传递）、浅拷贝与深拷贝 |
 | day07 | 函数嵌套、作用域（局部/嵌套/全局/内建）、闭包、global/nonlocal、递归、匿名函数（lambda/map/filter/reduce）、文件操作 |
 | day08 | 面向对象编程（类的定义、__init__、self、类属性/实例属性、实例方法/类方法/静态方法、__slots__、__del__） |
+| day12 | 浅拷贝/深拷贝、迭代器（iter/next/自定义迭代器）、生成器（yield/send）、命名空间、作用域（LEGB）、闭包、装饰器（@语法糖/带参/多层/类装饰器） |
+| day13 | 并发/并行、进程（Process/自定义进程类/进程池Pool）、进程间通信（Queue/Manager().Queue()）、线程（Thread/自定义线程类/线程池ThreadPoolExecutor）、线程安全（Lock）、模块导入 |
+| day14 | 线程安全与锁（Lock/售票系统）、UDP编程（socket/UDP Server-Client）、TCP编程（TCP Server-Client/多线程服务器）、HTTP请求（requests库）、Web服务（Starlette/uvicorn） |
 
 ---
 

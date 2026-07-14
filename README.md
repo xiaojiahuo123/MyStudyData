@@ -56,6 +56,7 @@
 | day11 | 模块与包（`import`、`__all__`、包的结构）、面向对象综合练习 |
 | day12 | 浅拷贝与深拷贝、迭代器（Iterable/Iterator）、生成器（yield/send）、作用域（LEGB）、闭包、装饰器 |
 | day13 | 并发与并行、多进程（Process/Pool/Queue通信）、多线程（Thread/ThreadPoolExecutor/线程安全/Lock） |
+| day14 | 线程安全与锁（Lock/RLock/Condition）、网络编程（UDP/TCP Socket、HTTP请求、Web服务） |
 
 ### 4. 网络安全 学习
 
@@ -140,8 +141,13 @@ MyStudyData/
 │   │   ├── day10/                  # day10 异常处理、自定义异常、with语句
 │   │   ├── day11/                  # day11 模块与包（import、包结构、__all__）
 │   │   ├── day12/                  # day12 浅拷贝/深拷贝、迭代器、生成器、作用域、闭包、装饰器
-│   │   ├── day13/                  # day13 多进程、多线程、进程池、线程池、线程安全
-│   │   ├── exercises/              # 练习题（day01-day11，含答案）
+│   │   ├── day13/                  # day13 多进程、多线程、进程池、线程池、线程安全（含Process详解.md）
+│   │   ├── exercises/              # 练习题（day01-day14，含答案）
+│   │   │   ├── day01_ex ~ day08_ex/ # day01-day08 练习（变量、数据类型、控制流、列表、集合、函数、闭包、OOP）
+│   │   │   ├── day11_ex/           # day11 综合练习
+│   │   │   ├── day12_ex/           # day12 浅拷贝/迭代器/生成器 + 作用域/闭包/装饰器（含day12_练习.md）
+│   │   │   ├── day13_ex/           # day13 进程基础 + 线程基础
+│   │   │   └── day14_ex/           # day14 锁与线程安全 + 网络编程（UDP/TCP/HTTP）
 │   │   └── python3.13.13/          # Python 3.13.13源码阅读
 │   │       ├── Objects/            # 对象实现（listobject.c、dictobject.c等）
 │   │       ├── Include/            # 头文件
@@ -213,7 +219,8 @@ MyStudyData/
 - 掌握 Java 面向对象编程
 - 熟练使用 MySQL 数据库
 - 掌握 Python 基础语法和面向对象编程
-- 掌握 Python 多进程与多线程编程（Process/Thread/Pool/线程安全）
+- 掌握 Python 多进程与多线程编程（Process/Thread/Pool/线程安全/Lock）
+- 掌握 Python 网络编程（UDP/TCP Socket、HTTP请求、Web服务）
 - 深入理解 Python 底层实现（源码阅读）
 
 ### 网络安全学习

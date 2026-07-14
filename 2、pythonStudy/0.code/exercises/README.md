@@ -1,4 +1,4 @@
-# Python 练习题
+﻿# Python 练习题
 
 根据每日学习内容生成的配套练习，由浅入深，结合 CPython 源码深入理解。
 
@@ -31,6 +31,24 @@ exercises/
 ├── day11_ex/
 │   ├── ex01_comprehensive_11days.py        # day01-day11 综合练习
 │   └── ex01_comprehensive_11days_answer.py # 综合练习答案
+│
+├── day12_ex/
+│   ├── ex01_copy_iter_gen.py               # 浅拷贝/深拷贝、迭代器、生成器
+│   ├── ex01_copy_iter_gen_answer.py        # 练习答案
+│   ├── ex02_scope_closure_decorator.py     # 作用域、闭包、装饰器
+│   └── ex02_scope_closure_decorator_answer.py # 练习答案
+│
+├── day13_ex/
+│   ├── ex01_process_basics.py              # 进程基础、进程池、进程间通信
+│   ├── ex01_process_basics_answer.py       # 练习答案
+│   ├── ex02_thread_basics.py               # 线程基础、线程池、线程安全
+│   └── ex02_thread_basics_answer.py        # 练习答案
+│
+├── day14_ex/
+│   ├── ex01_lock_and_thread_safe.py        # 线程安全与锁
+│   ├── ex01_lock_and_thread_safe_answer.py # 练习答案
+│   ├── ex02_network_basics.py              # 网络编程(UDP/TCP/HTTP/Web)
+│   └── ex02_network_basics_answer.py       # 练习答案
 │
 ├── AI_EXERCISE_GUIDE.md       # AI 练习生成指南
 └── README.md                  # 练习说明
