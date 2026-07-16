@@ -9,7 +9,7 @@ Day13 练习2 - 线程基础与线程安全
 版本: v1.0
 最后更新: 2026-07-13
 """
-
+import os
 import threading
 import time
 import concurrent.futures
@@ -28,12 +28,12 @@ import concurrent.futures
 # 3) Python 中由于 GIL（Global Interpreter Lock）的存在，同一时刻只能有一个线程执行 ______ 字节码
 # 4) 线程的开销比进程 ______（大/小），创建和切换速度比进程 ______（快/慢）
 
-answer_1_1 = ""  # TODO: 填入"进程"
-answer_1_2_a = ""  # TODO: 填入"内存空间"
-answer_1_2_b = ""  # TODO: 填入"全局变量/资源"
-answer_1_3 = ""  # TODO: 填入"Python"
-answer_1_4_a = ""  # TODO: 填入"大"或"小"
-answer_1_4_b = ""  # TODO: 填入"快"或"慢"
+answer_1_1 = "进程"  # TODO: 填入"进程"
+answer_1_2_a = "内存空间"  # TODO: 填入"内存空间"
+answer_1_2_b = "全局变量/资源"  # TODO: 填入"全局变量/资源"
+answer_1_3 = "Python"  # TODO: 填入"Python"
+answer_1_4_a = "小"  # TODO: 填入"大"或"小"
+answer_1_4_b = "快"  # TODO: 填入"快"或"慢"
 
 print("题1: 请完成线程基本概念辨析")
 print()
@@ -58,9 +58,9 @@ def predict_thread_basic():
     print(f"  [{threading.current_thread().name}] 所有线程结束")
 
 # 问题:
-# 1) 两个线程的输出是否会交替出现？____（会/不会）
-# 2) 最后一行的线程名是: ____
-# 3) join() 的作用是: ____
+# 1) 两个线程的输出是否会交替出现？____会（会/不会）
+# 2) 最后一行的线程名是: ____MainThread
+# 3) join() 的作用是: ____阻塞主进程
 
 answer_2_1 = ""  # TODO
 answer_2_2 = ""  # TODO
@@ -93,10 +93,10 @@ def predict_thread_pool():
 # 3) executor.submit() 返回的对象类型是 ____
 # 4) with 语句结束时会自动调用 ____
 
-answer_3_1 = ""  # TODO
-answer_3_2 = ""  # TODO
-answer_3_3 = ""  # TODO
-answer_3_4 = ""  # TODO
+answer_3_1 = "3"  # TODO
+answer_3_2 = "等待有空闲线程了再执行"  # TODO
+answer_3_3 = "列表"  # TODO
+answer_3_4 = "关闭线程池"  # TODO
 
 # 预测输出:
 # ____
@@ -128,13 +128,13 @@ def predict_race_condition():
     print(f"  最终 g_num = {g_num}")
 
 # 问题:
-# 1) 如果没有竞争条件，3个线程各加100000次，最终结果应该是 ____
+# 1) 如果没有竞争条件，3个线程各加100000次，最终结果应该是 ____300000
 # 2) 实际运行结果可能是 ____（等于/小于/大于/等于或小于）期望值
 # 3) 产生这个问题的原因是 g_num += 1 不是 ______（原子操作/可迭代对象），它包含 ______ 步
 # 4) 解决这个问题需要使用 ____
 
-answer_4_1 = ""  # TODO
-answer_4_2 = ""  # TODO
+answer_4_1 = "100000"  # TODO
+answer_4_2 = "小于"  # TODO
 answer_4_3_a = ""  # TODO
 answer_4_3_b = ""  # TODO  (三步: 读取、加1、写回)
 answer_4_4 = ""  # TODO
@@ -174,10 +174,10 @@ def predict_with_lock():
     print(f"  最终 g_num_safe = {g_num_safe}")
 
 # 问题:
-# 1) 使用 Lock 后，最终结果一定是 ____
-# 2) lock.acquire() 的作用是 ____
-# 3) lock.release() 的作用是 ____
-# 4) 如果忘记调用 lock.release() 会导致 ____
+# 1) 使用 Lock 后，最终结果一定是 ____300000
+# 2) lock.acquire() 的作用是 ____获取锁
+# 3) lock.release() 的作用是 ____释放锁
+# 4) 如果忘记调用 lock.release() 会导致 ____死锁
 
 answer_5_1 = ""  # TODO
 answer_5_2 = ""  # TODO
@@ -213,10 +213,10 @@ def style_b():
 # 2) with lock 的优势是: 即使 with 块内发生 ______，锁也会被自动 ______
 # 3) 推荐使用写法 ____，因为更安全、更简洁
 
-answer_6_1 = ""  # TODO
-answer_6_2_a = ""  # TODO
-answer_6_2_b = ""  # TODO
-answer_6_3 = ""  # TODO
+answer_6_1 = "是"  # TODO
+answer_6_2_a = "异常"  # TODO
+answer_6_2_b = "自动释放"  # TODO
+answer_6_3 = "with"  # TODO
 
 print("题6: with lock 与手动 acquire/release 对比")
 print()
@@ -229,11 +229,11 @@ print()
 # 维度            | 进程 (Process)    | 线程 (Thread)
 # ---------------|-------------------|-------------------
 # 资源分配         |                   |
-# 内存空间         |                   |
-# 创建/切换开销    |                   |
-# 并发性           |                   |
+# 内存空间         |   独立                |共享进程的内存空间
+# 创建/切换开销    |     大              |小
+# 并发性           |      可以             |不行
 # 独立性           |                   |
-# 通信方式         |                   |
+# 通信方式         |    Queue, Pipe, Manager               |共享变量（需加锁保证安全）
 # GIL 影响        |                   |
 
 # TODO: 填写上表（在注释中写答案）
@@ -292,14 +292,29 @@ print()
 # - 每个线程卖出一张票后打印: "[窗口X] 卖出第Y张，剩余Z张"
 
 # TODO: 实现 sell_tickets 函数和窗口线程
-# tickets = 100
-# ticket_lock = threading.Lock()
+tickets = 100
+ticket_lock = threading.Lock()
 #
-# def sell_tickets(window_name):
-#     ...
+def sell_tickets(window_name):
+    global tickets
+    counts = 0
+    while ( tickets >= 0):
+        with ticket_lock:
+            if tickets <= 0:    # ← 在锁内判断，不会被其他线程干扰
+                break
+            tickets -= 1
+            time.sleep(2)
+            # count = 100 - tickets
+            counts += 1
+            print(f"窗口{window_name},{os.getpid()}卖出第{counts}张，剩余{tickets}张")
 #
-# def run_ticket_system():
-#     ...
+def run_ticket_system():
+    funters = [threading.Thread(target=sell_tickets,args=(i,)) for i in range(3)]
+    for f in funters:
+        f.start()
+    for f in funters:
+        f.join()
+
 
 # 取消注释在 main 中运行验证:
 # run_ticket_system()
@@ -354,8 +369,8 @@ print()
 # [t.start() for t in threads]
 # [t.join() for t in threads]
 # print(counter)  # 预期 5000，实际可能不是
-# 问题: ____
-# 修复: ____
+# 问题: ____没有加锁
+# 修复: ____利用with自动释放，并加锁
 
 # BUG 2: Lock 在循环内创建导致每个线程用不同的锁
 # def unsafe_worker():
@@ -388,11 +403,12 @@ if __name__ == '__main__':
     print()
 
     # 在此处取消注释运行各题的验证代码
-    # 例如: predict_thread_basic()
-    #       predict_thread_pool()
+    # 例如:
+    # predict_thread_basic()
+    # predict_thread_pool()
     #       predict_race_condition()
     #       predict_with_lock()
-    #       run_ticket_system()
+    run_ticket_system()
 
     print("请完成所有 TODO 后，在此处运行验证代码。")
 

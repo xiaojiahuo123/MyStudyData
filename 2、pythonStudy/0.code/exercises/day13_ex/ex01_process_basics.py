@@ -13,6 +13,7 @@ Day13 练习1 - 进程基础
 
 import multiprocessing
 import os
+import random
 import time
 
 
@@ -24,15 +25,15 @@ import time
 # 知识点: concurrency vs parallelism
 # 填空: 用"并发"或"并行"完成以下描述
 
-# 1) 多个任务在同一时间段内交替执行，但不一定同时运行，称为 ______
-# 2) 多个任务在同一时刻真正同时执行（需要多核 CPU），称为 ______
-# 3) 单核 CPU 上的多进程属于 ______（宏观上看同时，微观上是交替的）
-# 4) 多核 CPU 上的多进程可以实现真正的 ______
+# 1) 多个任务在同一时间段内交替执行，但不一定同时运行，称为 ______并发
+# 2) 多个任务在同一时刻真正同时执行（需要多核 CPU），称为 ______并行
+# 3) 单核 CPU 上的多进程属于 ______并行（宏观上看同时，微观上是交替的）
+# 4) 多核 CPU 上的多进程可以实现真正的 ______并发
 
-answer_1_1 = ""  # TODO: 填入"并发"或"并行"
-answer_1_2 = ""  # TODO
-answer_1_3 = ""  # TODO
-answer_1_4 = ""  # TODO
+answer_1_1 = "并发"  # TODO: 填入"并发"或"并行"
+answer_1_2 = "并行"  # TODO
+answer_1_3 = "并行"  # TODO
+answer_1_4 = "并发"  # TODO
 
 print("题1: 请完成并发与并行概念辨析")
 print()
@@ -47,10 +48,10 @@ print()
 # 3) 在餐厅点菜后一直站在柜台等菜做好再端走 = ______
 # 4) 在餐厅点菜后先回座位，菜好了服务员送来 = ______
 
-answer_2_1 = ""  # TODO
-answer_2_2 = ""  # TODO
-answer_2_3 = ""  # TODO
-answer_2_4 = ""  # TODO
+answer_2_1 = "同步"  # TODO
+answer_2_2 = "异步"  # TODO
+answer_2_3 = "同步"  # TODO
+answer_2_4 = "异步"  # TODO
 
 print("题2: 请完成同步与异步概念辨析")
 print()
@@ -70,9 +71,9 @@ def predict_process_basic():
     print("  主进程: 子进程已结束")
 
 # 预测输出:
+# ____子进程:你好，Python ！
 # ____
-# ____
-# 说明 join() 的作用: ____
+# 说明 join() 的作用: ____阻塞主进程，让主进程在子进程执行完毕后再执行
 
 print("题3: 预测进程创建输出，join() 的作用是什么？")
 print()
@@ -92,7 +93,7 @@ def predict_pid():
     p.join()
 
 # 预测输出中，子进程的 PPID 与主进程的 PID 是什么关系？
-# ____
+# ____子进程的PPID应该等于主进程的PID，因为主进程是子进程的父进程
 
 # 取消注释在 main 中运行验证:
 # predict_pid()
@@ -144,10 +145,10 @@ def predict_apply_async():
 # 3) 代码A中3个任务的执行方式是: ______（逐个执行 / 同时执行）
 # 4) 代码B中3个任务的执行方式是: ______（逐个执行 / 同时执行）
 
-answer_5_1 = ""  # TODO
-answer_5_2 = ""  # TODO
-answer_5_3 = ""  # TODO
-answer_5_4 = ""  # TODO
+answer_5_1 = "同步，阻塞"  # TODO
+answer_5_2 = "异步，不阻塞"  # TODO
+answer_5_3 = "逐个执行"  # TODO
+answer_5_4 = "同时执行"  # TODO
 
 # 取消注释在 main 中运行验证:
 # predict_apply()
@@ -156,7 +157,6 @@ answer_5_4 = ""  # TODO
 
 print("题5: apply vs apply_async 区别辨析")
 print()
-
 
 # ----- 题6: 进程间数据不共享 [必做] -----
 # 知识点: 每个进程独立内存空间
@@ -178,10 +178,11 @@ def predict_no_share():
     print(f"  主进程 PID={os.getpid()}, list={my_list}")
 
 # 预测输出:
-# 子进程1 的 list: ____
-# 子进程2 的 list: ____
-# 主进程 的 list: ____
-# 解释为什么主进程的 list 为空: ____
+# 子进程1 的 list: ____[0,1,2]
+# 子进程2 的 list: ____[0,1,2]
+# 主进程 的 list: ____[]
+# 解释为什么主进程的 list 为空: ____子进程的内存是独立创建的，在执行完毕之后释放，而主进程的list[]一直没有变化
+
 
 # 取消注释在 main 中运行验证:
 # predict_no_share()
@@ -222,10 +223,10 @@ def predict_queue():
 #    - multiprocessing.Queue 只能用于 ______（Process / Pool）
 #    - Manager().Queue() 可以用于 ______（Process / Pool / 两者皆可）
 
-answer_7_1 = ""  # TODO
-answer_7_2 = ""  # TODO
-answer_7_3_a = ""  # TODO
-answer_7_3_b = ""  # TODO
+answer_7_1 = "先进后出"  # TODO
+answer_7_2 = "一次性取出"  # TODO
+answer_7_3_a = "Process"  # TODO
+answer_7_3_b = "Pool"  # TODO
 
 # 取消注释在 main 中运行验证:
 # predict_queue()
@@ -259,13 +260,15 @@ def predict_manager_queue():
 
 # 问题:
 # 1) 如果把上面的 multiprocessing.Manager().Queue() 换成 multiprocessing.Queue()，
-#    在 Pool 中能否正常工作？____（能/不能）
+#    在 Pool 中能否正常工作？____不能（能/不能）
+# `multiprocessing.Queue()`：适用于 `Process` 创建的进程
+# `multiprocessing.Manager().Queue()`：适用于进程池（`Pool`）创建的进程
 # 2) 原因是: ____
 # 3) Manager().Queue() 的底层实现基于 ______（管道/共享内存/代理对象）
 
-answer_8_1 = ""  # TODO
-answer_8_2 = ""  # TODO
-answer_8_3 = ""  # TODO
+answer_8_1 = "不能"  # TODO
+answer_8_2 = "multiprocessing.Queue()`：适用于 `Process` 创建的进程"  # TODO
+answer_8_3 = "代理对象"  # TODO
 
 # 取消注释在 main 中运行验证（注意此程序会一直运行，需手动终止）:
 # predict_manager_queue()
@@ -285,34 +288,47 @@ print()
 # - Consumer: 从队列取出数据，遇到 None 结束
 
 # TODO: 实现 Producer 类
-# class Producer(multiprocessing.Process):
-#     def __init__(self, queue):
-#         super().__init__()
-#         self.queue = queue
-#
-#     def run(self):
-#         ...
+class Producer(multiprocessing.Process):
+    def __init__(self, queue):
+        super().__init__()
+        self.queue = queue
+
+    def run(self):
+        for _ in range(5):
+          item = random.randint(1, 100)
+          self.queue.put(item)
+          print(f"题目9，Producer进程{os.getpid()}向队列中放入了数据{item}")
+        self.queue.put(None)
+        # self.queue.put(list)
+
+
 
 # TODO: 实现 Consumer 类
-# class Consumer(multiprocessing.Process):
-#     def __init__(self, queue):
-#         super().__init__()
-#         self.queue = queue
-#
-#     def run(self):
-#         ...
+class Consumer(multiprocessing.Process):
+    def __init__(self, queue):
+        super().__init__()
+        self.queue = queue
+
+    def run(self):
+        for _ in range(5):
+            item = self.queue.get()
+            if item == None:
+                break
+            print(f"题目9，Consumer进程{os.getpid()}从队列中取出数据: {item}")
+
+
 
 # 取消注释在 main 中运行验证:
-# def run_producer_consumer():
-#     import random
-#     q = multiprocessing.Queue()
-#     producer = Producer(q)
-#     consumer = Consumer(q)
-#     producer.start()
-#     consumer.start()
-#     producer.join()
-#     consumer.join()
-#     print("  生产者-消费者模式完成")
+def run_producer_consumer():
+    import random
+    q = multiprocessing.Queue()
+    producer = Producer(q)
+    consumer = Consumer(q)
+    producer.start()
+    consumer.start()
+    producer.join()
+    consumer.join()
+    print("  生产者-消费者模式完成")
 
 print("题9: 请实现自定义进程类的生产者-消费者模式")
 print()
@@ -323,16 +339,16 @@ print()
 # 判断以下场景应该用"多进程"还是"多线程"，并简述理由
 
 # 场景1: 爬取1000个网页（I/O 密集型）
-answer_10_1 = ""  # TODO: 多进程/多线程? 理由: ____
+answer_10_1 = ""  # TODO: 多进程/多线程? 理由: ____多进程，各自都是独立的任务
 
 # 场景2: 对100万张图片做矩阵运算（CPU 密集型）
-answer_10_2 = ""  # TODO: 多进程/多线程? 理由: ____
+answer_10_2 = ""  # TODO: 多进程/多线程? 理由: ____多线程
 
 # 场景3: 同时读写同一个文件
-answer_10_3 = ""  # TODO: 多进程/多线程? 理由: ____
+answer_10_3 = ""  # TODO: 多进程/多线程? 理由: ____多线程，同一个文件
 
 # 场景4: 需要多个任务共享一个大字典并实时修改
-answer_10_4 = ""  # TODO: 多进程/多线程? 理由: ____
+answer_10_4 = ""  # TODO: 多进程/多线程? 理由: ____多线程，因为是对同一个资源进行修改
 
 print("题10: 请完成进程 vs 线程场景分析")
 print()
@@ -383,13 +399,15 @@ if __name__ == '__main__':
     print()
 
     # 在此处取消注释运行各题的验证代码
-    # 例如: predict_pid()
-    #       predict_apply()
-    #       predict_apply_async()
-    #       predict_no_share()
-    #       predict_queue()
-    #       predict_manager_queue()
-    #       run_producer_consumer()
+    # 例如:
+    # predict_pid()
+    # predict_apply()
+    # predict_apply_async()
+    # predict_no_share()
+    # # test()
+    # predict_queue()
+    # predict_manager_queue()
+    run_producer_consumer()
 
     print("请完成所有 TODO 后，在此处运行验证代码。")
 

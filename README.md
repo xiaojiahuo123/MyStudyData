@@ -142,11 +142,12 @@ MyStudyData/
 │   │   ├── day11/                  # day11 模块与包（import、包结构、__all__）
 │   │   ├── day12/                  # day12 浅拷贝/深拷贝、迭代器、生成器、作用域、闭包、装饰器
 │   │   ├── day13/                  # day13 多进程、多线程、进程池、线程池、线程安全（含Process详解.md）
-│   │   ├── exercises/              # 练习题（day01-day14，含答案）
+│   │   ├── day14/                  # day14 线程安全与锁、网络编程（UDP/TCP Socket、HTTP请求、Starlette Web服务）
+│   │   ├── exercises/              # 练习题（含答案）
 │   │   │   ├── day01_ex ~ day08_ex/ # day01-day08 练习（变量、数据类型、控制流、列表、集合、函数、闭包、OOP）
 │   │   │   ├── day11_ex/           # day11 综合练习
 │   │   │   ├── day12_ex/           # day12 浅拷贝/迭代器/生成器 + 作用域/闭包/装饰器（含day12_练习.md）
-│   │   │   ├── day13_ex/           # day13 进程基础 + 线程基础
+│   │   │   ├── day13_ex/           # day13 进程基础 + 线程基础（含day13练习.md）
 │   │   │   └── day14_ex/           # day14 锁与线程安全 + 网络编程（UDP/TCP/HTTP）
 │   │   └── python3.13.13/          # Python 3.13.13源码阅读
 │   │       ├── Objects/            # 对象实现（listobject.c、dictobject.c等）
@@ -164,7 +165,14 @@ MyStudyData/
 │       ├── day06_浅深拷贝与引用计数.md       # 浅拷贝/深拷贝、引用计数、循环引用
 │       ├── day07_作用域与高阶函数.md         # global/nonlocal、lambda、map/filter/reduce
 │       ├── day08_类与面向对象.md            # 类定义、self/__init__、类/静态方法、__slots__
+│       ├── day09_封装继承与多态.md         # 封装（私有属性、@property、__str__）、继承（多继承、MRO）、super()、方法重写、多态（鸭子类型、抽象类）
+│       ├── day10_异常处理与上下文管理器.md    # 异常处理（try-except-else-finally）、raise/assert、自定义异常、异常传递、with上下文管理器
+│       ├── day12_迭代器生成器与装饰器.md      # 浅拷贝/深拷贝、迭代器、生成器（yield/send详细图解）、命名空间、作用域LEGB、闭包、装饰器（多层/带参/类装饰器）
+│       ├── day13_多进程多线程与并发.md       # 并发与并行、多进程（Process/Pool/Queue通信）、多线程（Thread/ThreadPoolExecutor/线程安全/Lock）、模块导入
+│       ├── Queue实现进程间通信原理.md        # multiprocessing.Queue、管道、Manager代理对象
+│       ├── __call__以及__init__解释.md       # 魔术方法详解、装饰器类、闭包工厂
 │       ├── max函数实现原理.md              # max()底层实现原理
+│       ├── Process详解.md                # multiprocessing.Process 详解
 │       └── python3.13.13/          # 源码文档备份
 │
 └── 3、网络安全/                     # 网络安全学习内容
@@ -181,8 +189,11 @@ MyStudyData/
     │   ├── 7月7日内容.md             # 命令注入绕过（空格/文件/读取过滤）
     │   ├── 7月8日.md                # SQL注入、反序列化、PHP魔术方法
     │   ├── 7月9日内容.md             # MISC隐写、ZIP破解
+    │   ├── 7月10日.md               # 流量分析、WebShell后门分析
+    │   ├── 总结.md                   # 学习总结（含.html/.pdf版本）
     │   ├── 盲注爆破.py               # SQL布尔盲注自动化脚本
     │   ├── Acsll.py                  # ASCII编码解码工具
+    │   ├── base64_decoder.py         # Base64解码工具
     │   ├── SQL注入绕过空格过滤获取flag.md  # SQL注入空格过滤绕过实战
     │   ├── 手动构造HTTP请求获取flag.md    # HTTP请求构造实战
     │   └── Ubuntu22_04_syslog日志.md # Ubuntu日志系统
@@ -197,12 +208,20 @@ MyStudyData/
         │   ├── ZIPbaopo.py         # CRC32碰撞爆破ZIP
         │   └── jsfuck例题/         # JSFuck编码
         ├── 0710/                   # 流量分析与WebShell实操
+        │   ├── 02/                 # FTP流量抓包分析
+        │   ├── 03/                 # 流量分析实战题
         │   ├── 04/                 # Wireshark流量分析（窃听风云.pcap）
-        │   └── 05/                 # WebShell后门分析与流量分析
+        │   ├── 05/                 # WebShell后门分析与流量分析
+        │   └── 流量分析提取数据/     # 数据提取练习
+        ├── 6月29日上午上课实验/      # SSH实验、TCP-SYN防护、Telnet实验、VLAN路由
         ├── 7月8日/                 # PHP反序列化实操
-        ├── day01/                  # 基本ACL、高级ACL实验
+        ├── day01/                  # 基本ACL、高级ACL实验（.topo拓扑文件）
         ├── dirsearch-master/       # 目录扫描工具
         └── ...
+
+├── scroe/                           # 考核文件（EzMisc1/EzMisc2解题）
+├── secret_file/                     # 相关文件（flag.zip等）
+└── 资料/                            # 参考资料（JavaSE常用API文档.md）
 ```
 
 ## 技术栈

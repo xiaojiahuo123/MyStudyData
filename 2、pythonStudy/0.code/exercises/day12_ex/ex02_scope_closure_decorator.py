@@ -248,14 +248,21 @@ print("\n----- 题9: 带参装饰器 (三层嵌套) -----")
 
 def repeat(n):
     # TODO: 实现带参装饰器
-    pass
+    def decorator(func):
+        def wrapper(*args, **kwargs):
+            for i in range(n) :
+                result = func(*args, **kwargs)
+            return result
+        return wrapper
+    return decorator
+
 
 # 测试代码 (取消注释以验证):
-# @repeat(3)
-# def say_hi():
-#     print("  Hi!")
-#
-# say_hi()
+@repeat(3)
+def say_hi():
+    print("  Hi!")
+
+say_hi()
 # 期望输出:
 #   Hi!
 #   Hi!
@@ -298,7 +305,7 @@ def my_function():
 
 my_function()
 # 预测: 完整的输出顺序是什么? 提示: 装饰器相当于 my_function = A(B(C(my_function)))
-# ____
+# ____A前，B前，C前，核心函数执行，C后，B后，A后
 
 
 # ----- 题11: 类装饰器 (__call__) [选做] -----
@@ -310,17 +317,54 @@ print("\n----- 题11: 类装饰器 (__call__) -----")
 
 class CacheDecorator:
     # TODO: 实现 __init__ 和 __call__
-    pass
+    def __init__(self, func):
+        self.func = func
+        self.cache = {}
+
+    # 这样无论被装饰的函数做什么运算、接收几个参数都能正确缓存。当前写法只适用于两数相加，expensive_add 里的 print也不会被执行
+    # def __call__(self, a, b):
+    #     key = (a, b)
+    #     if key in self.cache:
+    #         return (f"已经计算过了:{self.cache[key]}")
+    #     else:
+    #         self.cache[key] = a + b
+    #         print(f"新计算并缓存: {a} + {b}")
+    #     return self.cache[key]
+    # 接受claudecode建议，更改为如下形式:
+
+    def __call__(self, *args, **kwargs):
+        if args in self.cache:
+            return f"已经计算过了:{self.cache[args]}"
+        self.cache[args] = self.func(*args)  # 调用原函数
+        return self.cache[args]
+
+    # Python的字典要求key必须是可哈希的（hashable），而元组恰好满足这个条件。可哈希的条件： 对象必须实现__hash__()和 __eq__()方法，且生命周期内哈希值不变。
+    # - 元组是不可变的，内部元素如果也都是可哈希的（int、str、float等），那元组本身也是可哈希的
+    # - 列表不行，因为列表是可变的，哈希值会变
+    # # 元组可以当 key
+    # d = {}
+    # d[(1, 2)] = "ok"  # ✓ 元组是 hashable
+    # d[[1, 2]] = "no"  # ✗ TypeError: unhashable type: 'list'
+    # # args 本质就是元组
+    # def foo(*args):
+    #     print(type(args))  # <class 'tuple'>
+    # foo(1, 2)  # args = (1, 2)
+    # 所以 if args in self.cache就是在字典里查找key为(1, 2)的条目，完全合法。这也是为什么很多缓存实现（包括functools.lru_cache）都用 * args拼成元组做key
+
 
 # 测试代码 (取消注释以验证):
-# @CacheDecorator
-# def expensive_add(a, b):
-#     print(f"  计算 {a} + {b}...")
-#     return a + b
-#
-# print(f"结果: {expensive_add(1, 2)}")
-# print(f"结果: {expensive_add(1, 2)}")  # 第二次不应打印 "计算..."
-# print(f"结果: {expensive_add(3, 4)}")
+@CacheDecorator  # 原始函数作为参数传入 __init__，
+def expensive_add(a, b):  # expensive_add 不再是函数，而是一个 CacheDecorator 的实例对象
+
+    print(f"  计算 {a} + {b}...")
+    return a + b
+
+print(f"结果: {expensive_add(1, 2)}")
+# expensive_add(1, 2)
+#  ↑ expensive_add 现在是个实例对象！
+#  ↑ 对实例加括号 → 触发 __call__(self, 1, 2)
+print(f"结果: {expensive_add(1, 2)}")  # 第二次不应打印 "计算..."
+print(f"结果: {expensive_add(3, 4)}")
 # 期望: 第二次调用 expensive_add(1, 2) 不会打印 "计算..."
 
 
@@ -328,14 +372,18 @@ class CacheDecorator:
 # 知识点: 循环中创建闭包的经典陷阱——所有闭包共享同一个变量
 print("\n----- 题12: 调试修复 - 闭包陷阱 -----")
 
-# BUG: 以下代码想创建 5 个函数分别返回 0-4，但结果不正确
+# BUG: 以下代码想创建 5 个函数`分别`返回 0-4，但结果不正确
 def create_multipliers_bug():
     """有 Bug 的版本"""
     multipliers = []
     for i in range(5):
         def multiplier(x):
             return x * i  # BUG: 这里的 i 不是创建时的值，而是最终循环结束的值
+        # 应该说，这里因为是闭包，闭包的成员变量被保存，所以这里的 i 实际是保存的最后的值，在这里是 4
         multipliers.append(multiplier)
+        # 关键在于
+        # Bug: 存储的是函数本身，没调用 multipliers.append(multiplier)   
+        # 存了一个"等会儿再查 i"的闭包
     return multipliers
 
 bug_funcs = create_multipliers_bug()
@@ -352,12 +400,17 @@ print()
 def create_multipliers_fixed():
     """修复后的版本"""
     # TODO: 修复闭包陷阱
-    pass
+    multipliers = []
+    for i in range(5):
+        def multiplier(i):return lambda x : x * i
+        multipliers.append(multiplier(i))
+        #  存储的是 multiplier(i) 的返回值（即 lambda），multiplier(i) 当场执行了
+    return multipliers
 
 # 测试代码 (取消注释以验证):
-# fixed_funcs = create_multipliers_fixed()
-# print("修复版本:")
-# for f in fixed_funcs:
-#     print(f"  f(10) = {f(10)}", end="")
-# print()
+fixed_funcs = create_multipliers_fixed()
+print("修复版本:")
+for f in fixed_funcs:
+    print(f"  f(10) = {f(10)}", end="")
+print()
 # 期望: 0 10 20 30 40
