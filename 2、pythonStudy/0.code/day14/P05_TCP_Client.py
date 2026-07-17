@@ -5,7 +5,7 @@ import socket
 # 创建socket对象
 socket_tcp = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # 建立和服务器的连接
-server_ip = '192.168.34.78'
+server_ip = '127.0.0.1'
 server_port = 9999
 socket_tcp.connect((server_ip, server_port))
 # 循环

@@ -57,8 +57,31 @@
 | day12 | 浅拷贝与深拷贝、迭代器（Iterable/Iterator）、生成器（yield/send）、作用域（LEGB）、闭包、装饰器 |
 | day13 | 并发与并行、多进程（Process/Pool/Queue通信）、多线程（Thread/ThreadPoolExecutor/线程安全/Lock） |
 | day14 | 线程安全与锁（Lock/RLock/Condition）、网络编程（UDP/TCP Socket、HTTP请求、Web服务） |
+| day15 | 正则表达式（re模块、匹配规则、分组、替换） |
 
-### 4. 网络安全 学习
+### 4. 数据结构与算法学习
+
+| 章节 | 内容 |
+|------|------|
+| day01 | 时间复杂度（Big O）、数组、链表 |
+| 刷题 | LeetCode Hot 100 题解（Python实现） |
+
+#### LeetCode 题目列表
+
+已刷题目包括但不限于：
+- 数组：两数之和、盛最多水的容器、三数之和、搜索旋转排序数组、接雨水
+- 链表：合并两个有序链表、删除链表的倒数第N个结点、环形链表、反转链表、LRU缓存
+- 字符串：无重复字符的最长子串、最长回文子串、验证回文串、字母异位词分组
+- 二叉树：二叉树的中序遍历、翻转二叉树、二叉树的最大深度、验证二叉搜索树、二叉树的最近公共祖先
+- 动态规划：爬楼梯、最长递增子序列、最长公共子序列、编辑距离、零钱兑换、最长回文子串
+- 贪心算法：买卖股票的最佳时机、跳跃游戏、分发糖果
+- 回溯：全排列、子集、N皇后、单词搜索
+- 图论：岛屿数量、课程表、克隆图
+- 栈/队列：有效的括号、最小栈、逆波兰表达式求值、滑动窗口最大值
+- 堆：数据流的中位数、查找和最小的K对数字
+- 其他：多数元素、只出现一次的数字、生命游戏
+
+### 5. 网络安全 学习
 
 | 章节 | 内容 |
 |------|------|
@@ -80,11 +103,14 @@
 | 反序列化漏洞 | PHP序列化格式、魔术方法（`__construct/destruct/wakeup/sleep`）、POP链 |
 | 命令注入绕过 | 空格过滤（$IFS等）、文件过滤（通配符/Base64）、读取过滤（tac/head替代cat） |
 | Ubuntu22.04 syslog日志 | Ubuntu系统日志配置与分析 |
+| 7月7日内容 | 命令注入绕过（空格/文件/读取过滤） |
+| 7月8日内容 | SQL注入、反序列化、PHP魔术方法 |
 | 7月9日内容 | MISC隐写（摩斯密码、Whitespace隐写、LSB隐写）、ZIP破解（CRC32碰撞爆破、已知明文攻击、伪加密） |
 | 7月10日内容 | 流量分析（Wireshark数据提取、协议分析）、WebShell后门分析（蚁剑WebShell、open_basedir绕过、Shellshock漏洞利用） |
 
 #### 网络安全实操内容
 
+**协议与网络实验：**
 - SSH实验（路由器SSH登录配置、抓包分析）
 - TCP-SYN防护实验（防火墙SYN Cookie配置）
 - Telnet实验（抓包分析）
@@ -92,136 +118,85 @@
 - 基本ACL/高级ACL配置实验
 - UDP Flood防护实验
 - HTTP协议实验（报文构造、本地HTTP服务器/客户端、抓包分析）
+
+**Web安全实验：**
 - Session攻防实验（Session概念、Session劫持演示、Session存储机制）
-- Misc隐写实战（摩斯密码、Whitespace隐写、LSB隐写、图片分离）
-- ZIP破解（CRC32碰撞爆破、已知明文攻击、伪加密）
 - SQL注入实战（联合注入、报错注入、布尔盲注自动化）
 - PHP反序列化漏洞利用（POP链构造）
-- 流量分析实战（Wireshark数据提取、协议分析）
 - WebShell后门分析（蚁剑WebShell结构、open_basedir绕过、多策略命令执行）
+
+**MISC安全实验：**
+- Misc隐写实战（摩斯密码、Whitespace隐写、LSB隐写、图片分离）
+- ZIP破解（CRC32碰撞爆破、已知明文攻击、伪加密）
+- 流量分析实战（Wireshark数据提取、协议分析、FTP流量分析）
 
 ## 项目结构
 
 ```
 MyStudyData/
-├── 0.1、JAVA/                      # Java代码示例和笔记
-│   ├── mian/
-│   │   ├── src/                    # 源代码目录
-│   │   │   ├── algorithm/          # 算法练习
-│   │   │   ├── cms/                # CMS系统练习
-│   │   │   ├── day02-day_19/       # 每日练习代码
-│   │   │   └── lib/                # 依赖库（lombok、jsoup、junit）
-│   │   └── JAVA学习内容/            # 笔记文档
-│   └── .gitignore
+├── 0.1、JAVA/                              # Java代码示例和笔记
+│   └── mian/
+│       ├── src/                            # 源代码目录
+│       │   └── day_08/                     # 每日练习代码
+│       └── JAVA学习内容/                    # 笔记文档
 │
-├── 0、JAVA学习内容/                 # Java学习笔记（独立文档）
-│   ├── images/                     # 配图资源
-│   └── 1-23章笔记.md               # 完整笔记系列
+├── 0、JAVA学习内容/                         # Java学习笔记（独立文档）
+│   └── 1-23章笔记.md                       # 完整笔记系列
 │
-├── 1.1、Mysql/                     # MySQL学习内容
-│   ├── day01/                      # day01 SQL基础
-│   ├── day02/                      # day02 函数与查询
-│   └── test/                       # 测试数据
+├── 1.1、Mysql/                             # MySQL学习内容
+│   ├── day01/                              # day01 SQL基础
+│   ├── day02/                              # day02 函数与查询
+│   └── test/                               # 测试数据（含Python导入脚本）
 │
-├── 1、MySql学习内容/               # MySQL笔记
-│   ├── image/                      # 配图资源
+├── 1、MySql学习内容/                       # MySQL笔记
 │   └── 学习文档.md
 │
-├── 2、pythonStudy/                  # Python学习内容
-│   ├── 0.code/                     # Python代码示例
-│   │   ├── day01/                  # day01 变量与格式化
-│   │   ├── day02/                  # day02 数字类型、类型转换、编码解码
-│   │   ├── day03/                  # day03 运算符、条件语句、循环语句
-│   │   ├── day04/                  # day04 序列（列表、元组、字符串）
-│   │   ├── day05/                  # day05 字符串方法、集合、字典
-│   │   ├── day06/                  # day06 函数、参数、深浅拷贝
-│   │   ├── day07/                  # day07 递归、闭包、匿名函数、文件操作
-│   │   ├── day08/                  # day08 面向对象基础（类、self、方法）
-│   │   ├── day09/                  # day09 封装、继承、多态
-│   │   ├── day10/                  # day10 异常处理、自定义异常、with语句
-│   │   ├── day11/                  # day11 模块与包（import、包结构、__all__）
-│   │   ├── day12/                  # day12 浅拷贝/深拷贝、迭代器、生成器、作用域、闭包、装饰器
-│   │   ├── day13/                  # day13 多进程、多线程、进程池、线程池、线程安全（含Process详解.md）
-│   │   ├── day14/                  # day14 线程安全与锁、网络编程（UDP/TCP Socket、HTTP请求、Starlette Web服务）
-│   │   ├── exercises/              # 练习题（含答案）
-│   │   │   ├── day01_ex ~ day08_ex/ # day01-day08 练习（变量、数据类型、控制流、列表、集合、函数、闭包、OOP）
-│   │   │   ├── day11_ex/           # day11 综合练习
-│   │   │   ├── day12_ex/           # day12 浅拷贝/迭代器/生成器 + 作用域/闭包/装饰器（含day12_练习.md）
-│   │   │   ├── day13_ex/           # day13 进程基础 + 线程基础（含day13练习.md）
-│   │   │   └── day14_ex/           # day14 锁与线程安全 + 网络编程（UDP/TCP/HTTP）
-│   │   └── python3.13.13/          # Python 3.13.13源码阅读
-│   │       ├── Objects/            # 对象实现（listobject.c、dictobject.c等）
-│   │       ├── Include/            # 头文件
-│   │       ├── Python/             # Python核心
-│   │       ├── Lib/                # 标准库
-│   │       └── Misc/               # 其他文件
+├── 2、pythonStudy/                          # Python学习内容
+│   ├── 0.code/                             # Python代码示例
+│   │   ├── day01-day15/                    # 每日练习代码
+│   │   ├── exercises/                      # 练习题（含答案）
+│   │   └── python3.13.13/                  # Python 3.13.13源码阅读
+│   │       ├── Objects/                    # 对象实现
+│   │       ├── Include/                    # 头文件
+│   │       ├── Python/                     # Python核心
+│   │       ├── Lib/                        # 标准库
+│   │       └── Misc/                       # 其他文件
 │   │
-│   └── 1.doc/                      # Python学习文档
-│       ├── day01_f-string详解.md           # f-string语法、格式控制、对齐填充
-│       ├── day02_进制基础与数据类型.md       # 进制转换、数据类型、编码解码、int()原理
-│       ├── day03_运算符与位运算.md           # 位运算（&｜^~）、进制转换、运算符优先级
-│       ├── day04_序列与列表.md              # 列表/元组/字符串、切片、列表推导式
-│       ├── day05_字符串方法与字典.md         # 字符串方法、字典推导式、字符串驻留
-│       ├── day06_浅深拷贝与引用计数.md       # 浅拷贝/深拷贝、引用计数、循环引用
-│       ├── day07_作用域与高阶函数.md         # global/nonlocal、lambda、map/filter/reduce
-│       ├── day08_类与面向对象.md            # 类定义、self/__init__、类/静态方法、__slots__
-│       ├── day09_封装继承与多态.md         # 封装（私有属性、@property、__str__）、继承（多继承、MRO）、super()、方法重写、多态（鸭子类型、抽象类）
-│       ├── day10_异常处理与上下文管理器.md    # 异常处理（try-except-else-finally）、raise/assert、自定义异常、异常传递、with上下文管理器
-│       ├── day12_迭代器生成器与装饰器.md      # 浅拷贝/深拷贝、迭代器、生成器（yield/send详细图解）、命名空间、作用域LEGB、闭包、装饰器（多层/带参/类装饰器）
-│       ├── day13_多进程多线程与并发.md       # 并发与并行、多进程（Process/Pool/Queue通信）、多线程（Thread/ThreadPoolExecutor/线程安全/Lock）、模块导入
-│       ├── Queue实现进程间通信原理.md        # multiprocessing.Queue、管道、Manager代理对象
-│       ├── __call__以及__init__解释.md       # 魔术方法详解、装饰器类、闭包工厂
-│       ├── max函数实现原理.md              # max()底层实现原理
-│       ├── Process详解.md                # multiprocessing.Process 详解
-│       └── python3.13.13/          # 源码文档备份
+│   └── 1.doc/                              # Python学习文档
+│       ├── day01-day14系列文档.md           # 详细学习笔记
+│       ├── 练习文档.md                     # 练习题详解
+│       └── python3.13.13/                  # 源码文档备份
 │
-└── 3、网络安全/                     # 网络安全学习内容
-    ├── php源码/                      # PHP 8.5 源码（Zend引擎、扩展、SAPI）
-    ├── 知识点/                      # 知识点笔记
-    │   ├── Day1_网络与通信安全.md
-    │   ├── Day2_操作系统安全配置.md
-    │   ├── Day3_物理和环境安全.md
-    │   ├── Day4_竞赛与攻防基础.md
-    │   ├── Day5_Web安全基础2-3.md
-    │   ├── Day6_MISC安全基础与隐写.md
-    │   ├── Day7_Misc综合安全与考核.md
-    │   ├── HTTP协议详解.md          # HTTP报文、HTTPS、安全头
-    │   ├── 7月7日内容.md             # 命令注入绕过（空格/文件/读取过滤）
-    │   ├── 7月8日.md                # SQL注入、反序列化、PHP魔术方法
-    │   ├── 7月9日内容.md             # MISC隐写、ZIP破解
-    │   ├── 7月10日.md               # 流量分析、WebShell后门分析
-    │   ├── 总结.md                   # 学习总结（含.html/.pdf版本）
-    │   ├── 盲注爆破.py               # SQL布尔盲注自动化脚本
-    │   ├── Acsll.py                  # ASCII编码解码工具
-    │   ├── base64_decoder.py         # Base64解码工具
-    │   ├── SQL注入绕过空格过滤获取flag.md  # SQL注入空格过滤绕过实战
-    │   ├── 手动构造HTTP请求获取flag.md    # HTTP请求构造实战
-    │   └── Ubuntu22_04_syslog日志.md # Ubuntu日志系统
-    │
-    └── 实操/                        # 实操和实验
-        ├── 0706/                   # HTTP协议与Session实验
-        │   ├── http/               # HTTP报文构造、本地服务器/客户端、抓包
-        │   └── session/            # Session概念、劫持演示、存储机制
-        ├── 0709/                   # Misc综合实操（隐写、ZIP破解、编码）
-        │   ├── misc-摩斯编码题/     # 摩斯密码与Whitespace隐写
-        │   ├── LSB/                # LSB图片隐写
-        │   ├── ZIPbaopo.py         # CRC32碰撞爆破ZIP
-        │   └── jsfuck例题/         # JSFuck编码
-        ├── 0710/                   # 流量分析与WebShell实操
-        │   ├── 02/                 # FTP流量抓包分析
-        │   ├── 03/                 # 流量分析实战题
-        │   ├── 04/                 # Wireshark流量分析（窃听风云.pcap）
-        │   ├── 05/                 # WebShell后门分析与流量分析
-        │   └── 流量分析提取数据/     # 数据提取练习
-        ├── 6月29日上午上课实验/      # SSH实验、TCP-SYN防护、Telnet实验、VLAN路由
-        ├── 7月8日/                 # PHP反序列化实操
-        ├── day01/                  # 基本ACL、高级ACL实验（.topo拓扑文件）
-        ├── dirsearch-master/       # 目录扫描工具
-        └── ...
-
-├── scroe/                           # 考核文件（EzMisc1/EzMisc2解题）
-├── secret_file/                     # 相关文件（flag.zip等）
-└── 资料/                            # 参考资料（JavaSE常用API文档.md）
+├── 3、网络安全/                             # 网络安全学习内容
+│   ├── php源码/                            # PHP 8.5 源码（Zend引擎、扩展、SAPI）
+│   ├── 知识点/                             # 知识点笔记
+│   │   ├── Day1-Day7.md                    # 每日学习笔记
+│   │   ├── HTTP协议详解.md                 # HTTP报文、HTTPS、安全头
+│   │   ├── 7月7日-7月10日内容.md           # 专题学习内容
+│   │   └── 工具脚本.py                     # Python工具脚本（盲注爆破、Base64解码等）
+│   │
+│   └── 实操/                               # 实操和实验
+│       ├── 0706/                           # HTTP协议与Session实验
+│       ├── 0709/                           # Misc综合实操（隐写、ZIP破解、编码）
+│       ├── 0710/                           # 流量分析与WebShell实操
+│       ├── 7月8日/                         # PHP反序列化实操
+│       ├── day01/                          # 基本ACL、高级ACL实验
+│       └── 其他实验文件/                    # 各种实验数据包和工具
+│
+├── 4、DataStructures_andAlgorithms/         # 数据结构与算法
+│   ├── 0.code/                             # 代码示例
+│   │   ├── day01/                          # day01 时间复杂度、数组、链表
+│   │   └── Loocode/                        # LeetCode Hot 100 题解（100+题）
+│   │
+│   └── 1.doc/                              # 学习文档
+│       ├── 刷题.md                         # 刷题记录
+│       └── 尚硅谷大模型技术之数据结构与算法1.0.docx
+│
+├── scroe/                                   # 考核文件（EzMisc1/EzMisc2解题）
+├── secret_file/                             # 相关文件（flag.zip等）
+└── 资料/                                    # 参考资料
+    ├── 0、python/                          # Python学习资料
+    └── JDK_api（文档）/                     # JavaSE常用API文档
 ```
 
 ## 技术栈
@@ -230,6 +205,7 @@ MyStudyData/
 - **Python**: Python 3.6+ / Python 3.13.13（源码阅读）
 - **MySQL**: 8.0+
 - **PHP**: PHP 8.5.8（源码分析、反序列化漏洞研究）
+- **数据结构与算法**: LeetCode Hot 100（Python实现）
 - **网络安全**: eNSP仿真、Wireshark抓包、Burp Suite、dirsearch、华为交换机/路由器/防火墙配置
 
 ## 学习目标
@@ -241,6 +217,7 @@ MyStudyData/
 - 掌握 Python 多进程与多线程编程（Process/Thread/Pool/线程安全/Lock）
 - 掌握 Python 网络编程（UDP/TCP Socket、HTTP请求、Web服务）
 - 深入理解 Python 底层实现（源码阅读）
+- 掌握常见数据结构与算法（数组、链表、树、图、动态规划、贪心、回溯）
 
 ### 网络安全学习
 - 掌握常见应用层协议的工作原理（HTTP/HTTPS、FTP、DNS、SSH）
