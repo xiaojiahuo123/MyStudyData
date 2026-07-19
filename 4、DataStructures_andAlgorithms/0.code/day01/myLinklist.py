@@ -1,0 +1,129 @@
+class mynode:
+    def __init__(self, data, next=None):
+        self.data = data
+        self.next = next
+
+class myLinkList:
+    def __init__(self):
+        self.__size = 0
+        self.__tail = None
+        self.__head = None
+
+    def __str__(self):
+        res = []
+        node = self.__head  # 获取头节点
+        while node:
+            res.append(str(node.data))
+            node = node.next
+            if node:
+                res.append('->')
+        return ''.join(res)
+
+    @property
+    def size(self):
+        return self.__size
+
+    def is_empty(self):
+        return self.__size == 0
+
+    def insert(self, index:int, data):
+        if index < 0 or index >= self.size:
+            raise IndexError('链表索引越界')
+
+        node = self.__head  # 获取头节点
+        # 我自己原来忘记了在头节点处添加的情况
+        if index == 0:
+            # 说明要向头节点的位置添加元素  这个新添加的元素下一个元素指向原来的头，整个链表的头变成当前节点
+            self.__head = mynode(data, self.__head)
+        else:
+            for i in range(index - 1):
+                node = node.next  # 获取插入位置的上一个节点
+            node.next = mynode(data, node.next)
+        self.__tail = node
+        self.__size += 1
+
+    def append(self, data):
+        new_node = mynode(data)
+
+        if self.__head is None:
+            # 链表为空，新节点就是头节点
+            self.__head = new_node
+        else:
+            # 链表不为空，遍历到最后一个节点
+            node = self.__head
+            for i in range(self.__size - 1):
+                node = node.next
+            node.next = new_node
+
+        self.__size += 1
+        # 下面的是我的原本实现，没有考虑空链表的情况，
+        # node = self.__head
+        # for i  in range(self.__size - 1):
+        #     node = node.next
+        # node.next = mynode(data)
+        # self.__size += 1
+
+    def remove(self, index:int):
+        if index < 0 or index >= self.size:
+            raise IndexError('链表索引越界')
+        node = self.__head # 获取了头节点
+        if index == 0:
+            self.__head = node.next # 头节点的结果变为其指向的下一个节点，实现头节点删除
+        else:
+            for i in range(index - 1):  # 这里之所以是 range(index -1 )，是因为循环是从头节点开始的，头节点本身就是索引0
+                # 而这里即使最终 index - 1 = 0,循环也会执行一次
+                node = node.next
+            node.next = node.next.next  # 通过更改删除节点位置的前一个节点的next，让其指向下一个节点的next,实现去除index位置节点
+            self.__size -= 1
+
+    def set(self,index:int,data):
+        if index < 0 or index >= self.size:
+            raise IndexError("链表索引越界!")
+        node = self.__head
+        # for i in range(index - 1):
+        for i in range(index):  # 此时不需要减一了。直接到index - 1，也就是对于当前的 node 节点的data直接进行修改，这和 remove不一样，和insert也不同
+            node = node.next
+        node.data = data
+
+    def get(self,index:int):
+        if index < 0 or index >= self.size:
+            raise IndexError("链表索引越界!")
+        node = self.__head
+        for i in range(index):
+            node = node.next
+        return node.data
+
+    def find(self,item):
+        # 这是我的实现，但是实际上，头节点以及不存在可以更简单的实现
+        # node = self.__head
+        # if node is None:
+        #     return None
+        # if item == node.data:return node
+        #
+        # for i in range(self.__size - 1):
+        #     node = node.next
+        #     if node.data == item:
+        #         return node
+
+        node = self.__head
+        while node:
+            if node.data == item:  # 先判断，是头节点直接返回 True，不是在到下一个节点
+                return True
+            node = node.next
+        return False  # 如果一直到循环完所有节点，那就是不存在，直接返回False
+
+    def for_each(self,func):
+        node = self.__head
+        while node:
+            func(node)
+            node = node.next
+
+llist = myLinkList()
+llist.append(1)
+llist.append(2)
+llist.append(3)
+llist.insert(0, 10)
+llist.remove(0)
+print(llist)
+llist.set(0,10)
+print(llist)

@@ -1,4 +1,4 @@
-## 1. array.array 访问行为
+## 1. array.array 访问行为 —— 底层存储与Python访问的差异
 
 - `array.array` 内部存储的是原始 C int 数值，紧凑无对象开销
 - 但用 Python 访问时（`arr[0]`），Python 自动将原始值包装成 Python int 对象返回
@@ -11,7 +11,7 @@
 
 ***
 
-## 2. `[0] * capacity` 预分配数组
+## 2. `[0] * capacity` 预分配数组 —— 模拟底层数组的内存预分配机制
 
 ```python
 self.__capacity = 5
@@ -32,7 +32,7 @@ capacity=5, size=3:  [1, 2, 3, 0, 0]     ← 前 3 个是真实数据
 
 ***
 
-## 3. `__str__` 方法（Python 版 toString）
+## 3. `__str__` 方法（Python 版 toString） —— 对象的字符串表示与自动调用机制
 
 ```python
 def __str__(self):
@@ -45,7 +45,7 @@ def __str__(self):
 
 ***
 
-## 4. 单向链表（LinkedList）核心概念
+## 4. 单向链表（LinkedList）核心概念 —— 节点结构与链表操作的实现原理
 
 ### 链表结构 vs 节点结构
 
@@ -128,7 +128,7 @@ node.next = Node(item, node.next)
 
 ***
 
-## 5. 双向链表（Doubly Linked List）
+## 5. 双向链表（Doubly Linked List） —— 双向遍历与O(1)删除的优势
 
 ### 与单向链表的核心区别
 
@@ -228,7 +228,7 @@ LRU（Least Recently Used）缓存需要频繁移动和删除节点，双向链�
 
 ***
 
-## 6. 链表遍历：`for i in range(index - 1)` 的作用
+## 6. 链表遍历：`for i in range(index - 1)` 的作用 —— 通过循环次数定位目标节点的原理
 
 ### 代码场景
 
