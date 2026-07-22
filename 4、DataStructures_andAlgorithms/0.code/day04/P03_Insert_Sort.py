@@ -1,0 +1,14 @@
+"""
+    该案例演示了插入排序
+"""
+def insert_sort(nums):
+
+    for i in range(1, len(nums)):
+        for j in range(i, 0, -1):
+            if nums[j] >= nums[j - 1]:
+                break
+            nums[j], nums[j - 1] = nums[j - 1], nums[j]
+
+list1 = [3,1,5,4,2]
+insert_sort(list1)
+print(list1)
