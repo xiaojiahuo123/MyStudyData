@@ -32,14 +32,7 @@
 | 22 | IO流和网络编程 |
 | 23 | 反射 |
 
-### 2. MySQL 学习
-
-| 章节 | 内容 |
-|------|------|
-| day01 | SQL基础语法 |
-| day02 | 函数、约束、分组查询、多表连接查询、排序分页 |
-
-### 3. Python 学习
+### 2. Python 学习
 
 | 章节 | 内容 |
 |------|------|
@@ -59,7 +52,7 @@
 | day14 | 线程安全与锁（Lock/RLock/Condition）、网络编程（UDP/TCP Socket、HTTP请求、Web服务） |
 | day15 | 正则表达式（re模块、匹配规则、分组、替换） |
 
-### 4. 数据结构与算法学习
+### 3. 数据结构与算法学习
 
 | 章节 | 内容 |
 |------|------|
@@ -67,7 +60,8 @@
 | day02 | 栈（后进先出）、队列（先进先出）、哈希表（数组+链表、哈希函数、负载因子、扩容机制） |
 | day03 | 二叉搜索树（BST）实现与操作 |
 | day04 | 排序算法（冒泡、选择、插入、归并、快速、堆排序）、汉诺塔 |
-| 刷题 | LeetCode Hot 100 题解（Python实现，139题） |
+| day05 | 分治算法（Karatsuba算法）、动态规划（爬楼梯、子数组和、背包问题、全排列） |
+| 刷题 | LeetCode Hot 100 题解（Python实现，约120题） |
 
 #### LeetCode 题目列表
 
@@ -89,7 +83,7 @@
 - 股票系列：买卖股票的最佳时机、买卖股票的最佳时机II、买卖股票的最佳时机IV
 - 其他：整数反转、Pow(x,n)、二进制求和、x的平方根、只出现一次的数字、直线上最多的点数、分数到小数、多数元素、轮转数组、除自身以外数组的乘积、生命游戏
 
-### 5. 网络安全 学习
+### 4. 网络安全 学习
 
 | 章节 | 内容 |
 |------|------|
@@ -138,6 +132,13 @@
 - ZIP破解（CRC32碰撞爆破、已知明文攻击、伪加密）
 - 流量分析实战（Wireshark数据提取、协议分析、FTP流量分析）
 
+### 5. Linux与Shell 学习
+
+| 文档 | 内容 |
+|------|------|
+| Linux.md | Linux系统基础 |
+| shell.md | Shell脚本编程 |
+
 ## 项目结构
 
 ```
@@ -145,19 +146,23 @@ MyStudyData/
 ├── 0.1、JAVA/                              # Java代码示例和笔记
 │   └── mian/
 │       ├── src/                            # 源代码目录
-│       │   └── day_08/                     # 每日练习代码
-│       └── JAVA学习内容/                    # 笔记文档
+│       │   ├── day02/                      # day02 基础语法练习
+│       │   ├── day03/                      # day03 位运算与条件语句
+│       │   ├── day04/                      # day04 循环与switch
+│       │   ├── day05_teacher_code/         # day05 数组练习
+│       │   ├── day06_teacher_code/         # day06 数组算法
+│       │   ├── day07_teacher_code/         # day07 方法
+│       │   ├── day_08/                     # day08 面向对象基础
+│       │   ├── day_09/                     # day09 封装与继承
+│       │   ├── day_10/                     # day10 抽象类与接口
+│       │   ├── day_11/                     # day11 多态与作业
+│       │   ├── algorithm/                  # 算法实现（数组、二分查找）
+│       │   └── cms/                        # 客户管理系统项目
+│       ├── JAVA学习内容/                    # 笔记文档（21-23章）
+│       └── lib/                            # 依赖库（JUnit4、jsoup、Lombok）
 │
 ├── 0、JAVA学习内容/                         # Java学习笔记（独立文档）
 │   └── 1-23章笔记.md                       # 完整笔记系列
-│
-├── 1.1、Mysql/                             # MySQL学习内容
-│   ├── day01/                              # day01 SQL基础
-│   ├── day02/                              # day02 函数与查询
-│   └── test/                               # 测试数据（含Python导入脚本）
-│
-├── 1、MySql学习内容/                       # MySQL笔记
-│   └── 学习文档.md
 │
 ├── 2、pythonStudy/                          # Python学习内容
 │   ├── 0.code/                             # Python代码示例
@@ -178,11 +183,12 @@ MyStudyData/
 │   │   ├── day15/                          # day15 正则表达式
 │   │   ├── exercises/                      # 练习题（含答案）
 │   │   └── python3.13.13/                  # Python 3.13.13源码阅读
-│   │       ├── Objects/                    # 对象实现
 │   │       ├── Include/                    # 头文件
-│   │       ├── Python/                     # Python核心
 │   │       ├── Lib/                        # 标准库
-│   │       └── Misc/                       # 其他文件
+│   │       ├── Modules/                    # C扩展模块
+│   │       ├── Objects/                    # 对象实现
+│   │       ├── Parser/                     # 解析器
+│   │       └── Python/                     # Python核心
 │   │
 │   └── 1.doc/                              # Python学习文档
 │       ├── day01_f-string详解.md           # day01学习笔记
@@ -221,6 +227,7 @@ MyStudyData/
 │   │   ├── Day6_MISC安全基础与隐写.md       # 摩斯编码、Whitespace隐写、LSB隐写
 │   │   ├── Day7_Misc综合安全与考核.md       # Misc综合安全与考核
 │   │   ├── HTTP协议详解.md                 # HTTP报文、HTTPS、安全头
+│   │   ├── Ubuntu22_04_syslog日志.md       # Ubuntu系统日志配置与分析
 │   │   ├── 7月7日内容.md                   # 命令注入绕过
 │   │   ├── 7月8日.md                       # SQL注入、反序列化
 │   │   ├── 7月9日内容.md                   # MISC隐写、ZIP破解
@@ -245,15 +252,18 @@ MyStudyData/
 │
 ├── 4、DataStructures_andAlgorithms/         # 数据结构与算法
 │   ├── 0.code/                             # 代码示例
-│   │   ├── day01/                          # day01 时间复杂度、数组、链表（7个文件）
-│   │   ├── day02/                          # day02 栈、队列、哈希表（8个文件）
-│   │   ├── day03/                          # day03 二叉搜索树（3个文件）
-│   │   ├── day04/                          # day04 排序算法（7个文件：冒泡、选择、插入、归并、快速、堆排序、汉诺塔）
-│   │   └── Loocode/                        # LeetCode Hot 100 题解（139题，Python实现）
+│   │   ├── day01/                          # day01 时间复杂度、数组、链表
+│   │   ├── day02/                          # day02 栈、队列、哈希表
+│   │   ├── day03/                          # day03 二叉搜索树
+│   │   ├── day04/                          # day04 排序算法（冒泡、选择、插入、归并、快速、堆排序、汉诺塔）
+│   │   ├── day05/                          # day05 分治算法（Karatsuba）、动态规划（爬楼梯、背包、全排列）
+│   │   └── Loocode/                        # LeetCode Hot 100 题解（约120题，Python实现）
 │   │
 │   └── 1.doc/                              # 学习文档
 │       ├── day01_数组与链表基础.md          # 数组与链表学习笔记
-│       ├── day02.md                        # day02 学习笔记
+│       ├── day02_栈、队列与哈希表.md        # day02 学习笔记
+│       ├── day03_二叉搜索树.md             # day03 学习笔记
+│       ├── day04.md                        # day04 学习笔记
 │       ├── 二叉搜索树的简易实现.md         # BST实现文档
 │       ├── 栈的简易实现.md                 # 栈的实现详解
 │       ├── 哈希表的简易实现.md             # 哈希表的实现详解
@@ -263,6 +273,13 @@ MyStudyData/
 │       ├── images/                         # 学习截图
 │       ├── 尚硅谷大模型技术之数据结构与算法1.0.docx
 │       └── 尚硅谷大模型技术之数据结构与算法1.0.pdf
+│
+├── 5、LiunxAndShell/                        # Linux与Shell学习
+│   └── 1、doc/
+│       ├── Linux.md                        # Linux系统基础
+│       ├── shell.md                        # Shell脚本编程
+│       ├── 尚硅谷大模型技术之Linux（Ubuntu）1.0.pdf
+│       └── 尚硅谷大模型技术之Shell1.0.pdf
 │
 ├── scroe/                                   # 考核文件（EzMisc1/EzMisc2解题）
 ├── secret_file/                             # 相关文件（flag.zip等）
@@ -275,23 +292,23 @@ MyStudyData/
 
 - **Java**: JDK 8+、JUnit4、Lombok、jsoup、IntelliJ IDEA
 - **Python**: Python 3.6+ / Python 3.13.13（源码阅读）、PyCharm
-- **MySQL**: 8.0+
 - **PHP**: PHP 8.5.8（源码分析、反序列化漏洞研究）
-- **数据结构与算法**: LeetCode Hot 100（Python实现，139题）、尚硅谷数据结构与算法课程
+- **数据结构与算法**: LeetCode Hot 100（Python实现，约120题）、尚硅谷数据结构与算法课程
 - **网络安全**: eNSP仿真、Wireshark抓包、Burp Suite、dirsearch、华为交换机/路由器/防火墙配置、CTF竞赛
+- **Linux**: Ubuntu 22.04、Shell脚本
 
 ## 学习目标
 
 ### 编程学习
 - 掌握 Java 面向对象编程（封装、继承、多态、抽象类、接口）
-- 熟练使用 MySQL 数据库（SQL语法、函数、约束、分组查询、多表连接）
 - 掌握 Python 基础语法和面向对象编程
 - 掌握 Python 多进程与多线程编程（Process/Thread/Pool/线程安全/Lock）
 - 掌握 Python 网络编程（UDP/TCP Socket、HTTP请求、Web服务）
 - 掌握 Python 正则表达式（re模块、匹配规则、分组、替换）
 - 深入理解 Python 底层实现（源码阅读）
-- 掌握常见数据结构与算法（数组、链表、栈、队列、哈希表、二叉树、排序算法）
-- 掌握 LeetCode 刷题技巧（已完成139题，覆盖主要算法类型）
+- 掌握常见数据结构与算法（数组、链表、栈、队列、哈希表、二叉树、排序算法、动态规划）
+- 掌握 LeetCode 刷题技巧（已完成约120题，覆盖主要算法类型）
+- 掌握 Linux 系统基础和 Shell 脚本编程
 
 ### 网络安全学习
 - 掌握常见应用层协议的工作原理（HTTP/HTTPS、FTP、DNS、SSH）

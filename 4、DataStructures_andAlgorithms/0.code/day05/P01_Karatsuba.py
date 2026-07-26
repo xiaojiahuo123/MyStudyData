@@ -18,14 +18,14 @@ def karatsuba(x, y):
         return x * y
 
     # 确保数字长度一致
-    x_str = x_str.zfill(n)
+    x_str = x_str.zfill(n)  #zfill(n) 是字符串方法， 在字符串左侧填充0 ，使其达到长度n
     y_str = y_str.zfill(n)
 
     # 计算分割点
     m = n // 2
 
     # 将数字划分为高位部分和低位部分
-    high1, low1 = int(x_str[:-m]), int(x_str[-m:])
+    high1, low1 = int(x_str[:-m]), int(x_str[-m:])  #从倒数第m位开始，-m是负索引，从-1开始，这里就是从后面开始取
     high2, low2 = int(y_str[:-m]), int(y_str[-m:])
 
     # 令z0 = A0×B0

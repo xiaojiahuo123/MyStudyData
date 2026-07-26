@@ -4,7 +4,7 @@
 def knapsack(weights, values, W):
     n = len(weights)
     # 初始化二维数组dp，dp[i][j]表示前i个物品中，背包容量为j时的最大价值
-    dp = [[0] * (W + 1) for _ in range(n)]
+    dp = [[0] * (W + 1) for _ in range(n)]  # 从0开始到n - 1，所以循环执行n次
 
     # 每次增加一个可选物品，增加物品后遍历一次背包重量
     for i in range(n):
