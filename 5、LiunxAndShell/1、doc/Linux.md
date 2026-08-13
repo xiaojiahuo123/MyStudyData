@@ -59,7 +59,129 @@ Desktop/
 
 ***
 
-## 2. /etc/passwd —— 用户账户信息文件
+## 2. rm 命令 —— 文件与目录删除
+
+### 基本用法
+
+```bash
+rm [选项] 文件/目录
+```
+
+### 删除文件
+
+```bash
+# 删除单个文件
+rm file.txt
+
+# 删除多个文件
+rm file1.txt file2.txt file3.txt
+
+# 使用通配符删除
+rm *.log
+rm *.tmp
+```
+
+### 常用选项
+
+| 选项 | 说明 | 示例 |
+|------|------|------|
+| `-i` | 删除前确认 | `rm -i file.txt` |
+| `-f` | 强制删除，不提示 | `rm -f file.txt` |
+| `-r` | 递归删除目录 | `rm -r directory` |
+| `-v` | 显示删除过程 | `rm -v file.txt` |
+| `-rf` | 强制递归删除 | `rm -rf directory` |
+
+### 删除目录
+
+```bash
+# 删除空目录
+rmdir directory
+
+# 删除非空目录（递归删除）
+rm -r directory
+
+# 强制删除目录（不提示）
+rm -rf directory
+```
+
+### 安全删除建议
+
+```bash
+# 删除前先确认文件
+ls -la file.txt
+rm file.txt
+
+# 使用 -i 选项防止误删
+rm -i *.log
+
+# 删除前先查看要删除的文件
+ls *.log
+rm *.log
+
+# 使用 -v 选项显示删除过程
+rm -v *.tmp
+```
+
+### 危险操作警告
+
+```bash
+# 千万不要执行！
+rm -rf /          # 删除根目录，会删除整个系统
+rm -rf *          # 删除当前目录所有文件
+rm -rf ~          # 删除用户目录
+rm -rf /*         # 同 rm -rf /
+```
+
+### 实际应用场景
+
+```bash
+# 1. 清理临时文件
+rm -rf /tmp/*
+
+# 2. 清理日志文件
+rm -f /var/log/*.log.*
+
+# 3. 删除前确认
+rm -i important_file.txt
+
+# 4. 批量删除特定类型文件
+find /tmp -name "*.tmp" -exec rm {} \;
+
+# 5. 删除空目录
+rmdir empty_dir
+
+# 6. 删除目录及其内容
+rm -r project_backup/
+```
+
+### 常见错误
+
+| 错误操作 | 后果 | 预防措施 |
+|----------|------|----------|
+| `rm -rf /` | 删除整个系统 | 永远不要执行 |
+| `rm -rf *` | 删除当前目录所有文件 | 先 `ls` 确认 |
+| `rm -rf ~` | 删除用户主目录 | 永远不要执行 |
+| `rm file *` | 删除 file 和所有文件 | 使用 `rm file` |
+
+### 与 find 命令组合
+
+```bash
+# 查找并删除特定文件
+find /tmp -name "*.tmp" -exec rm {} \;
+
+# 查找并删除空文件
+find /home -type f -empty -delete
+
+# 查找并删除超过30天的文件
+find /var/log -name "*.log" -mtime +30 -delete
+
+# 查找并删除特定大小的文件
+find / -type f -size +100M -exec rm {} \;
+```
+
+***
+
+## 3. /etc/passwd —— 用户账户信息文件
 
 ### 文件格式
 
@@ -146,7 +268,7 @@ ls -la /etc/shadow
 
 ***
 
-## 3. tail 命令 —— 文件尾部查看与实时监视
+## 4. tail 命令 —— 文件尾部查看与实时监视
 
 ### 基本用法
 
@@ -241,7 +363,7 @@ tail -F /var/log/*.log
 
 ***
 
-## 4. 重定向 —— > 与 >>
+## 5. 重定向 —— > 与 >>
 
 ### 基本概念
 
@@ -306,7 +428,7 @@ command >> output.txt 2>&1
 
 ***
 
-## 5. 软链接（Symbolic Link）
+## 6. 软链接（Symbolic Link）
 
 ### 基本概念
 
@@ -380,7 +502,7 @@ rm access_link/     # 危险：可能删除原目录内容！
 
 ***
 
-## 6. history 命令 —— 命令历史记录
+## 7. history 命令 —— 命令历史记录
 
 ### 基本用法
 
@@ -428,9 +550,9 @@ history | grep ssh
 
 ***
 
-## 7. 用户管理 —— 增、删、改
+## 8. 用户管理 —— 增、删、改
 
-### 7.1 添加用户：useradd
+### 8.1 添加用户：useradd
 
 ```bash
 useradd [选项] 用户名
@@ -458,7 +580,7 @@ sudo useradd -m -d /home/ty -s /bin/bash -g sudo -G docker,www-data -u 1001 -c "
 sudo passwd ty
 ```
 
-### 7.2 修改用户：usermod
+### 8.2 修改用户：usermod
 
 ```bash
 usermod [选项] 用户名
@@ -493,7 +615,7 @@ sudo usermod -L ty
 sudo usermod -U ty
 ```
 
-### 7.3 删除用户：userdel
+### 8.3 删除用户：userdel
 
 ```bash
 userdel [选项] 用户名
@@ -512,7 +634,7 @@ sudo userdel ty
 sudo userdel -r ty
 ```
 
-### 7.4 修改密码：passwd
+### 8.4 修改密码：passwd
 
 ```bash
 passwd [用户名]
@@ -535,7 +657,7 @@ sudo passwd ty
 sudo passwd -e ty
 ```
 
-### 7.5 常用组合示例
+### 8.5 常用组合示例
 
 ```bash
 # 创建一个完整的开发用户
@@ -551,7 +673,7 @@ sudo userdel -r olduser
 
 ***
 
-## 8. 用户组管理
+## 9. 用户组管理
 
 ### 基本概念
 
@@ -707,7 +829,7 @@ grep -E '^(sudo|wheel):' /etc/group
 
 ***
 
-## 9. chmod 命令 —— 文件权限管理
+## 10. chmod 命令 —— 文件权限管理
 
 ### 基本概念
 
@@ -849,7 +971,7 @@ chmod 640 /var/log/syslog          # 所有者读写，所属组只读
 
 ***
 
-## 10. find 命令 —— 文件查找
+## 11. find 命令 —— 文件查找
 
 ### 基本语法
 
@@ -1031,7 +1153,7 @@ find /home -type f -name "*.py" | wc -l
 
 ***
 
-## 11. grep 与管道符 —— 文本过滤查找
+## 12. grep 与管道符 —— 文本过滤查找
 
 ### 管道符 `|`
 
@@ -1214,7 +1336,7 @@ grep -rn "TODO\|FIXME\|HACK" /home/ty/project/ --include="*.py"
 
 ***
 
-## 12. tar 命令 —— 文件打包与压缩
+## 13. tar 命令 —— 文件打包与压缩
 
 ### 基本概念
 
@@ -1365,7 +1487,7 @@ unxz file.xz
 
 ***
 
-## 13. 网络管理命令
+## 14. 网络管理命令
 
 ### 网络信息查看
 
@@ -1497,7 +1619,7 @@ tcpdump -i eth0 -w capture.pcap
 
 ***
 
-## 14. 进程管理命令
+## 15. 进程管理命令
 
 ### 查看进程
 
