@@ -49,6 +49,9 @@ source 需导入的sql文件路径;
 
 -- 导出数据
 mysqldump -u 用户名 -p 密码 数据库名 表名 > 脚本名.sql;
+mysqldump -u root -p 密码 mydb student > D:\backup\student.sql
+# 一般来说文件夹的路径可能会包含空格，所以最好用双引号包裹路径：
+mysqldump -u root -p123456 mydb student > "D:\My Backup Files\student.sql"
 ```
 
 ![](.\images\Snipaste_2026-07-30_20-47-18.png)
@@ -175,7 +178,7 @@ alter table teacher modify email varchar(100) after name;
 ###### 修改表名
 
 ```sql
-alter table 旧表名 rename 新表名;
+alter table 旧表名 rename 新表名; #注意是rename 不是rname
 -- 或者
 rename table 旧表名 to 新表名;
 
@@ -373,4 +376,28 @@ select id as 编号,name "姓 名" from teacher;
 10. XOR
 11. OR ||
 12. :=
+```
+
+##### 模糊匹配（LIKE）
+
+- `%` 代表任意个字符
+- `_` 代表1个字符，如果2个下划线就代表2个字符
+
+```sql
+use atguigu;
+
+-- 查询名字有 冰 字的
+select * from t_employee where ename like '%冰%';
+
+-- 查询名字以 雨 结尾的
+select * from t_employee where ename like '%雨';
+
+-- 查询名字以 李 开头的
+select * from t_employee where ename like '李%';
+
+-- 查询名字有 红 这个字，但是 红 的前面只能有1个字
+select * from t_employee where ename like '_红%';
+
+-- 查询当前MySQL数据库的字符集情况
+show variables like '%character%';
 ```
