@@ -45,11 +45,12 @@
 
 | 章节 | 内容 |
 |------|------|
-| day01 | DDL/DML 基础（数据库与表的创建/删除/查询、数据插入与查询）、运算符汇总、模糊匹配（`LIKE`/`%`/`_`）、数据导入导出（`source`/`mysqldump`）、Navicat 可视化操作、MySQL 密码重置 |
+| day01 | DDL/DML 基础（数据库与表的创建/删除/查询、数据插入与查询）、运算符汇总、模糊匹配（`LIKE`/`%`/`_`）、数据类型（数值/字符串/日期/枚举集合）、系统预定义函数（分组/字符串/日期/数值/条件判断/窗口函数）、数据导入导出（`source`/`mysqldump`）、Navicat 可视化操作、MySQL 密码重置 |
+| day04 | Python 连接数据库：pymysql 操作 MySQL（查询/插入/修改/删除）、Python 连接 Redis、Impala 连接 Hive |
 
 - 课程资料：《尚硅谷大模型技术之MySQL1.0》（PDF/DOCX）
 - 配套数据：`演示数据.sql`、`练习数据.sql`
-- 实操练习：`题目/` 目录含 day01 全量练习与 LIKE 模糊匹配专项（均带答案版）
+- 实操练习：`题目/` 目录含 day01 全量练习、LIKE 模糊匹配专项、综合进阶练习（数据类型/函数/窗口函数/关联查询/子查询），均带答案版
 
 ### 3. Python 学习
 
@@ -193,9 +194,10 @@ MyStudyData/
 │
 ├── 1、Mysql/                                # MySQL学习内容
 │   ├── 0、code/
-│   │   └── day01/                          # day01 SQL练习、MySQL密码重置方法
+│   │   ├── day01/                          # day01 SQL练习、MySQL密码重置方法
+│   │   └── day04/                          # Python连接MySQL/Redis/Hive（pymysql等）
 │   ├── 1、doc/
-│       ├── day01.md                        # DDL/DML基础、运算符、模糊匹配、数据导入导出、Navicat使用
+│       ├── day01.md                        # DDL/DML、运算符、模糊匹配、数据类型、系统预定义函数、导入导出、Navicat使用
 │       ├── 演示数据.sql / 练习数据.sql      # 配套练习数据
 │       ├── 尚硅谷大模型技术之MySQL1.0.docx / .pdf
 │       └── images/                         # 学习截图
@@ -203,7 +205,9 @@ MyStudyData/
 │       ├── day01-实操练习题.md                  # day01 全量练习
 │       ├── day01-实操练习题-答案.md               # 对应答案
 │       ├── day01-模糊匹配练习题.md                # LIKE 模糊匹配专项
-│       └── day01-模糊匹配练习题-答案.md             # 对应答案
+│       ├── day01-模糊匹配练习题-答案.md             # 对应答案
+│       ├── 综合进阶练习题.md                  # 数据类型/函数/窗口函数/关联查询/子查询
+│       └── 综合进阶练习题-答案.md               # 对应答案
 │
 ├── 2、pythonStudy/                          # Python学习内容
 │   ├── 0.code/                             # Python代码示例
