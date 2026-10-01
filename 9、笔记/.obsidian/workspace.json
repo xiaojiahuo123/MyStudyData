@@ -115,7 +115,7 @@
               "state": {
                 "file": "积累.md",
                 "followCursor": false,
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
@@ -188,7 +188,7 @@
       "bases:新建数据库": false
     }
   },
-  "active": "7c0e91a0458dee64",
+  "active": "17b0d485f767c0d6",
   "lastOpenFiles": [
     "%SystemDrive%/ProgramData/Microsoft/Windows/Caches/{DDF571F2-BE98-426D-8288-1A9A39C3FDA2}.2.ver0x0000000000000001.db",
     "%SystemDrive%/ProgramData/Microsoft/Windows/Caches/{6AF0698E-D558-4F6E-9B3C-3716689AF493}.2.ver0x0000000000000001.db",
