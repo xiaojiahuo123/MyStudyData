@@ -1,0 +1,5 @@
+rapidocr=False
+paddleocr=False
+easyocr=False
+PIL=True
+img=True

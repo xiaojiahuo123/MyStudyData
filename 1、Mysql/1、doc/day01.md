@@ -1914,7 +1914,7 @@ limit 0,2;
 
 子查询：嵌套在另一个SQL语句中的查询。
 
-select语句可以嵌套在另一个select、update、delete、insert、create等语句中。根据子查询嵌入的位置，分为以下几种情况。
+select语句可以嵌套在另一个select、update、delete、insert、create等语句中。根据子查询嵌入的位置，分为以下几种情况。在使用子查询的时候需要注意，外层用到的列必须是子查询查询出来的
 
 ##### select中嵌套子查询
 
@@ -2201,4 +2201,962 @@ cte as(
 )
 select * from cte;
 ```
+
+#### MySQL约束
+
+##### 约束的作用
+
+约束是为了保证数据的完整性。数据完整性（Data Integrity）是指数据的精确性（Accuracy）和可靠性（Reliability）。它是应防止数据库中存在不符合语义规定的数据和防止因错误信息的输入输出造成无效操作或错误信息而提出的。
+
+数据的完整性要从以下四个方面考虑：
+
+- 实体完整性（Entity Integrity）：例如，同一个表中，不能存在两条完全相同无法区分的记录
+- 域完整性（Domain Integrity）：例如，年龄范围0-120，性别范围"男/女"
+- 引用完整性（Referential Integrity）：例如，员工所在部门，在部门表中要能找到这个部门
+- 用户自定义完整性（User-defined Integrity）：例如，用户名唯一、密码不能为空等，本部门经理的工资不得高于本部门职工的平均工资的5倍
+
+可以在创建表时规定约束（通过create table语句），或者在表创建之后也可以添加约束（通过alter table语句）。
+
+##### 约束的类型
+
+- 键约束：主键约束、外键约束、唯一键约束
+- Not NULL约束：非空约束
+- Check约束：检查约束
+- Default约束：默认值约束
+- 自增是键约束字段的一个额外的属性
+
+##### 表级约束和列级约束
+
+- **表级约束**：不仅要看约束字段当前单元格的数据，还要看其他单元格的数据。键约束和检查约束是表级约束。
+- **列级约束**：约束字段只看当前单元格的数据即可，和其他单元格无关。非空约束和默认值约束是列级约束。
+
+所有的表级约束都可以在"information_schema.table_constraints"表中查看。
+
+```sql
+select * from information_schema.table_constraints where table_name = '表名';
+```
+
+##### 约束和索引
+
+在MySQL中键约束会自动创建索引，提高查询效率。
+
+约束和索引不同：
+
+- 约束是一个逻辑概念，不会占用物理空间
+- 索引是一个物理概念，会占用物理空间
+
+例如，字典里面有要求，不能有重复的字（字一样，读音也一样），这是约束。字典里面有"目录"，它可以快速的查找某个字，目录需要占用单独的页，这是索引。
+
+##### 非空约束
+
+`not null`：限定某个字段/某列的值不允许为空。
+
+- 只能某个列单独限定非空，不能组合非空
+- 一个表可以有很多列都分别限定了非空
+
+###### 指定非空约束：
+
+```sql
+-- 建表时
+create table 表名(
+    字段名 数据类型 not null,
+    字段名 数据类型 not null
+);
+
+-- 建表后
+alter table 表名 modify 字段名 数据类型 not null;
+-- 如果该字段已经有值了，给该字段增加非空约束，要求该字段的值不能有NULL值
+-- 否则需要先处理NULL值才能加上非空约束
+```
+
+###### 删除非空约束：
+
+```sql
+alter table 表名 modify 字段名 数据类型;
+-- 如果使用modify修改有非空约束的字段时想要保留非空约束，必须带上not null
+-- 否则会在修改时，把非空约束丢掉
+```
+
+###### 示例：
+
+```sql
+create table not_null_demo(
+    id int not null,
+    name varchar(20) not null,
+    birthday date
+);
+insert into not_null_demo values(null,null,null);
+insert into not_null_demo(id) values(1);
+-- 此时name设定了非空约束，但没有指定默认值
+-- 如果没赋值只能处理为NULL，违反了非空约束
+-- 在insert添加记录时，必须给所有没有指定默认值的非空约束字段赋值
+insert into not_null_demo(id,name) values(1,'张三');
+insert into not_null_demo(id,name,birthday) values(2,'李四','2000-1-1');
+insert into not_null_demo values(3,'王五','2000-2-1');
+insert into not_null_demo values(4,'赵六',null);
+-- 给birthday字段添加非空约束
+alter table not_null_demo modify column birthday date not null;
+-- 失败的原因是因为birthday字段现在有NULL值，添加不上非空约束
+-- 如果要加，必须先将原来的NULL值修改掉
+update not_null_demo set birthday = '2000-5-1' where birthday is null;
+alter table not_null_demo modify column birthday date not null;
+desc not_null_demo;
+-- 删除birthday字段的非空约束
+alter table not_null_demo modify column birthday date;
+desc not_null_demo;
+-- 修改name字段的数据类型为varchar(30)，本来想要保留非空约束的
+alter table not_null_demo modify column name varchar(30);
+desc not_null_demo;
+-- alter没有加not null，会把name字段的非空约束给丢掉
+```
+
+##### 唯一键约束
+
+`unique key`：用来限制某列的值或几个字段的值组合不能重复。
+
+- 一个表可以有很多个唯一键约束
+- 每一个唯一键约束字段都会自动创建索引
+- 唯一键约束允许为空（NULL可以重复）
+- 唯一键约束也可以是复合唯一
+- 删除唯一键约束的索引来删除唯一键约束，索引名默认是字段名，复合唯一默认是第一个字段名
+
+###### 指定唯一键约束：
+
+```sql
+-- 建表时
+create table 表名(
+    字段名 数据类型 unique key,
+    字段名 数据类型 unique key
+);
+-- 或
+create table 表名(
+    字段名1 数据类型,
+    字段名2 数据类型,
+    unique key(字段名1),
+    unique key(字段名2)
+);
+
+-- 建表后
+alter table 表名 add unique (字段名);
+```
+
+###### 复合唯一：
+
+```sql
+-- 多个字段的组合是唯一
+create table 表名(
+    字段名1 数据类型,
+    字段名2 数据类型,  
+    字段名3 数据类型,
+    unique key(字段名1,字段名2,字段名3)
+);
+```
+
+###### 查看唯一键约束：
+
+```sql
+desc 表名;
+show create table 表名;
+show index from 表名; -- 查看表的索引信息
+select * from information_schema.table_constraints where table_name = '表名';
+```
+
+###### 删除唯一键约束：
+
+```sql
+-- 删除唯一键约束需要手动删除对应的索引
+alter table 表名 drop index 索引名;
+```
+
+###### 示例：
+
+```sql
+-- 建表，限定编号、身份证号码和手机号码唯一
+drop table if exists emp;
+create table emp(
+    id int unique key, -- 表示id字段值不能重复
+    name varchar(20),
+    cardid char(18),
+    tel char(11),
+    unique key(cardid), -- 表示cardid字段值不能重复
+    unique key(tel) -- 表示tel字段值不能重复
+);
+desc emp;
+show create table emp;
+-- 添加数据
+insert into emp values(1,'张三','25678544522222','13589587585');
+insert into emp values(2,'张三','25678544522211','13589587596');
+select * from emp;
+insert into emp values(3,'李四','25678544522233','13589587596');
+-- 手机号码重复，报错
+insert into emp values
+(3,'李四',null,null),
+(4,'王五',null,null);
+-- NULL可以重复
+select * from emp;
+-- 查看emp表的索引
+show index from emp;
+-- 删除唯一键约束
+-- 如果在指定唯一键约束时，没有手动定义名字，默认就是字段名
+-- 建议在删除时用show index语句查看一下索引名
+-- 删除emp表的cardid的唯一键约束
+alter table emp drop index cardid;
+show index from emp;
+desc emp;
+-- 建表后给emp表的cardid增加唯一键约束
+alter table emp add unique key(cardid);
+desc emp;
+show index from emp;
+
+-- 复合唯一，表示两个或更多个字段值的组合唯一，单个字段看不唯一
+-- 学生表
+drop table if exists stu;
+create table stu(
+    id int,
+    name varchar(20)
+);
+insert into stu values(1,'张三'),(2,'李四');
+select * from stu;
+-- 课程表
+drop table if exists course;
+create table course(
+    id int,
+    title varchar(50)
+);
+insert into course values(1,'python'),(2,'mysql');
+select * from course;
+-- 选课表
+drop table if exists course;
+create table xuanke(
+    xid int unique key, -- xid不能重复
+    sid int,
+    cid int,
+    score int,
+    unique key(sid,cid)
+    -- 这么写表示sid和cid的组合不能重复
+    -- 单独看sid和cid是可以重复的
+);
+insert into xuanke values
+(1,1,1,89),
+(2,1,2,96),
+(3,2,1,75),
+(4,2,2,96);
+select * from xuanke;
+insert into xuanke values(5,1,1,100); -- sid为1和cid为1组合重复
+desc xuanke;
+show index from xuanke;
+-- 组合唯一键索引名默认是unique key(字段1,字段2)的第一个字段名
+-- 删除复合唯一键约束
+alter table xuanke drop index sid;
+desc xuanke;
+show index from xuanke;
+```
+
+##### 主键约束
+
+`primary key`：用来唯一的确定一条记录。
+
+- 唯一并且非空
+- 一个表最多只能有一个主键约束
+- 如果主键是由多列组成，可以使用复合主键
+- 主键列会自动创建索引（能够根据主键查询的，就根据主键查询，效率更高），mysql会给每个表的主键列创建索引，会开辟单独的物理空间来存储每一个主键的目录表（Btree结构）。这样可以根据主键快速查询到某一行的记录
+- 如果删除主键约束了，主键约束对应的索引就自动删除了
+
+唯一键约束和主键约束区别：
+
+- 唯一键约束一个表可以有好几个，但是主键约束只有一个。
+- 唯一键约束本身不带非空限制，如果需要非空，需要单独定义。主键约束不用再定义not null，自身就带非空限制。
+
+###### 指定主键约束：
+
+```sql
+-- 建表时
+create table 表名(
+    字段名 数据类型 primary key,
+    字段名 数据类型
+); 
+-- 或
+create table 表名(
+    字段名1 数据类型,
+    字段名2 数据类型,  
+    primary key(字段名1)
+);
+
+-- 建表后
+alter table 表名 add primary key(字段列表);
+-- 字段列表可以是一个字段，也可以是多个字段，如果是多个字段的话，是复合主键
+```
+
+###### 复合主键：
+
+```sql
+create table 表名(
+    字段名1 数据类型,
+    字段名2 数据类型,  
+    字段名3 数据类型,
+    primary key(字段名1,字段名2)
+);
+```
+
+###### 删除主键约束：
+
+```sql
+alter table 表名 drop primary key;
+```
+
+###### 示例：
+
+```sql
+drop database if exists atguigu;
+create database atguigu;
+use atguigu;
+-- 创建员工表
+create table emp(
+    id int primary key, -- 主键
+    ename varchar(20) not null, -- 非空
+    cardid char(18) unique key not null, -- 非空且唯一
+    tel char(11) unique key, -- 唯一
+    address varchar(100)
+);
+desc emp;
+insert into emp values
+(1,'张三','524265198235684255','18536955456',null),
+(2,'李四','524265198235685255',null,null),
+(3,'李四','524265198235685895',null,null);
+select * from emp;
+insert into emp values(3,'王五','524265198235675895',null,null); -- 主键重复
+insert into emp values(null,'王五','524265198235675775',null,null); -- 主键为null
+-- 创建一个表，两个字段设置主键，报错
+create table xuanke(
+    sid int primary key,
+    cid int primary key,
+    score int
+);
+
+-- 复合主键约束
+-- 学生表
+create table stu(
+    id int,
+    name varchar(20)
+);
+insert into stu values(1,'张三'),(2,'李四');
+select * from stu;
+-- 课程表
+create table course(
+    id int,
+    title varchar(50)
+);
+insert into course values(1,'python'),(2,'mysql');
+select * from course;
+-- 选课表
+create table xuanke(
+    sid int,
+    cid int,
+    score int,
+    primary key(sid,cid) -- 复合主键
+);
+insert into xuanke values(1,1,96),(2,1,85),(1,2,75),(2,2,45);
+insert into xuanke values(1,1,75);
+-- 报错，重复主键
+-- 查看emp表和xuanke表的索引
+show index from emp;
+show index from xuanke;
+-- 删除xuanke表的主键约束
+alter table xuanke drop primary key;
+show index from xuanke;
+desc xuanke;
+-- 删除主键约束时，对应的索引、键约束删除了，但是主键约束自带的非空约束没有删除
+-- 如果要去掉的话，需要用删除非空约束的方式，单独删除
+-- 建表后增加主键约束
+alter table xuanke add primary key(sid,cid);
+desc xuanke;
+-- 删除emp的主键约束
+alter table emp drop primary key;
+desc emp;
+-- 自动把cardid识别为主键，因为cardid定义了唯一键+非空约束，但是不同于真正的主键
+show index from emp;
+-- 给emp表的id字段增加主键约束
+alter table emp add primary key(id);
+show index from emp;
+```
+
+##### 自增约束
+
+`auto_increment`：给某个字段自动赋值，这个值如无干扰每次+1。
+
+- 一个表只能有一个自增字段，因为一个表只有一个AUTO_INCREMENT属性记录自增字段值
+- 自增字段只能是**key字段，即定义了主键、唯一键等键约束**的字段
+- 自增字段应该是数值类型，一般都是整数类型
+- 如果自增列指定了0和null，会在当前最大值的基础上自增，如果自增列手动指定了具体值，直接赋值为具体值
+- 如果手动修改AUTO_INCREMENT属性值，必须 > 当前自增字段的最大值
+
+###### 指定自增约束：
+
+```sql
+-- 建表时
+create table 表名(
+    字段名 数据类型 primary key auto_increment,
+    字段名 数据类型 unique key not null
+);
+
+-- 建表后
+alter table 表名 modify 字段名 数据类型 auto_increment;
+```
+
+###### 删除自增约束：
+
+```sql
+alter table 表名 modify 字段名 数据类型;
+-- 去掉auto_increment相当于删除
+```
+
+###### 示例：
+
+```sql
+drop table if exists emp;
+create table emp(
+    eid int auto_increment,
+    ename varchar(20)
+);
+-- 报错，只能有一个自增字段且需为key字段
+create table emp(
+    eid int primary key auto_increment,
+    ename varchar(20)
+);
+insert into emp(ename) values('李四'); -- 不给自增字段指定值，也是自增
+insert into emp values(null,'张三'); -- 给自增字段赋值NULL，也是自增
+insert into emp values(0,'王五');  -- 给自增字段赋值0，也是自增
+select * from emp;
+insert into emp values(-5,'王五');
+insert into emp values(15,'田七');
+select * from emp;
+-- 当手动给自增字段赋值时
+-- 如果这个值大于当前 AUTO_INCREMENT 属性记录的自增值时
+-- 会修改 AUTO_INCREMENT 属性值
+-- 下次就从这个值基础上自增
+-- 建议不要随意修改 AUTO_INCREMENT 的值，让他自动维护
+insert into emp values(7, '周八');
+select * from emp;
+-- 修改emp表 AUTO_INCREMENT 值为8
+alter table emp AUTO_INCREMENT = 8;
+show create table emp;
+-- AUTO_INCREMENT值都不能修改为<当前自增字段最大的值
+-- 删除eid字段的自增属性
+alter table emp modify column eid int;
+desc emp;
+-- modify会影响列级约束，默认值、非空等约束
+-- 表级约束（主键、唯一键）不受影响
+-- 给eid字段的添加自增属性
+alter table emp modify column eid int auto_increment;
+desc emp;
+```
+
+##### 默认值约束
+
+`default`：给某个字段/某列指定默认值，当添加时或修改时，可以使用默认值。
+
+###### 指定默认值约束：
+
+```sql
+-- 建表时
+create table 表名(
+    字段名 数据类型 primary key,
+    字段名 数据类型 unique key not null,
+    字段名 数据类型 unique key,
+    字段名 数据类型 not null default 默认值
+);
+-- 默认值约束一般不在唯一键和主键列上加
+
+-- 建表后
+alter table 表名 modify 字段名 数据类型 default 默认值;
+```
+
+###### 删除默认值约束：
+
+```sql
+alter table 表名 modify 字段名 数据类型;
+-- 如果使用modify修改有默认值约束的字段时想要保留默认值约束，必须带上default 默认值
+-- 否则会在修改时，把默认值约束丢掉
+```
+
+###### 示例：
+
+```sql
+drop table if exists emp;
+create table emp(
+    eid int primary key,
+    ename varchar(20) not null,
+    gender enum('男','女') default '男' not null, -- 非空并且有默认值
+    address varchar(100) default '不详' -- 可以指定为null
+);
+insert into emp values(1,'张三'); -- 错误，值的数量和字段的数量不匹配
+insert into emp(eid,ename) values(1,'张三');
+insert into emp values(2,'李四',default,default);
+insert into emp values(3,'王五',default,null);
+select * from emp;
+-- 删除emp表的address的默认值约束
+alter table emp modify column address varchar(100);
+desc emp;
+-- 给emp表address增加 不详 默认值
+alter table emp modify column address varchar(100) default '不详';
+desc emp;
+```
+
+##### 检查约束
+
+`check`：检查约束用于限制字段中的值的范围。如果对单个字段定义检查约束，那么该字段只允许特定范围的值。如果对一个表定义检查约束，那么此约束会基于行中其他字段的值在特定的字段中对值进行限制。
+
+- 在MySQL 8.0.16版本之前，create table语句支持给单个字段定义检查约束的语法，但是不起作用。
+- 在MySQL 8.0.16版本之后，create table语句既支持给单个字段定义列级检查约束，也支持定义表级检查约束。
+
+###### 指定检查约束：
+
+```sql
+-- 建表时
+create table 表名(
+    字段名 数据类型 check(条件), -- 在字段后面直接加检查约束
+    字段名 数据类型,
+    字段名 数据类型,
+    check (条件) enforced -- 可以限定两个字段之间的取值条件
+);
+-- 如果省略或指定为enforced，则会强制执行约束，不满足约束的数据行不能插入成功
+-- 如果写not enforced，则不满足检查约束也没关系
+
+-- 建表后
+alter table 表名 add check(条件);
+```
+
+###### 删除检查约束：
+
+```sql
+alter table 表名 drop check 检查约束名;
+```
+
+###### 示例：
+
+```sql
+drop table if exists emp;
+create table emp(
+    id int primary key auto_increment,
+    name varchar(20) not null,
+    age int check(age>=18), -- 年龄>=18岁
+    birthday date not null, -- 出生日期
+    hiredate date not null, -- 入职日期
+    check(year(hiredate)-year(birthday)>=18) -- 入职时>=18岁
+);
+insert into emp values(null,'张三',23,'2000-1-1','2021-11-30');
+select * from emp;
+insert into emp values(null,'张三',8,'2013-1-1','2021-11-30'); -- 不满足条件
+insert into emp values(null,'张三',28,'2013-1-1','2021-11-30'); -- 不满足条件
+desc emp;
+show create table emp;
+-- 查看emp表的约束
+select * from information_schema.table_constraints where table_name = 'emp';
+-- 只能看到主键、唯一键、外键、检查约束
+-- 默认值、非空约束这里看不到
+-- 删除emp表的age字段的检查约束 emp_chk_1 
+-- 删除emp表的hiredate和birthday字段的检查约束 emp_chk_2
+alter table emp drop check emp_chk_1;
+alter table emp drop check emp_chk_2;
+show create table emp;
+-- 使用modify给age字段添加检查约束age>=18，不起作用
+alter table emp modify age int check(age>=18); -- 语法没问题，但是没有真正起作用
+insert into emp values(null,'李四',6,'1998-5-1','2021-1-2'); -- 添加成功，说明检查约束没有起作用
+-- 使用add check给age字段添加检查约束age>=18
+alter table emp add check(age>=18);
+-- 因为表中有违反(age>=18)的数据，必须先处理
+select * from emp;
+update emp set age = 26 where age<18;
+-- 使用add check给age字段添加检查约束age>=18
+alter table emp add check(age>=18);
+insert into emp values(null,'李四',6,'1998-5-1','2021-1-2');
+```
+
+##### 外键约束
+
+`foreign key`：限**定某个表的某个字段的引用完整性，比如：员工表的员工所在部门的选择，必须在部门表能找到对应的部分。**
+
+外键约束会影响性能，效率，所以很多人不愿意加外键约束。
+
+建和不建外键约束有什么区别：
+
+- 建外键约束，操作（创建表、删除表、添加、修改、删除）会受到限制，从语法层面受到限制。例如在员工表中不可能添加一个员工信息，它的部门的值在部门表中找不到。
+- 不建外键约束，操作（创建表、删除表、添加、修改、删除）不受限制，要保证数据的引用完整性，只能依靠程序员的自觉，或者是在程序中进行限定。例如在员工表中，可以添加一个员工的信息，它的部门指定为一个完全不存在的部门。
+
+主表和从表/父表和子表：
+
+- 主表（父表）：被引用的表，被参考的表
+- 从表（子表）：引用别人的表，参考别人的表
+
+例如员工表与部门表。员工表的员工所在部门这个字段的值要参考部门表，部门表是主表，员工表是从表。例如学生表、课程表、选课表。选课表的学生和课程要分别参考学生表和课程表，学生表和课程表是主表，选课表是从表。
+
+外键约束的特点：
+
+- 在从表中指定外键约束，并且一个表可以建立多个外键约束
+- 创建表时就指定外键约束的话，先创建主表，再创建从表
+- 删表时，先删从表（或先删除外键约束），再删除主表。或者先解除关系，再各自删除
+- 从表的外键列，必须引用/参考主表的键列（主键或唯一键），因为被依赖/被参考的值必须是唯一的
+- 从表的外键列的数据类型，要与主表被参考/被引用的列的数据类型一致，并且逻辑意义一致。例如都是表示部门编号，都是int类型
+- 外键列也会自动建立索引（根据外键查询效率更快）
+- **外键约束删除后索引不会自动删除，如果要删除对应的索引，必须手动删除**
+
+指定外键约束：
+
+```sql
+-- 建表时
+create table 主表(
+    字段1 数据类型 primary key,
+    字段2 数据类型
+);
+
+create table 从表(
+    字段1 数据类型 primary key,
+    字段2 数据类型,
+    foreign key (从表的某个字段) references 主表(被参考字段)
+);
+-- (从表的某个字段)的数据类型必须与主表(被参考字段)的数据类型一致，逻辑意义也一样
+-- (从表的某个字段)的字段名可以与主表(被参考字段)的字段名不同
+
+-- 建表后
+alter table 从表 add foreign key (从表的字段) references 主表(被引用字段) [on update xx] [on delete xx];
+```
+
+查看外键约束：
+
+```sql
+desc 从表; -- 可以看到外键约束，但看不到外键约束名
+show create table 从表; -- 可以看到外键约束名
+select * from information_schema.table_constraints where table_name='表名';
+-- information_schema数据库名(系统库)
+-- table_constraints表名(专门存储各个表的约束)
+```
+
+查看外键字段索引：
+
+```sql
+show index from 表名;
+```
+
+删除外键约束：
+
+```sql
+-- 先查看约束名和删除外键约束
+select * from information_schema.table_constraints where table_name='表名';
+alter table 从表 drop foreign key 外键约束名;
+-- 查看索引名和删除索引
+show index from 表名;
+alter table 从表 drop index 索引名;
+```
+
+示例：
+
+```sql
+drop table if exists dept;
+create table dept(
+    did int primary key auto_increment,
+    dname varchar(50) unique key not null
+);
+drop table if exists emp;
+create table emp(
+    id int primary key auto_increment,
+    name varchar(20) not null,
+    departmentid int,
+    -- 外键约束只能在字段列表下面单独定义，不能在字段后面直接定义
+    foreign key (departmentid) references dept(did)
+);
+desc dept;
+desc emp;
+show create table dept;
+show create table emp;
+-- 查看系统库的约束表
+select * from information_schema.table_constraints where table_name='emp';
+-- 添加父表数据，没有影响
+insert into dept values(null,'财务'),(null,'教学'),(null,'咨询'),(null,'后勤');
+select * from dept;
+-- 添加子表数据，有影响，受到约束
+insert into emp values(null,'张三',1); -- 成功
+insert into emp values(null,'李四',1); -- 成功
+insert into emp values(null,'王五',2); -- 成功
+insert into emp values(null,'赵六',6); -- 失败
+-- departmentid=6在父表dept中找不到对应部门
+select * from emp;
+-- 修改子表的外键字段的信息，有影响，受到约束
+update emp set departmentid = 3 where id=1; -- 成功
+update emp set departmentid = 6 where id=3; -- 失败
+-- departmentid=6在父表dept中找不到对应部门
+select * from emp;
+-- 修改父表的被引用字段的值，受约束
+update dept set did = 6 where did=1; -- 失败
+-- did=1的部门被子表引用
+update dept set did = 6 where did=4; -- 成功
+-- did=4的部门没有被子表引用
+select * from dept;
+-- 删除父表的记录，受约束
+delete from dept where did=6; -- 成功
+-- did=6的部门没有被子表引用
+delete from dept where did=1; -- 失败
+-- did=1的部门被子表引用
+-- 删除子表的数据，不受约束
+delete from emp where name='王五';
+select * from emp;
+-- 删除父表，受约束
+drop table dept; -- 失败
+-- 删除子表，不受约束
+drop table emp;
+
+-- 建表后添加外键约束
+create table emp(
+    id int primary key auto_increment,
+    name varchar(20) not null,
+    departmentid int
+);
+-- 给emp表(子表)增加外键约束
+alter table emp add foreign key (departmentid) references dept(did);
+-- 查看emp的约束信息
+select * from information_schema.table_constraints where table_name='emp';
+-- 键约束(主键、唯一键、外键)都会自动创建索引
+-- 查看emp表的索引
+show index from emp;
+-- 主键字段索引名是PRIMARY，删除主键时，会自动删除对应索引
+-- 唯一键字段索引名是字段名，删除唯一键时，就是通过删除对应的索引方式来删除唯一键约束
+-- 外键字段索引名是字段名，删除外键约束时，不会自动删除外键字段的索引，因为它们的命名不一样
+-- 删除emp表的departmentid字段的外键约束
+alter table emp drop foreign key emp_ibfk_1;
+show index from emp;
+-- 删除emp表的departmentid字段的索引
+alter table emp drop index departmentid;
+show index from emp;
+```
+
+设置外键约束等级：
+
+- Cascade方式：在父表上update/delete记录时，同步update/delete子表的匹配记录
+- Set null方式：在父表上update/delete记录时，将子表上匹配记录的列设为null，但是要注意子表的外键列不能为not null
+- No action方式：如果子表中有匹配的记录,则不允许对父表对应候选键进行update/delete操作
+- Restrict方式：同no action，都是立即检查外键约束
+- 如果没有指定等级，就相当于Restrict方式。
+
+```sql
+-- 创建父表
+drop table if exists dept;
+create table dept(
+    did int primary key auto_increment,
+    dname varchar(50) unique key not null
+);
+insert into dept values(null,'财务'),(null,'教学'),(null,'咨询'),(null,'后勤');
+select * from dept;
+-- 创建子表
+drop table if exists emp;
+create table emp(
+    id int primary key auto_increment,
+    name varchar(20) not null,
+    departmentid int,
+    foreign key (departmentid) references dept(did) on update cascade on delete set null
+    -- on delete set null要求departmentid字段没有not null约束
+);
+-- 添加子表记录
+insert into emp values
+(null,'张三',1),
+(null,'李四',2),
+(null,'王五',1);
+select * from emp;
+-- 修改父表被引用的did值
+update dept set did = 6 where did=1; 
+-- 此时did=1的记录被子表引用，可以修改
+-- 并且会同时修改子表的departmentid=1的字段值为6，级联修改
+select * from dept;
+select * from emp;
+-- 删除父表被引用的did的记录
+delete from dept where did=6;
+select * from dept;
+select * from emp;
+```
+
+#### 事务
+
+##### 事务的特点（ACID）
+
+事务处理：保证所有事务都作为一个工作单元来执行，即使出现了故障，都不能改变这种执行方式。当在一个事务中执行多个操作时，要么所有的事务都被提交(commit)，那么这些修改就永久地保存下来；要么数据库管理系统将放弃所作的所有修改，整个事务回滚(rollback)到最初状态。
+
+事务的 ACID 属性：
+
+| 属性 | 含义 |
+|------|------|
+| 原子性（Atomicity） | 事务是一个不可分割的工作单位，事务中的操作要么都发生，要么都不发生 |
+| 一致性（Consistency） | 事务必须使数据库从一个一致性状态变换到另外一个一致性状态 |
+| 隔离性（Isolation） | 一个事务的执行不能被其他事务干扰，并发执行的各个事务之间不能互相干扰 |
+| 持久性（Durability） | 一个事务一旦被提交，它对数据库中数据的改变就是永久性的，接下来的其他操作和数据库故障不应该对其有任何影响 |
+
+以"张三给李四转账500"为例理解 ACID（转账前张三、李四余额都是1000）：
+
+- 原子性：成功时张三账号变为500、李四变为1500；失败时张三、李四还是1000，不会出现"只扣了张三的钱、没给李四加钱"的情况
+- 一致性：要么两人余额都不变（总和2000），要么张三500、李四1500（总和还是2000）。出现"张三500、李四1000（总和1500）"就是错误结果
+- 隔离性：张三要给李四转500、王五也要给李四转500，张三转账是否成功和王五是否转账成功无关
+- 持久性：张三给李四转500，一旦成功提交就转账成功，撤不回来了
+
+##### 事务的开启、提交、回滚
+
+MySQL 默认情况下是自动提交事务。每一条语句都是一个独立的事务，一旦成功就提交了。一条语句失败，单独一条语句不生效，其他语句是生效的。
+
+###### 手动提交模式
+
+```sql
+-- 开启手动提交事务模式
+set autocommit=false;
+-- 或
+set autocommit=0;
+-- 上述语句执行之后，它之后的所有SQL，都需要手动提交才能生效，直到恢复自动提交模式
+
+-- 恢复自动提交模式
+set autocommit=true;
+-- 或
+set autocommit=1;
+
+-- 例如
+set autocommit=false; -- 设置当前连接为手动提交模式
+update t_employee set salary = 15000 where ename='孙红雷';
+commit; -- 提交
+-- 如果没有提交，直接关了连接，那么修改不会生效
+```
+
+###### 自动提交模式下开启事务
+
+```sql
+start transaction; -- 开始事务
+update t_employee set salary = 0 where ename='李冰冰';
+commit(或 rollback); -- 提交或回滚
+-- start transaction ... commit/rollback 中的语句属于手动提交模式，其他的语句仍然是自动提交模式
+```
+
+###### DDL语句不支持事务
+
+- DDL：create、drop、alter 等创建库、创建表、删除库、删除表、修改库、修改表结构等语句不支持事务
+- 只对 insert、update、delete 语句支持事务
+- truncate 不支持事务
+
+##### 事务的隔离级别
+
+数据库事务的隔离性：数据库系统必须具有隔离并发运行各个事务的能力，使它们不会相互影响，避免各种并发问题。一个事务与其他事务隔离的程度称为隔离级别。隔离级别越高，数据一致性就越好，但并发性越弱。
+
+###### 并发问题
+
+| 并发问题 | 说明 |
+|---------|------|
+| 脏读 | 一个事务读取了另一个事务未提交数据。对于两个事务T1、T2，T1 读取了已经被 T2 更新但还没有被提交的字段。之后若 T2 回滚，T1 读取的内容就是临时且无效的 |
+| 不可重复读 | 同一个事务中前后两次读取同一条记录不一样。对于两个事务T1、T2，T1 读取了一个字段，然后 T2 更新/修改了该字段并提交。之后 T1 再次读取同一个字段，值就不同了 |
+| 幻读 | 一个事务读取了另一个事务新增、删除的记录情况，记录数不一样，像是出现幻觉。对于两个事务T1、T2，T1 从一个表中读取了一个字段，然后 T2 在该表中插入/删除了一些新的行。之后如果 T1 再次读取同一个表，就会多/少几行 |
+
+###### 四种事务隔离级别
+
+| 隔离级别 | 说明 |
+|---------|------|
+| read-uncommitted（读未提交） | 允许 A 事务读取其他事务未提交和已提交的数据。会出现脏读、不可重复读、幻读问题 |
+| read-committed（读已提交） | 只允许 A 事务读取其他事务已提交的数据。可以避免脏读，但仍然会出现不可重复读、幻读问题 |
+| repeatable-read（可重复读） | 确保事务可以多次从一个字段中读取相同的值。在这个事务持续期间，禁止其他事务对这个字段进行更新。可以避免脏读和不可重复读，但是幻读问题仍然存在。注意：MySQL 中使用了 MVCC 多版本控制技术，在这个级别也可以避免幻读 |
+| serializable（串行化） | 确保事务可以从一个表中读取相同的行，相同的记录。在这个事务持续期间，禁止其他事务对该表执行插入、更新、删除操作。所有并发问题都可以避免，但性能十分低下 |
+
+> 隔离级别从低到高：read-uncommitted → read-committed → repeatable-read → serializable。级别越高一致性越好、并发性越弱。**MySQL 默认隔离级别是 repeatable-read（可重复读）**。
+
+###### 修改与查看隔离级别
+
+```sql
+-- 先更改事务隔离级别，再开启事务
+-- 修改隔离级别
+set transaction_isolation='隔离级别';
+-- 例如
+set transaction_isolation='read-committed';
+
+-- 查看隔离级别
+select @@transaction_isolation;
+```
+
+#### 用户管理
+
+##### 用户管理的目标
+
+###### 登录验证
+
+用户主机IP地址 + 用户名 + 密码三重验证。
+
+- 用户主机IP 是客户端主机的IP，而非 MySQL 服务器的IP
+- IP 地址可以是一个明确的IP（例如：192.168.1.25），可以是某个IP段（例如：192.168.1.%），可以是任意IP地址（%）
+
+例如假设 MySQL 服务器的 IP 地址是 192.168.31.152：
+
+| IP写法 | 含义 |
+|--------|------|
+| `192.168.31.%` | 192.168.31 网段内的客户端都可以连接到 192.168.31.152 机器上的 MySQL 服务 |
+| `%` | 任意一台主机的客户端都可以连接到 192.168.31.152 机器上的 MySQL 服务 |
+| `192.168.31.23` | 只能从 192.168.31.23 主机的客户端连接到 192.168.31.152 机器上的 MySQL 服务 |
+
+###### 权限管理
+
+权限从大到小分为：
+
+- 全局权限
+- 数据库权限
+- 数据表权限
+- 字段权限
+- 存储过程或函数子程序的权限
+
+对用户的操作进行逐级权限验证，如果上一级有这个权限，下一级就不再验证。
+
+##### 用户管理演示
+
+当具有权限管理的用户通过 Navicat 图形界面工具连接 MySQL 服务后，可以按照如下步骤进行用户和权限管理：
+
+1. 步骤1：用户 → 可以选择新建用户，或者对已有用户进行编辑
+2. 步骤2：如果要创建新用户，选择"新建用户"按钮，弹出新用户信息填写窗口。用户名和主机文本框必须填写，其他项可以不填写，按照默认值处理。如果密码和再一次输入密码框为空，表示密码为空。如果要设置密码必须保证密码框和再一次输入密码框输入相同字符，并在 Plugin 选择合适的插件 "caching_sha2_password" 或 "mysql_native_password"，默认是 "caching_sha2_password" 插件
+3. 步骤3：对已有的用户进行授权操作，或撤销已有用户的授权，可以在权限相关的选项卡中，对相应权限打勾或者取消打勾
+
+#### MySQL8部分新特性
+
+##### 系统表全部为InnoDB表
+
+从 MySQL8.0 开始，mysql 系统表和数据字典表使用 InnoDB 存储引擎，存储在 MySQL 数据目录下的 mysql.ibd 表空间文件中。在 MySQL5.7 之前，这些系统表使用 MyISAM 存储引擎，存储在 MySQL 数据库文件目录下各自的表空间文件中。
+
+```sql
+-- 查看系统表类型
+SELECT DISTINCT(ENGINE) FROM information_schema.tables;
+```
+
+##### 默认字符集为utf8mb4
+
+在 8.0 版本之前，MySQL 默认的字符集为 Latin1，而 8.0 版本默认字符集为 utf8mb4。
+
+- Latin1 是 ISO-8859-1 的别名，有些环境下写作 Latin-1。ISO-8859-1 编码是单字节编码，不支持中文等多字节字符，但向下兼容 ASCII
+- MySQL 中 utf8 字符集是 utf8mb3 的别称，使用三个字节编码表示一个字符，自 MySQL4.1 版本被引入，能够支持绝大多数语言的字符，但依然有些字符不能正确编码，如 emoji 表情字符等
+- 为此 MySQL5.5 引入了 utf8mb4 字符集。mb4 就是 "mostbyte4" 的意思，专门用来兼容四字节的 Unicode，utf8mb4 编码是 utf8 编码的超集，兼容 utf8，并且能存储 4 字节的表情字符
+- 如果原来某些库和表的字符集是 utf8，可以直接修改为 utf8mb4，不需要做其他转换。但是从 utf8mb4 转回 utf8 就会有问题
+
+```sql
+-- 查看 MySQL8.0 版本数据库的默认编码
+SHOW VARIABLES LIKE 'character_set_database';
+```
+
+字符集校对规则是在字符集内用于字符比较和排序的一套规则，比如有的规则区分大小写，有的则无视。校对规则特征：
+
+- 两个不同的字符集不能有相同的校对规则
+- 每个字符集有一个默认校对规则
+- 校对规则存在命名约定，以其相关的字符集名开始，中间包括一个语言名，并且以 _ci、_cs 或 _bin 结尾。其中 _ci 表示大小写不敏感、_cs 表示大小写敏感、bin 表示直接比较字符的二进制编码，即区分大小写
+
+```sql
+-- 查看 utf8mb4 字符集的部分校对规则
+SHOW COLLATION LIKE 'utf8mb4_0900%';
+```
+
+##### 用户管理（MySQL8的变化）
+
+- 在 MySQL8 之前默认的身份插件是 "mysql_native_password"，即 MySQL 用户的密码使用 PASSWORD 函数进行加密。在 MySQL 8.x 中，默认的身份认证插件是 "caching_sha2_password"，替代了之前的 "mysql_native_password"，PASSWORD 函数被弃用了
+- 从 MySQL 5.6.6 版本起，在 mysql.user 表中添加了 "password_expired" 字段，它允许设置密码是否失效。如果 "password_lifetime" 字段值不为 NULL，那么从 MySQL 服务启动时间开始，经过 "password_lifetime" 字段值的时间间隔之后，密码就过期了，即 "password_expired" 字段就为 "Y"。任何密码超期的账号想要连接服务器端进行数据库操作都必须更改密码。MySQL8.0 版本允许数据库管理员手动设置账户密码过期时间
+- 从 MySQL8.x 版本开始允许限制重复使用以前的密码
+- 在 MySQL8 之前，如果要给多个用户授予相同的角色，需要为每个用户单独授权。在 MySQL8 之后，可以为多个用户赋予统一的角色，然后给角色授权即可，角色可以看成是一些权限的集合，这样就无须为每个用户单独授权。如果角色的权限修改，将会使得该角色下的所有用户的权限都跟着修改，这就非常方便
+
+MySQL 的密码字段变化：
+
+| 版本 | mysql 系统库 user 表的密码字段名 | 说明 |
+|------|--------------------------------|------|
+| MySQL5.7 之前 | password | 无角色概念 |
+| MySQL5.7 | authentication_string | 无角色概念 |
+| MySQL8.0 | authentication_string | 新增角色概念，mysql 系统库中有 default_roles 表 |
 

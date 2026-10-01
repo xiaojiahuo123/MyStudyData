@@ -1,0 +1,918 @@
+3	DX50D-T2-150-N-S	21.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t2-150-n-s.zip
+3	DX50D-T2-150-N	21.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t2-150-n.zip
+3	DX50D-T2-100-N-S	21.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t2-100-n-s.zip
+3	DX50D-T2-100-N	21.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t2-100-n.zip
+3	DX50D-S2-075-N-S	21.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-s2-075-n-s.zip
+3	DX50D-S2-075-N	21.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-s2-075-n.zip
+3	DX50D-S2-040-N-S	20.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-s2-040-n-s.zip
+3	DX50D-S2-040-N	20.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-s2-040-n.zip
+3	DX50D-S2-020-N-S	20.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-s2-020-n-s.zip
+3	DX50D-S2-020-N	20.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-s2-020-n.zip
+2	DX50D-T3-500-N	23.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-500-n.zip
+2	和利时交流220V驱动器HES100电磁兼容性合规证书	828.5KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时交流220v驱动器hes100电磁兼容性合规证书.pdf
+2	DX50D-T3-300-N-S	21.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-300-n-s.zip
+2	DX50D-T3-300-N	21.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-300-n.zip
+2	DX50D-T3-200-N-S	21.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-200-n-s.zip
+2	DX50D-T3-200-N	21.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-200-n.zip
+2	DX50D-T3-150-N-S	21.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-150-n-s.zip
+2	DX50D-T3-150-N	21.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-150-n.zip
+2	DX50D-T3-100-N-S	21.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-100-n-s.zip
+2	DX50D-T3-100-N	21.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-100-n.zip
+4	DX50D-T3-750-E-S	19.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-750-e-s.zip
+4	DX50D-T3-750-E	19.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-750-e.zip
+4	DX50D-T3-600-E-S	19.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-600-e-s.zip
+4	DX50D-T3-600-E	19.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-600-e.zip
+4	DX50D-T3-500-E-S	19.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-500-e-s.zip
+4	DX50D-T3-500-E	19.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-500-e.zip
+4	DX50D-T3-300-E-S	17.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-300-e-s.zip
+4	DX50D-T3-300-E	17.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-300-e.zip
+4	DX50D-T3-200-E-S	17.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-200-e-s.zip
+4	DX50D-T3-200-E	17.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-200-e.zip
+1	LT-e系列分布式IO使用案例（LT-eCM01）	1.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-e系列分布式io使用案例（lt-ecm01）.pdf
+1	和利时380V低压交流单驱动器HES100电磁兼容性合规证书	178.0KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时380v低压交流单驱动器hes100电磁兼容性合规证书.pdf
+1	和利时380V低压交流单驱动器HES100电磁兼容性详细测试报告	3.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时380v低压交流单驱动器hes100电磁兼容性详细测试报告.pdf
+1	和利时交流220V驱动器HES100电磁兼容性详细测试报告	10.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时交流220v驱动器hes100电磁兼容性详细测试报告.pdf
+1	iAT_DriveX_V1.5.0_A01_V01	361.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/iat_drivex_v1.5.0_a01_v01.zip
+1	DX50D-T3-750-N-S	24.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-750-n-s.zip
+1	DX50D-T3-750-N	23.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-750-n.zip
+1	DX50D-T3-600-N-S	24.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-600-n-s.zip
+1	DX50D-T3-600-N	23.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-600-n.zip
+1	DX50D-T3-500-N-S	24.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-500-n-s.zip
+5	DX50D-T3-150-E-S	17.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-150-e-s.zip
+5	DX50D-T3-150-E	17.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-150-e.zip
+5	DX50D-T3-100-E-S	17.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-100-e-s.zip
+5	DX50D-T3-100-E	17.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-100-e.zip
+5	DX50D-T2-150-E-S	17.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t2-150-e-s.zip
+5	DX50D-T2-150-E	17.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t2-150-e.zip
+5	DX50D-T2-100-E-S	17.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t2-100-e-s.zip
+5	DX50D-T2-100-E	17.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t2-100-e.zip
+5	DX50D-S2-075-E-S	16.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-s2-075-e-s.zip
+5	DX50D-S2-075-E	16.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-s2-075-e.zip
+7	DX50D-T3-100-P	23.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-100-p.zip
+7	DX50D-T2-150-P	27.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t2-150-p.zip
+7	DX50D-T2-100-P	23.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t2-100-p.zip
+7	DX50D-S2-075-P	23.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-s2-075-p.zip
+7	DX50D-S2-040-P	22.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-s2-040-p.zip
+7	DX50D-S2-020-P	22.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-s2-020-p.zip
+7	DX30D-T2-150-E	19.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx30d-t2-150-e.zip
+7	DX30D-T2-100-E	19.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx30d-t2-100-e.zip
+7	DX30D-S2-075-E	20.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx30d-s2-075-e.zip
+7	DX30D-S2-040-E	19.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx30d-s2-040-e.zip
+8	DX30D-S2-020-E	19.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx30d-s2-020-e.zip
+8	HGE150系列精巧型变频器产品样本	4.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hge150系列精巧型变频器产品样本.pdf
+8	HGE150精巧型变频器用户手册  V1.1	17.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hge150精巧型变频器用户手册  v1.1.pdf
+8	Intelligent AutoThink V5.0.0A10_2026.07.02_ARM64	3.4GB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/intelligent autothink v5.0.0a10_2026.07.02_arm64.7z
+8	【0827】LK500系列大型冗余PLC选型手册	19.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/【0827】lk500系列大型冗余plc选型手册.pdf
+8	LT-h系列热插拔分布式IO模块手册（V1.2）	15.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-h系列热插拔分布式io模块手册（v1.2）.pdf
+8	LK500系列大型可编程逻辑控制器模块手册（V1.0）	9.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk500系列大型可编程逻辑控制器模块手册（v1.0）.pdf
+8	Intelligent AutoThink V5.0.0A10_2026.07.02_Windows(1)	1.1GB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/intelligent autothink v5.0.0a10_2026.07.02_windows(1).7z
+8	LK-CU513R-GB40050报告	1.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk-cu513r-gb40050报告.pdf
+8	LK500大型PLC+LT-h热插拔分布式IO系统国产化报告	5.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk500大型plc+lt-h热插拔分布式io系统国产化报告 .pdf
+6	DX50D-S2-040-E-S	16.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-s2-040-e-s.zip
+6	DX50D-S2-040-E	16.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-s2-040-e.zip
+6	DX50D-S2-020-E-S	16.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-s2-020-e-s.zip
+6	DX50D-S2-020-E	16.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-s2-020-e.zip
+6	DX50D-T3-750-P	27.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-750-p.zip
+6	DX50D-T3-600-P	27.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-600-p.zip
+6	DX50D-T3-500-P	27.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-500-p.zip
+6	DX50D-T3-300-P	27.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-300-p.zip
+6	DX50D-T3-200-P	27.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-200-p.zip
+6	DX50D-T3-150-P	23.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-t3-150-p.zip
+9	LK500 EMC CNAS报告HHX-BG20260501	2.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk500 emc cnas报告hhx-bg20260501.pdf
+9	LK500 EMC CNAS报告（暗室试验）YLCLAB250310-013	6.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk500 emc cnas报告（暗室试验）ylclab250310-013.pdf
+9	LK500 CE LVD证书	77.6KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk500 ce lvd证书.pdf
+9	LK500 CE LVD报告26050922417SAF-1	5.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk500 ce lvd报告26050922417saf-1.pdf
+9	LK500 CE LVD报告	21.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk500 ce lvd报告.pdf
+9	IAT_麒麟认证	386.5KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/iat_麒麟认证.pdf
+9	E000959_LK500_Hollysys_EMC Type 证书	84.4KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/e000959_lk500_hollysys_emc type 证书.pdf
+9	E000959_LK500_Hollysys EMC Report 报告	18.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/e000959_lk500_hollysys emc report 报告.pdf
+9	E000932_LK500_Hollysys_EMC Type 证书	84.8KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/e000932_lk500_hollysys_emc type 证书.pdf
+9	E000932_LK500_Hollysys EMC Report 报告	25.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/e000932_lk500_hollysys emc report 报告.pdf
+10	LT-hSSI001、LT-hFI001、LT-hPO001	95.8KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-hssi001、lt-hfi001、lt-hpo001.dwg
+10	LT-hDI101、LT-hDI102、LT-hDI103、LT-hDO101、LT-hDO102、LT-hDO103	208.1KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-hdi101、lt-hdi102、lt-hdi103、lt-hdo101、lt-hdo102、lt-hdo103.dwg
+10	LT-hAO101	48.5KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-hao101.dwg
+10	LT-hAI101、LT-hAI110、LT-hRTD101	96.9KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-hai101、lt-hai110、lt-hrtd101.dwg
+10	Intelligent AutoThink V5.0.0A10_2026.07.02_Windows	1.1GB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/intelligent autothink v5.0.0a10_2026.07.02_windows.7z
+10	Intelligent AutoThink使用指南-2026.7.2	26.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/intelligent autothink使用指南-2026.7.2.pdf
+10	Intelligent AutoThink指令手册-2026.7.2	24.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/intelligent autothink指令手册-2026.7.2.pdf
+10	LE系列——中国船级社欧盟互认型式认可证书	521.5KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/le系列——中国船级社欧盟互认型式认可证书.pdf
+10	FA-AutoThinkV3.2.3	569.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/fa-autothinkv3.2.3.7z
+10	LX-CU155 3D图纸	46.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cu155 3d图纸.stp
+11	LX-CU155 2D图纸	7.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cu155 2d图纸.dwg
+11	LT-eIO12 3D图纸	14.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-eio12 3d图纸.stp
+11	LT-eIO12 2D图纸	10.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-eio12 2d图纸.dwg
+11	LT-eIO11 3D图纸	14.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-eio11 3d图纸.stp
+11	LT-eIO11 2D图纸	7.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-eio11 2d图纸.dwg
+11	LT-eIO02 3D图纸	13.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-eio02 3d图纸.stp
+11	LT-eIO02 2D图纸	9.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-eio02 2d图纸.dwg
+11	LT-eIO01 3D图纸	13.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-eio01 3d图纸.stp
+11	LT-eIO01 2D图纸	6.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-eio01 2d图纸.dwg
+11	HLS.GM232-ISW4-HV-28L-C	23.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.gm232-isw4-hv-28l-c.edz
+12	HLS.GM111-ISW2-D3-10L-C	13.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.gm111-isw2-d3-10l-c.edz
+12	HLS.GM101-PW-D1-8L-C	7.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.gm101-pw-d1-8l-c.edz
+12	HLS.GM101-ISW2-D1-10L-C	9.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.gm101-isw2-d1-10l-c.edz
+12	HLS.GM100-PW-D1-5L-C	6.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.gm100-pw-d1-5l-c.edz
+12	HLS.GM211-ISW4-RHV-28L-A	8.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.gm211-isw4-rhv-28l-a.edz
+12	HLS.GM111-ISW4-D3-20L-A	6.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.gm111-isw4-d3-20l-a.edz
+12	HLS.GM111-ISP4-DP-12L-A	15.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.gm111-isp4-dp-12l-a.edz
+12	HLS.GM110-ISW2-D1-8L-A	10.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.gm110-isw2-d1-8l-a.edz
+12	HLS.GM101-ISW2-D3-18L-A	5.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.gm101-isw2-d3-18l-a.edz
+14	和利时HIG-513U1系列通讯管理机（1U）说明书	1.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时hig-513u1系列通讯管理机（1u）说明书.pdf
+14	和利时HIG-151R系列通讯管理机说明书	1.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时hig-151r系列通讯管理机说明书.pdf
+14	HIG系列通讯管理机选型样本	637.2KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hig系列通讯管理机选型样本.pdf
+14	IP67现场型总线系统选型手册	1.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/ip67现场型总线系统选型手册.pdf
+14	LXS版本清单 FSP_2730_02_25_RL_2025_10_27	319.1KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lxs版本清单 fsp_2730_02_25_rl_2025_10_27.pdf
+14	配置小工具RfidController	8.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/配置小工具rfidcontroller.zip
+14	与欧姆龙通讯DEMO程序	19.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/与欧姆龙通讯demo程序.zip
+14	与倍福通讯DEMO程序	1.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/与倍福通讯demo程序.zip
+14	与西门子通讯DEMO程序	8.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/与西门子通讯demo程序.zip
+14	与和利时通讯DEMO程序	10.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/与和利时通讯demo程序.zip
+13	HLS.GM100-PW-D2C-16L-A	4.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.gm100-pw-d2c-16l-a.edz
+13	HLS.GM010-PW-8L-A	6.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.gm010-pw-8l-a.edz
+13	和利时DX30系列伺服应用手册-脉冲型 V1.1	15.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时dx30系列伺服应用手册-脉冲型 v1.1.pdf
+13	DX30D基础型EtherCAT伺服-CE（T2）证书	159.1KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx30d基础型ethercat伺服-ce（t2）证书.pdf
+13	DX30D基础型EtherCAT伺服-CE（S2）证书	168.0KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx30d基础型ethercat伺服-ce（s2）证书.pdf
+13	LX紧凑型PLC——分散式	219.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx紧凑型plc——分散式.zip
+13	LX紧凑型PLC——集中式(1)	220.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx紧凑型plc——集中式(1).zip
+13	HollyView7.5英文帮助文档	23.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollyview7.5英文帮助文档.pdf
+13	读写器读距表	197.1KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/读写器读距表.pdf
+13	HIG_Setup_20250902	21.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hig_setup_20250902.exe
+16	RFID读写功能块通讯应用手册（UQ215）	3.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/rfid读写功能块通讯应用手册（uq215）.pdf
+16	HSR-UQ215系列读写器技术手册	2.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hsr-uq215系列读写器技术手册.pdf
+16	HSR-UQ100读写器技术手册	1.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hsr-uq100读写器技术手册.pdf
+16	HSR-H系列读写器技术手册	2.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hsr-h系列读写器技术手册.pdf
+16	HSR-Hx-IOL系列读写器技术手册	2.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hsr-hx-iol系列读写器技术手册.pdf
+16	HSR67-4RF系列总线模块技术手册	1.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hsr67-4rf系列总线模块技术手册.pdf
+16	和利时RFID选型手册	4.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时rfid选型手册.pdf
+16	【证书】Intelligent AutoThink软件V5.0适配银河麒麟V10证书	386.5KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/【证书】intelligent autothink软件v5.0适配银河麒麟v10证书.pdf
+16	LX Series Compact PLC Module Manual (V1.2)	8.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx series compact plc module manual (v1.2).pdf
+16	20250508S-015	387.4KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/20250508s-015.pdf
+15	与汇川通讯DEMO程序	7.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/与汇川通讯demo程序.zip
+15	HollySys HSR-UQ215-ECT_20250826	7.3KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollysys hsr-uq215-ect_20250826.xml
+15	HollySys HSR-UQ215-EIP_V1.1	21.0KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollysys hsr-uq215-eip_v1.1.eds
+15	GSDML-V2.32-HSR-UQ215-PN-20250826	40.2KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/gsdml-v2.32-hsr-uq215-pn-20250826.xml
+15	HollySys HSR67-ECT-4RF_V1.0	9.3KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollysys hsr67-ect-4rf_v1.0.xml
+15	HollySys HSR67-EIP-4RF_V1.0	20.3KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollysys hsr67-eip-4rf_v1.0.eds
+15	GSDML-V2.32-HollySys-HSR67-PN-4RF-20220719	59.6KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/gsdml-v2.32-hollysys-hsr67-pn-4rf-20220719.xml
+15	URFID_FB	226.7KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/urfid_fb.hlf
+15	RFID_FB	460.6KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/rfid_fb.hlf
+15	RFID读写功能块通讯应用手册	2.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/rfid读写功能块通讯应用手册.pdf
+17	20250508S-014	425.9KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/20250508s-014.pdf
+17	20250508S-013	417.6KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/20250508s-013.pdf
+17	HollyControl 4.0与飞腾适配证书	96.4KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollycontrol 4.0与飞腾适配证书.pdf
+17	DX30DE_Servo_V101	15.0KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx30de_servo_v101.zip
+17	LT-e系列IO-CE-LVD 证书	318.5KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-e系列io-ce-lvd 证书.pdf
+17	LT-e系列IO-CE-EMC 证书	319.5KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-e系列io-ce-emc 证书.pdf
+17	LT-e系列IO-CE-LVD 报告	3.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-e系列io-ce-lvd 报告.pdf
+17	LT-e系列IO-CE-EMC 报告	6.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-e系列io-ce-emc 报告.pdf
+17	HollyControl2.0升级包20260126	41.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollycontrol2.0升级包20260126.zip
+17	DXM-A1系列电机3D模型(3)	164.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dxm-a1系列电机3d模型(3).zip
+18	DBM系列电机PDF文档图纸	6.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dbm系列电机pdf文档图纸.zip
+18	DBM系列电机CAD版图纸	2.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dbm系列电机cad版图纸.zip
+18	DBM系列电机3D图纸	58.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dbm系列电机3d图纸.zip
+18	FA-AutoThinkV3.1.12B1SP2	418.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/fa-autothinkv3.1.12b1sp2.zip
+18	LX紧凑型PLC-CE-LVD 证书	317.1KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx紧凑型plc-ce-lvd 证书.pdf
+18	LX紧凑型PLC-CE-LVD 报告	2.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx紧凑型plc-ce-lvd 报告.pdf
+18	LX紧凑型PLC-CE-EMC 证书	332.6KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx紧凑型plc-ce-emc 证书.pdf
+18	LX紧凑型PLC-CE-EMC 报告	10.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx紧凑型plc-ce-emc 报告.pdf
+18	和利时安隔系列产品综合样本	9.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时安隔系列产品综合样本.pdf
+20	DX30系列综合型录v5.2	7.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx30系列综合型录v5.2.pdf
+20	LT-eDO12   3D图纸	14.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-edo12   3d图纸.stp
+20	LT-eDO12   2D图纸	4.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-edo12   2d图纸.dwg
+20	LT-eDO11  3D图纸	19.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-edo11  3d图纸.stp
+20	LT-eDO11   2图纸	4.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-edo11   2图纸.dwg
+20	LT-eDI12   3D图纸	19.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-edi12   3d图纸.stp
+20	LT-eDI12   2D图纸	4.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-edi12   2d图纸.dwg
+20	LT-eDI11   3图纸	19.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-edi11   3图纸.stp
+20	LT-eDI11   2图纸	4.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-edi11   2图纸.dwg
+20	LT-eCM01   3D图纸	8.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-ecm01   3d图纸.stp
+19	和利时安隔系列产品综合样本	9.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时安隔系列产品综合样本.pdf
+19	DX30系列EtherCAT驱动器PDF格式图纸	4.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx30系列ethercat驱动器pdf格式图纸.zip
+19	DX30系列EtherCAT驱动器CAD格式图纸	4.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx30系列ethercat驱动器cad格式图纸.zip
+19	DX30系列EtherCAT标准款驱动器3D模型	34.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx30系列ethercat标准款驱动器3d模型.zip
+19	LT-eIM02-A02  固件升级	1.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-eim02-a02  固件升级.zip
+19	LT-eIM01-A02  固件升级	103.7KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-eim01-a02  固件升级.zip
+19	18230EC20094401 HT系列触摸屏CE报告	6.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/18230ec20094401 ht系列触摸屏ce报告.pdf
+21	LT-eCM01   2图纸	3.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-ecm01   2图纸.dwg
+21	LT-eAO03   3D图纸	13.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-eao03   3d图纸.stp
+21	LT-eAO03   2图纸	3.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-eao03   2图纸.dwg
+21	LT-eAO02   3D图纸	13.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-eao02   3d图纸.stp
+21	LT-eAO02   2图纸	3.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-eao02   2图纸.dwg
+21	LT-eAI03   3D图纸	13.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-eai03   3d图纸.stp
+21	LT-eAI03   2D图纸	3.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-eai03   2d图纸.dwg
+21	LT-eAI02   3D图纸	13.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-eai02   3d图纸.stp
+21	LT-eAI02   2图纸	3.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-eai02   2图纸.dwg
+21	和利时DX30系列伺服应用手册-EtherCAT总线型 V1.1	14.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时dx30系列伺服应用手册-ethercat总线型 v1.1.pdf
+22	EC Type-Examination Certificate (Machinery Directive)	595.2KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/ec type-examination certificate (machinery directive).pdf
+22	Feedback Control Algorithm Command Manual for LX Series Programmable Logic Controllers（V1.0）	1.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/feedback control algorithm command manual for lx series programmable logic controllers（v1.0）.pdf
+22	LX系列可编程控制器反馈控制功能指令手册（V1.0）	1.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx系列可编程控制器反馈控制功能��令手册（v1.0）.pdf
+22	LX系列可编程控制器反馈控制功能指令手册（V1.0）	1.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx系列可编程控制器反馈控制功能指令手册（v1.0）.pdf
+22	Hiot204-4G出厂快速指南	28.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hiot204-4g出厂快速指南.pdf
+22	Hiot202C-4G出厂快速指南	15.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hiot202c-4g出厂快速指南.pdf
+22	Hiot网关用户手册	2.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hiot网关用户手册.pdf
+22	HiaLink用户手册	5.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hialink用户手册.pdf
+22	HiaGrad用户手册	2.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hiagrad用户手册.pdf
+22	IP67 IO-Link Master Module CE证书	384.1KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/ip67 io-link master module ce证书.pdf
+22	IP67 IO-Link IO Module CE证书	384.0KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/ip67 io-link io module ce证书.pdf
+23	IP67 IO-Link Hub Module CE证书	384.0KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/ip67 io-link hub module ce证书.pdf
+23	LT-pCM02-xml-20251203 （B01版本）	29.6KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-pcm02-xml-20251203 （b01版本）.zip
+23	LT-pCM01-V1.2 （B01版本）	197.6KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-pcm01-v1.2 （b01版本）.xml
+23	LT-pCM02产品使用手册 (B01版本）	4.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-pcm02产品使用手册 (b01版本）.pdf
+23	LT-pCM03产品使用手册（B01版本）	3.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-pcm03产品使用手册（b01版本）.pdf
+23	LT-pCM01产品使用手册（B01版本）	4.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-pcm01产品使用手册（b01版本）.pdf
+23	LT-pIM01-AI01&LT-pIM01-AO01模块使用手册	2.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-pim01-ai01&lt-pim01-ao01模块使用手册.pdf
+23	Communication Manual for LX Series Programmable Logic Controllers(V1.4.0)	12.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/communication manual for lx series programmable logic controllers(v1.4.0).pdf
+23	LX系列可编程控制器通信手册（V1.4.0）	9.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx系列可编程控制器通信手册（v1.4.0）.pdf
+23	LX-EC022    3D图纸	5.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ec022    3d图纸.stp
+24	LX-EC022    2D图纸	5.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ec022    2d图纸.dwg
+24	LX-EC011    3D图纸	5.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ec011    3d图纸.stp
+24	LX-EC011    2D图纸	5.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ec011    2d图纸.dwg
+24	LX-EC006    3D图纸	5.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ec006    3d图纸.stp
+24	LX-EC006    2D图纸	5.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ec006    2d图纸.dwg
+24	LX-EC004   3D图纸	5.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ec004   3d图纸.stp
+24	LX-EC004   2D图纸	5.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ec004   2d图纸.dwg
+24	DXM-A1系列电机PDF格式图纸	16.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dxm-a1系列电机pdf格式图纸.zip
+24	DXM-A1系列电机CAD格式图纸	57.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dxm-a1系列电机cad格式图纸.zip
+24	DX50系列脉冲驱动器CAD格式图纸	9.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50系列脉冲驱动器cad格式图纸.zip
+25	DX50系列EtherCAT驱动器PDF格式图纸	2.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50系列ethercat驱动器pdf格式图纸.zip
+25	DX50系列EtherCAT驱动器CAD格式图纸(1)	9.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50系列ethercat驱动器cad格式图纸(1).zip
+25	DX50系列PROFINET驱动器PDF格式图纸	2.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50系列profinet驱动器pdf格式图纸.zip
+25	DX50系列PROFINET驱动器CAD格式图纸	9.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50系列profinet驱动器cad格式图纸.zip
+25	LT-e产品EtherCAT协议一致性认证	227.0KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-e产品ethercat协议一致性认证.pdf
+25	LT Intelligent Tool Usage Guide (V1.0)	2.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt intelligent tool usage guide (v1.0).pdf
+25	LT-e Series Distributed IO Module Manual (V1.2)	6.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-e series distributed io module manual (v1.2).pdf
+25	Hollysys_LT-eIM02-A02	105.1KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollysys_lt-eim02-a02.zip
+25	Hollysys_LT-eIM01-A02	6.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollysys_lt-eim01-a02.xml
+25	LXS功能安全证书 968_FSP_2730_02_25_en_el(1)	678.5KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lxs功能安全证书 968_fsp_2730_02_25_en_el(1).pdf
+26	LXS CE-EMC证书 HollySys_AE 50686642_CN247NSO 002_extsigned	1.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lxs ce-emc证书 hollysys_ae 50686642_cn247nso 002_extsigned.pdf
+26	LXS CE-LVD证书 HZ Hollysys_AN 50683890_0001_20250804051651_extsigned	1.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lxs ce-lvd证书 hz hollysys_an 50683890_0001_20250804051651_extsigned.pdf
+26	LXS_347_EMC_CNAS_TR_20250711	6.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lxs_347_emc_cnas_tr_20250711.pdf
+26	LXS_347_1_EMC_CNAS_TR（0Hz-150kHz CCD)_20250714	3.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lxs_347_1_emc_cnas_tr（0hz-150khz ccd)_20250714.pdf
+26	LXS_346_MENV_CNAS_TR__20250716	4.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lxs_346_menv_cnas_tr__20250716.pdf
+26	LX-CU333-3D图纸(1)	46.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cu333-3d图纸(1).stp
+26	LX-CU333-2D图纸(1)	7.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cu333-2d图纸(1).dwg
+26	LX-CU332-3D图纸(1)	46.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cu332-3d图纸(1).stp
+26	LX-CU332-2D图纸(1)	7.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cu332-2d图纸(1).dwg
+26	LX-CU331-3D图纸(1)	46.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cu331-3d图纸(1).stp
+27	LX-CU331-2D图纸(1)	7.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cu331-2d图纸(1).dwg
+27	HGE580&HGE586用户手册V1.4	25.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hge580&hge586用户手册v1.4.pdf
+27	DX50系列脉冲型标准款驱动器3D模型	102.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50系列脉冲型标准款驱动器3d模型.zip
+27	DX50系列PROFINET标准款驱动器3D模型	94.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50系列profinet标准款驱动器3d模型.zip
+27	DX50系列PROFINET安全款驱动器3D模型	99.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50系列profinet安全款驱动器3d模型.zip
+27	DX50系列EtherCAT标准款驱动器3D模型	94.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50系列ethercat标准款驱动器3d模型.zip
+27	setup_HT8001CN_3.0.58-new2(20260625)	271.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/setup_ht8001cn_3.0.58-new2(20260625).7z
+27	DX50D-CE认证(EtherCAT PN 脉冲)	337.1KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d-ce认证(ethercat pn 脉冲).pdf
+27	DX50D系列伺服UL认证	243.8KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d系列伺服ul认证.pdf
+27	72.E000632- EMC Type Examination Certificate_LKC主控_LKC IO(1)	80.8KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/72.e000632- emc type examination certificate_lkc主控_lkc io(1).pdf
+28	100.E000527- LKC EMC Type Examination Certificate	84.4KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/100.e000527- lkc emc type examination certificate.pdf
+28	74.E000633- EMC Type Examination Certificate_LKC主控_LKC IO(1)	80.6KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/74.e000633- emc type examination certificate_lkc主控_lkc io(1).pdf
+28	HollyControl4.0用户帮助文档	28.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollycontrol4.0用户帮助文档.pdf
+28	HollyControl4.0Install-x86-kylin-server-251024-288490.tar	1.7GB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollycontrol4.0install-x86-kylin-server-251024-288490.tar.gz
+28	HollyControl4.0Install-x86-kylin-desktop-251024-288490.tar	1.7GB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollycontrol4.0install-x86-kylin-desktop-251024-288490.tar.gz
+28	HollyControl4.0Install-win-desktop-251024-288490	861.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollycontrol4.0install-win-desktop-251024-288490.exe
+28	HollyControl4.0Install-arm-kylin-server-251024-288490.tar	1.3GB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollycontrol4.0install-arm-kylin-server-251024-288490.tar.gz
+28	HollyControl4.0Install-arm-kylin-desktop-251024-289600.tar	1.4GB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollycontrol4.0install-arm-kylin-desktop-251024-289600.tar.gz
+28	HGE500_EtherCAT_V0.90	376.6KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hge500_ethercat_v0.90.xml
+28	HGE500_EtherCAT_V1.01	376.1KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hge500_ethercat_v1.01.xml
+29	HGE530S	127.6KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hge530s.eds
+29	Intelligent AutoThink软件V5.0.0-软著证书	1.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/intelligent autothink软件v5.0.0-软著证书.pdf
+29	LT-e产品PROFINET协议一致性认证	260.8KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-e产品profinet协议一致性认证.pdf
+29	LT-e产品EtherNetIP协议一致性认证(1)	155.0KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-e产品ethernetip协议一致性认证(1).pdf
+29	3D模型	21.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/3d模型.zip
+29	和利时云3.0操作指南202410	4.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时云3.0操作指南202410.pdf
+29	HOLLiAS Config	11.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollias config.zip
+29	Hiot204-4G  CE证书	1.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hiot204-4g  ce证书.pdf
+29	Hiot202C-4G  CE证书	1.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hiot202c-4g  ce证书.pdf
+29	GM232-ISW4-HV-28L-C  CE-LVD证书	313.4KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/gm232-isw4-hv-28l-c  ce-lvd证书.pdf
+30	GM232-ISW4-HV-28L-C   CE-EMC证书	398.0KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/gm232-isw4-hv-28l-c   ce-emc证书.pdf
+30	GM211-ISW4-RHV-28L-A  CE-LVD证书	313.2KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/gm211-isw4-rhv-28l-a  ce-lvd证书.pdf
+30	GM211-ISW4-RHV-28L-A   CE-EMC证书	398.0KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/gm211-isw4-rhv-28l-a   ce-emc证书.pdf
+30	GM211-ISP4-HV-28L-A  CE-LVD证书	313.1KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/gm211-isp4-hv-28l-a  ce-lvd证书.pdf
+30	GM211-ISP4-HV-28L-A   CE-EMC证书	397.7KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/gm211-isp4-hv-28l-a   ce-emc证书.pdf
+30	GM111-ISW4-D3-20L-A   CE-EMC证书	397.6KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/gm111-isw4-d3-20l-a   ce-emc证书.pdf
+30	GM111-ISW2-D3-10L-C  CE-EMC证书	397.6KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/gm111-isw2-d3-10l-c  ce-emc证书.pdf
+30	GM111-ISP4-DP-12L-A   CE-EMC证书	397.0KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/gm111-isp4-dp-12l-a   ce-emc证书.pdf
+30	GM101-PW-D1-8L-C   CE-EMC证书	397.6KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/gm101-pw-d1-8l-c   ce-emc证书.pdf
+30	GM101-ISW2-D3-18L-A   CE-EMC证书	397.6KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/gm101-isw2-d3-18l-a   ce-emc证书.pdf
+31	GM101-ISW2-D1-10L-C  CE-EMC证书	397.3KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/gm101-isw2-d1-10l-c  ce-emc证书.pdf
+31	GM100-PW-D2C-16L-A  CE-EMC证书	397.3KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/gm100-pw-d2c-16l-a  ce-emc证书.pdf
+31	GM100-PW-D1-5L-C  CE-EMC证书	397.3KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/gm100-pw-d1-5l-c  ce-emc证书.pdf
+31	LX-EC033  3D图纸	4.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ec033  3d图纸.stp
+31	LX-EC033  2D图纸	7.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ec033  2d图纸.dwg
+31	LX-EC031  3D图纸	4.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ec031  3d图纸.stp
+31	LX-EC031  2D图纸	5.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ec031  2d图纸.dwg
+31	LX-EC012  3D图纸	5.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ec012  3d图纸.stp
+31	LX-EC012  2D图纸	5.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ec012  2d图纸.dwg
+31	LX-EC005  3D图纸	5.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ec005  3d图纸.stp
+33	HGE产品综合型录V2.2	9.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hge产品综合型录v2.2.pdf
+33	LX-IM003-A	18.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-im003-a.stp
+33	LX-DO006-A	12.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-do006-a.stp
+33	LX-CM106-A	16.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cm106-a.stp
+33	LX-CM022-A	12.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cm022-a.stp
+33	LX-CM009-A	6.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cm009-a.stp
+33	LX-CM007-A	16.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cm007-a.stp
+33	LX-AI103-A	12.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ai103-a.stp
+33	LX-IM003-A外形尺寸图	2.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-im003-a外形尺寸图.dwg
+33	LX-CM106-A外形尺寸图	2.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cm106-a外形尺寸图.dwg
+32	LX-EC005  2D图纸	5.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ec005  2d图纸.dwg
+32	LX-EC003  3D图纸	5.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ec003  3d图纸.stp
+32	LX-EC003  2D图纸	6.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ec003  2d图纸.dwg
+32	LX-CU157  3D图纸(1)	46.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cu157  3d图纸(1).stp
+32	LX-CU157  2D图纸(1)	7.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cu157  2d图纸(1).dwg
+32	LX-CU153  3D图纸	45.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cu153  3d图纸.stp
+32	LX-CU153  2D图纸	7.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cu153  2d图纸.dwg
+32	Intelligent AutoThink指令手册 - 2026.04.09	22.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/intelligent autothink指令手册 - 2026.04.09.pdf
+32	LX系列紧凑型PLC模块手册（V1.5）	17.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx系列紧凑型plc模块手册（v1.5）.pdf
+32	FA-AutoThinkV3.1.11B1SP4	400.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/fa-autothinkv3.1.11b1sp4.zip
+34	LX-CM022-A外形尺寸图	2.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cm022-a外形尺寸图.dwg
+34	LX-CM009-A外形尺寸图	2.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cm009-a外形尺寸图.dwg
+34	LX-CM007-A外形尺寸图	2.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cm007-a外形尺寸图.dwg
+34	LX-AI103-A外形尺寸图	2.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ai103-a外形尺寸图.dwg
+34	HLS.LX-TC601	24.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-tc601.edz
+34	HLS.LX-TC001	24.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-tc001.edz
+34	HLS.LX-SSI001	31.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-ssi001.edz
+34	HLS.LX-RTD001	24.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-rtd001.edz
+34	HLS.LX-PO001	31.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-po001.edz
+34	HLS.LX-PM003(1)	23.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-pm003(1).edz
+35	HLS.LX-IM002(1)	21.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-im002(1).edz
+35	HLS.LX-IM001(1)	27.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-im001(1).edz
+35	HLS.LX-HUB107(1)	23.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-hub107(1).edz
+35	HLS.LX-HUB106(1)	30.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-hub106(1).edz
+35	HLS.LX-ECI002	31.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-eci002.edz
+35	HLS.LX-ECI001(1)	31.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-eci001(1).edz
+35	HLS.LX-DO006	24.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-do006.edz
+35	HLS.LX-DO005	24.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-do005.edz
+35	HLS.LX-DO004	24.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-do004.edz
+35	HLS.LX-DO003	24.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-do003.edz
+36	HLS.LX-DI005(1)	24.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-di005(1).edz
+36	HLS.LX-DI002(1)	24.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-di002(1).edz
+36	HLS.LX-DI001	24.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-di001.edz
+36	HLS.LX-CM020	24.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-cm020.edz
+36	HLS.LX-CM010	35.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-cm010.edz
+36	HLS.LX-CM009(1)	23.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-cm009(1).edz
+36	HLS.LX-CM006(1)	26.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-cm006(1).edz
+36	HLS.LX-CM005(1)	26.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-cm005(1).edz
+36	HLS.LX-CM004(1)	21.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-cm004(1).edz
+36	HLS.LX-CM003(1)	24.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-cm003(1).edz
+37	HLS.LX-CM002	21.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-cm002.edz
+37	HLS.LX-CM001	23.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-cm001.edz
+37	HLS.LX-AUX102	24.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-aux102.edz
+37	HLS.LX-AUX101	24.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-aux101.edz
+37	HLS.LX-AUX004(1)	17.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-aux004(1).edz
+37	HLS.LX-AUX002(1)	24.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-aux002(1).edz
+37	HLS.LX-AUX001(1)	24.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-aux001(1).edz
+37	HLS.LX-AO102	24.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-ao102.edz
+37	HLS.LX-AO003(1)	23.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-ao003(1).edz
+37	HLS.LX-AO002(1)	24.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-ao002(1).edz
+38	HLS.LX-AI102	24.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-ai102.edz
+38	HLS.LX-AI003	23.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-ai003.edz
+38	HLS.LX-AI002	24.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-ai002.edz
+38	HLS.LX-AI001	23.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-ai001.edz
+38	LX-CU511-A	31.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cu511-a.stp
+38	LX-CU510-A	19.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cu510-a.stp
+38	LX-CU501-A	42.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cu501-a.stp
+38	LX-CU500-B	32.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cu500-b.stp
+38	LX-CU500-A	26.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cu500-a.stp
+38	LX-CU511-A外形尺寸图	3.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cu511-a外形尺寸图.dwg
+39	LX-CU510-A外形尺寸图	3.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cu510-a外形尺寸图.dwg
+39	LX-CU501-A外形尺寸图	2.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cu501-a外形尺寸图.dwg
+39	LX-CU500-A外形尺寸图	2.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cu500-a外形尺寸图.dwg
+39	LX-CU433-A	19.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cu433-a.stp
+39	LX-CU430-A	30.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cu430-a.stp
+39	LX-CU433-A外形尺寸图	3.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cu433-a外形尺寸图.dwg
+39	银河麒麟ARM版本取证	352.5KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/银河麒麟arm版本取证.pdf
+39	LK系列CE证书——LK716 LK616 LK432（E000637）	79.6KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk系列ce证书——lk716 lk616 lk432（e000637）.pdf
+39	LK系列CE证书——LK241M（E000846）	84.3KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk系列ce证书——lk241m（e000846）.pdf
+39	LK系列CE证书——LK238 LK512 LK239 LK620 (E000634)	79.6KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk系列ce证书——lk238 lk512 lk239 lk620 (e000634).pdf
+41	HollyControl4.0Install-arm-kylin-desktop-250722-286707.tar	1.3GB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollycontrol4.0install-arm-kylin-desktop-250722-286707.tar.gz
+41	HollyControl V4.0供热行业demo工程(1)	10.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollycontrol v4.0供热行业demo工程(1).zip
+41	HollyControl V4.0软著证书	1.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollycontrol v4.0软著证书.pdf
+41	HollyControl V4.0国产化SCADA选型样本	1.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollycontrol v4.0国产化scada选型样本.pdf
+41	HollyControl V4.0 用户手册	23.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollycontrol v4.0 用户手册.pdf
+41	LT-eEP02 3D图纸(1)	5.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-eep02 3d图纸(1).stp
+41	LT-eTC01 2D图纸	3.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-etc01 2d图纸.dwg
+41	LT-p EPLAN库	174.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-p eplan库.zip
+41	LT-ePT01 2D图纸	3.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-ept01 2d图纸.dwg
+41	LT-ePM01 2D图纸	3.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-epm01 2d图纸.dwg
+40	LK系列CE证书——LK235M（E000845）	84.3KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk系列ce证书——lk235m（e000845）.pdf
+40	LK系列CE证书——LK224 LK133 LK132 LK922 LK246 LK241 LK235 LK631 SP100（E000927）	84.4KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk系列ce证书——lk224 lk133 lk132 lk922 lk246 lk241 lk235 lk631 sp100（e000927）.pdf
+40	LK系列CE证书——LK222（E000579）	254.7KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk系列ce证书——lk222（e000579）.pdf
+40	LK系列CE证书——LK220冗余系统常规模块（E000050）	79.6KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk系列ce证书——lk220冗余系统常规模块（e000050）.pdf
+40	LK系列CE证书——LK220 LK210 通用IO模块（E0000565）(1)	87.9KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk系列ce证书——lk220 lk210 通用io模块（e0000565）(1).pdf
+40	LK系列CE证书——HOLLiSec LK220T1 LE5406 LK622 LK621 SP010（E000742）(1)	77.9KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk系列ce证书——hollisec lk220t1 le5406 lk622 lk621 sp010（e000742）(1).pdf
+40	HollyControl4.0Install-x86-kylin-server-250722-286707.tar	1.6GB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollycontrol4.0install-x86-kylin-server-250722-286707.tar.gz
+40	HollyControl4.0Install-x86-kylin-desktop-250722-286707.tar	1.7GB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollycontrol4.0install-x86-kylin-desktop-250722-286707.tar.gz
+40	HollyControl4.0Install-win-desktop-20250722-286740	703.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollycontrol4.0install-win-desktop-20250722-286740.exe
+40	HollyControl4.0Install-arm-kylin-server-250722-286707.tar	1.1GB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollycontrol4.0install-arm-kylin-server-250722-286707.tar.gz
+42	LT-eIM03  2D图纸	2.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-eim03  2d图纸.dwg
+42	LT-eIM02  2D图纸	2.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-eim02  2d图纸.dwg
+42	LT-eIM01 2D图纸	2.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-eim01 2d图纸.dwg
+42	LT-eEP01 2D图纸	3.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-eep01 2d图纸.dwg
+42	LT-eDO04 2D图纸	6.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-edo04 2d图纸.dwg
+42	LT-eDO02 2D图纸	3.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-edo02 2d图纸.dwg
+42	LT-eDO01 2D图纸	3.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-edo01 2d图纸.dwg
+42	LT-eDI02  2D图纸	3.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-edi02  2d图纸.dwg
+42	LT-eDI01  2D图纸	3.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-edi01  2d图纸.dwg
+42	LT-eAO01  2D图纸	3.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-eao01  2d图纸.dwg
+43	LT-eAI01 2D图纸	3.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-eai01 2d图纸.dwg
+43	LT-eIM02 3D图纸	19.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-eim02 3d图纸.stp
+43	LT-eTC01 3D图纸	13.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-etc01 3d图纸.stp
+43	LT-ePT01 3D图纸	13.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-ept01 3d图纸.stp
+43	LT-ePM01 3D图纸	11.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-epm01 3d图纸.stp
+43	LT-eIM03 3D图纸	19.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-eim03 3d图纸.stp
+43	LT-eDO02 3D图纸	13.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-edo02 3d图纸.stp
+43	LT-eIM01 3D图纸	19.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-eim01 3d图纸.stp
+43	LT-eEP01 3D图纸	6.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-eep01 3d图纸.stp
+43	LT-eDO04 3D图纸	16.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-edo04 3d图纸.stp
+45	LX-EC032 3D图纸	7.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ec032 3d图纸.stp
+45	Intelligent AutoThink使用指南 - 2026.04.09	27.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/intelligent autothink使用指南 - 2026.04.09.pdf
+45	HGE530S电液伺服驱动器用户手册	8.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hge530s电液伺服驱动器用户手册.pdf
+45	HGE530S电液伺服驱动器用户手册	8.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hge530s电液伺服驱动��用户手册.pdf
+45	HGE530F_CANopen_V0.10	118.6KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hge530f_canopen_v0.10.eds
+45	HGE产品综合型录V2.2(1)	9.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hge产品综合型录v2.2(1).pdf
+45	HGE530F高防护变频器用户手册V2.0	10.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hge530f高防护变频器用户手册v2.0.pdf
+45	变频调速器HGE500CE认证	1.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/变频调速器hge500ce认证.pdf
+45	HGE500变频器ModbusTCP通讯卡使用说明V2.0	2.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hge500变频器modbustcp通讯卡使用说明v2.0.pdf
+45	LT-e EPLAN库（集中式）	445.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-e eplan库（集中式）.zip
+45	LT-e EPLAN库（分散式）	444.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-e eplan库（分散式）.zip
+44	LT-eDI02 3D图纸	13.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-edi02 3d图纸.stp
+44	LT-eDO01 3D图纸	13.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-edo01 3d图纸.stp
+44	LT-eDI01 3D图纸	13.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-edi01 3d图纸.stp
+44	LT-eAO01 3D图纸	13.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-eao01 3d图纸.stp
+44	LT-eAI01 3D图纸	13.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-eai01 3d图纸.stp
+44	HSSV-EC_V3.0.0	187.0KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hssv-ec_v3.0.0.xml
+44	GSDML-V2.35-Hollysys-HSSV_PN-20250425	48.0KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/gsdml-v2.35-hollysys-hssv_pn-20250425.xml
+44	HSSV系列阀岛选型手册20250725	14.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hssv系列阀岛选型手册20250725.pdf
+44	和时利HSSV系列总线阀岛PN协议手册20250725	2.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和时利hssv系列总线阀岛pn协议手册20250725.pdf
+44	和利时HSSV系列总线阀岛EC协议手册20250725	1.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时hssv系列总线阀岛ec协议手册20250725.pdf
+47	LX-CU311  2D图纸(2)	5.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cu311  2d图纸(2).dwg
+47	LT-eEP02  2D图纸(2)	6.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-eep02  2d图纸(2).dwg
+47	LX系列紧凑型PLC选型手册	6.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx系列紧凑型plc选型手册.pdf
+47	HGE500-COMM-ECAT使用手册	1.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hge500-comm-ecat使用手册.pdf
+47	HLS.HGE586-7R5-T4B(2)	25.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.hge586-7r5-t4b(2).edz
+47	HLS.HGE500-0R7-T4B	13.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.hge500-0r7-t4b.edz
+47	和利时阀门产品三折页-V1.1	3.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时阀门产品三折页-v1.1.pdf
+47	HollyControl2.0设备通讯手册	14.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollycontrol2.0设备通讯手册.pdf
+47	HES100紧凑型高性能变频器选型样本V2.1	1.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hes100紧凑型高性能变频器选型样本v2.1.pdf
+47	HES100通用型驱动器用户手册_V2.1（精简版）	4.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hes100通用型驱动器用户手册_v2.1（精简版）.pdf
+46	LX-EC021 3D图纸	8.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ec021 3d图纸.stp
+46	LX-EC002 3D图纸	8.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ec002 3d图纸.stp
+46	LX-EC007 3D图纸	9.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ec007 3d图纸.stp
+46	LX-EC001 3D图纸	8.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ec001 3d图纸.stp
+46	LX-CU311 3D图纸(1)	120.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cu311 3d图纸(1).stp
+46	LX-EC032 2D图纸(1)	7.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ec032 2d图纸(1).dwg
+46	LX-EC007 2D图纸(1)	7.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ec007 2d图纸(1).dwg
+46	LX-EC002  2D图纸(1)	6.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ec002  2d图纸(1).dwg
+46	LX-EC021 2D图纸(1)	6.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ec021 2d图纸(1).dwg
+46	LX-EC001  2D图纸(1)	5.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ec001  2d图纸(1).dwg
+48	和利时物位开关产品样本	6.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时物位开关产品样本.pdf
+48	和利时仪表产品宣传册V4.0-2024	10.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时仪表产品宣传册v4.0-2024.pdf
+48	AL2000系列磁性液位产品样本	19.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/al2000系列磁性液位产品样本.pdf
+48	HLS.HGE500-7R5-T4B	14.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.hge500-7r5-t4b.edz
+48	HLS.HGE586-090-T4B(1)	20.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.hge586-090-t4b(1).edz
+48	HLS.HGE580-7R5-T4B(1)	25.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.hge580-7r5-t4b(1).edz
+48	AT4500系列压力变送器选型手册V1.0版	33.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/at4500系列压力变送器选型手册v1.0版.pdf
+48	和利时压力变送器三折页-V1.1(1)	1.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时压力变送器三折页-v1.1(1).pdf
+48	HLS.HGE500-090-T4B(2)	8.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.hge500-090-t4b(2).edz
+48	GSDML-V2.31-Hollysys-HGE5xx-20231127	52.2KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/gsdml-v2.31-hollysys-hge5xx-20231127.xml
+49	关于HGE586变频器EtherCAT通讯卡描述文件的选择说明	405.0KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/关于hge586变频器ethercat通讯卡描述文件的选择说明.pdf
+49	HGE500变频器EtherCAT通信卡XML设备描述文件选择说明	701.6KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hge500变频器ethercat通信卡xml设备描述文件选择说明.pdf
+49	HLS.HGE110-4R0-T4B(1)	4.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.hge110-4r0-t4b(1).edz
+49	和利时HGE500起重机调试指导V1.0	698.6KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时hge500起重机调试指导v1.0.pdf
+49	AT5000系列压力变送器综合样本V1.0版	24.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/at5000系列压力变送器综合样本v1.0版.pdf
+49	和利时压力变送器三折页-V1.1	1.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时压力变送器三折页-v1.1.pdf
+49	DX50系列综合型录v18.6	14.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50系列综合型录v18.6.pdf
+49	和利时DX50系列伺服应用手册-脉冲型 V1.3	17.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时dx50系列伺服应用手册-脉冲型 v1.3.pdf
+49	LK(S)欧亚经历联盟_ДС ТРТС(EAC)	1.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk(s)欧亚经历联盟_дс тртс(eac).pdf
+49	4.1 LK(S)俄罗斯计量认证PAC-哈萨克斯坦不通用LK(S)_PAC Сертификат(1)	169.9KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/4.1 lk(s)俄罗斯计量认证pac-哈萨克斯坦不通用lk(s)_pac сертификат(1).pdf
+50	LT-e系列分布式IO模块手册（V1.8）	8.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-e系列分布式io模块手册（v1.8）.pdf
+50	LT Intelligent Tool软件使用指南（V1.3）	2.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt intelligent tool软件使用指南（v1.3）.pdf
+50	HollysysV1.12.14	43.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollysysv1.12.14.zip
+50	LT-pIM03_V1.1	9.4KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-pim03_v1.1.eds
+50	LT-pIM02-xml-20250429	13.1KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-pim02-xml-20250429.zip
+50	LT-pCM03-V1.1	8.5KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-pcm03-v1.1.eds
+50	LT-pCM02-xml-20250429	25.4KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-pcm02-xml-20250429.zip
+50	Profinet通讯卡使用说明V2.0	4.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/profinet通讯卡使用说明v2.0.pdf
+50	相位检测板使用说明V1.0	202.1KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/相位检测板使用说明v1.0.pdf
+50	和利时HGE500简易调试指导V1.0	1.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时hge500简易调试指导v1.0.pdf
+51	和利时HGE系列变频器恒压供水调试指导V1.0	276.8KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时hge系列变频器恒压供水调试指导v1.0.pdf
+51	力矩控制调试指导V1.0	888.2KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/力矩控制调试指导v1.0.pdf
+51	HGE系列变频器PID控制调试指导V1.0	501.4KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hge系列变频器pid控制调试指导v1.0.pdf
+51	和利时驱动器对拖通用调试指导V2.0	1.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时驱动器对拖通用调试指导v2.0.pdf
+51	HGE586_CiA402_V1.31	483.5KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hge586_cia402_v1.31.xml
+51	HGD730系列变频器用户手册(1)	24.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hgd730系列变频器用户手册(1).pdf
+51	HGE586 CiA402 V1.50	507.8KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hge586 cia402 v1.50.xml
+51	HGE586_CANopen_V0.10	118.6KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hge586_canopen_v0.10.eds
+51	HGE580_CANopen_V0.10	118.6KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hge580_canopen_v0.10.eds
+51	HGE530_EtherCAT_V1	376.1KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hge530_ethercat_v1.xml
+52	HGE530_EtherCAT_V1	118.6KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hge530_ethercat_v1.eds
+52	HGE530_CANopen_V0.10	43.8KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hge530_canopen_v0.10.xml
+52	HGE500_CANopen_V0.10	118.6KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hge500_canopen_v0.10.eds
+52	HGE产品综合型录V2.2(2)	9.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hge产品综合型录v2.2(2).pdf
+52	HT8001CN Help EN--202412(1)	17.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/ht8001cn help en--202412(1).pdf
+52	HT8001CN Help CN--202412	18.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/ht8001cn help cn--202412.pdf
+52	LT Intelligent Tool V1.0.0	31.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt intelligent tool v1.0.0.zip
+52	HollyControl2.0-5000安装	1.9GB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollycontrol2.0-5000安装.rar
+52	和利时工厂自动化产品选型样本V202407(1)	27.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时工厂自动化产品选型样本v202407(1).pdf
+52	LX系列可编程控制器运动指令手册(2)	10.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx系列可编程控制器运动指令手册(2).pdf
+53	Motion Instruction Manual for LX Series Programmable Logic Controllers(2)	18.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/motion instruction manual for lx series programmable logic controllers(2).pdf
+53	Basic Instruction Manual for LX Series Programmable Logic Controller(2)	19.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/basic instruction manual for lx series programmable logic controller(2).pdf
+53	PLCopen Command Manual for LX Series Programmable Logic Controllers(1)	5.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/plcopen command manual for lx series programmable logic controllers(1).pdf
+53	Module Manual for LX Series Programmable Logic Controller(1)	15.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/module manual for lx series programmable logic controller(1).pdf
+53	Programming Manual for LX Series Programmable Logic Controllers(1)	18.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/programming manual for lx series programmable logic controllers(1).pdf
+53	LX系列可编程控制器编程手册(1)	40.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx系列可编程控制器编程手册(1).pdf
+53	LX系列可编程控制器通信手册(1)	14.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx系列可编程控制器通信手册(1).pdf
+53	LX系列可编程控制器模块手册（V1.9）	13.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx系列可编程控制器模块手册（v1.9）.pdf
+53	LX系列可编程控制器PLCopen指令手册(1)	28.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx系列可编程控制器plcopen指令手册(1).pdf
+53	【证书】2021SR1158087 和利时LKS安全级PLC编程组态软件[简称：Safety FA-AutoThink]V1.3.1(2)	581.2KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/【证书】2021sr1158087 和利时lks安全级plc编程组态软件[简称：safety fa-autothink]v1.3.1(2).pdf
+54	【证书】18.和利时LKS安全级PLC编程组态软件 V1.0.0（简称：Safety FA-AutoThink）_ 软件测评报告(1)	2.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/【证书】18.和利时lks安全级plc编程组态软件 v1.0.0（简称：safety fa-autothink）_ 软件测评报告(1).pdf
+54	【手册】Safety+FA-AutoThink+用户手册(1)	4.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/【手册】safety+fa-autothink+用户手册(1).pdf
+54	【安装包】Safety FA-AutoThink V1.3.2(1)	50.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/【安装包】safety fa-autothink v1.3.2(1).zip
+54	LKS安全型控制系统指令手册202501	5.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lks安全型控制系统指令手册202501.pdf
+54	AutoThink V3.1用户手册_工程组态202501	18.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/autothink v3.1用户手册_工程组态202501.pdf
+54	LKS Safety Control System Instruction Manual202501	4.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lks safety control system instruction manual202501.pdf
+55	HLS.LX-AI906	12.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-ai906.edz
+55	HLS.LX-AI907	12.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-ai907.edz
+55	HLS.LX-AUX901	12.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-aux901.edz
+55	HLS.LX-DI906	25.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-di906.edz
+55	HLS.LX-DI907	12.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-di907.edz
+55	HLS.LX-DO906	32.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-do906.edz
+55	HLS.LX-LG901	25.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-lg901.edz
+55	HLS.LX-PM903(1)	12.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-pm903(1).edz
+55	HLS.LX-RTD901	12.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-rtd901.edz
+55	HLS.LX-TC901	12.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-tc901.edz
+56	LX系列可编程控制器基本指令手册（V1.6.0）	11.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx系列可编程控制器基本指令手册（v1.6.0）.pdf
+56	LX系列可编程控制器运动指令手册(3)	6.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx系列可编程控制器运动指令手册(3).pdf
+56	Motion Instruction Manual for LX Series Programmable Logic Controllers(4)	14.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/motion instruction manual for lx series programmable logic controllers(4).pdf
+56	Basic Instruction Manual for LX Series Programmable Logic Controller(V1.6.0)	12.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/basic instruction manual for lx series programmable logic controller(v1.6.0).pdf
+56	LT-e系列IO选型手册(1)	39.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-e系列io选型手册(1).pdf
+56	PLCopen Command Manual for LX Series Programmable Logic Controllers	5.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/plcopen command manual for lx series programmable logic controllers.pdf
+56	Module Manual for LX Series Programmable Logic Controller	15.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/module manual for lx series programmable logic controller.pdf
+56	和利时伺服系统HS系列综合型录V202510	9.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时伺服系统hs系列综合型录v202510.pdf
+56	HSD-Q86系列伺服应用手册	12.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hsd-q86系列伺服应用手册.pdf
+56	HSD_Q71-ECAT_Rev24	229.5KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hsd_q71-ecat_rev24.xml
+57	HSD_Q71_CANopen_V0	77.6KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hsd_q71_canopen_v0.eds
+57	驱动器HSD-Q71	28.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/驱动器hsd-q71.zip
+57	HSD-Q71系列伺服应用手册	26.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hsd-q71系列伺服应用手册.pdf
+57	HSD-Q71系列伺服EtherCAT通讯手册	18.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hsd-q71系列伺服ethercat通讯手册.pdf
+57	伺服电机3D图纸	326.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/伺服电机3d图纸.zip
+57	伺服电机2D图纸	72.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/伺服电机2d图纸.zip
+57	VCHSSoft Ver2.1.15_07(HSD-Q86)	25.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/vchssoft ver2.1.15_07(hsd-q86).zip
+57	HSD-Q86_ECAT_20250311	18.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hsd-q86_ecat_20250311.xml
+57	3D图纸	29.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/3d图纸.zip
+57	2D图纸	6.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/2d图纸.zip
+58	HSD_Q70_ECAT_V1.4_G_20240521	202.2KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hsd_q70_ecat_v1.4_g_20240521.xml
+58	HSD_Q70_CANopen_20240506	93.6KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hsd_q70_canopen_20240506.eds
+58	GSDML-V2.33-HollySys-HSDQ70NA-20240506	48.7KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/gsdml-v2.33-hollysys-hsdq70na-20240506.xml
+58	驱动器HSD-Q70	192.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/驱动器hsd-q70.zip
+58	HSD系列伺服系统调试软件HSDSoft使用手册	1.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hsd系列伺服系统调试软件hsdsoft使用手册.pdf
+58	HSD-Q70系列伺服应用手册	24.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hsd-q70系列伺服应用手册.pdf
+58	HSD-Q70系列伺服PROFINET操作手册	4.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hsd-q70系列伺服profinet操作手册.pdf
+58	HSD-Q70系列伺服EtherCAT通讯手册	9.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hsd-q70系列伺服ethercat通讯手册.pdf
+58	gsdml-v2.43-hollysys-dx50dn-20250507	63.1KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/gsdml-v2.43-hollysys-dx50dn-20250507.xml
+58	和利时DX50系列伺服应用手册-PROFINET总线型 V1.6	22.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时dx50系列伺服应用手册-profinet总线型 v1.6.pdf
+59	DX50D_Servo_V112	306.4KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d_servo_v112.xml
+59	DX50系列EtherCAT安全款驱动器3D模型	99.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50系列ethercat安全款驱动器3d模型.zip
+59	DX50系列脉冲驱动器PDF格式图纸	26.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50系列脉冲驱动器pdf格式图纸.zip
+59	EtherCAT伺服的ETG一致性认证证书	316.8KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/ethercat伺服的etg一致性认证证书.pdf
+59	和利时DX50系列伺服应用手册-EtherCAT总线型 V1.7	16.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时dx50系列伺服应用手册-ethercat总线型 v1.7.pdf
+59	LXS系列可编程控制器模块手册-20260612	10.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lxs系列可编程控制器模块手册-20260612.pdf
+59	FA-AT_V3.1.11B1Patch1_2024.10.29	380.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/fa-at_v3.1.11b1patch1_2024.10.29.zip
+59	Programming Manual for LX Series Programmable Logic Controllers(V1.4.0)	17.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/programming manual for lx series programmable logic controllers(v1.4.0).pdf
+59	LX系列可编程控制器编程手册（V1.4.0）	14.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx系列可编程控制器编程手册（v1.4.0）.pdf
+59	02_ETHERCAT-A01	25.4KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/02_ethercat-a01.zip
+60	03_PROFINET-A01	49.5KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/03_profinet-a01.zip
+60	LK220系统——环境检测CNAS报告	822.5KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk220系统——环境检测cnas报告.pdf
+60	LK224系统——环境检测CNAS报告	821.6KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk224系统——环境检测cnas报告.pdf
+60	LK224系统——EMC检测CNAS报告	2.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk224系统——emc检测cnas报告.pdf
+60	LK220系统——EMC检测CNAS报告	2.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk220系统——emc检测cnas报告 .pdf
+60	HLS.LX-CU510	37.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-cu510.edz
+60	HLS.LX-CU501	36.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-cu501.edz
+60	HLS.LX-CU511	36.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-cu511.edz
+60	HLS.LX-CU500	31.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-cu500.edz
+60	HLS.LX-CU430	37.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.lx-cu430.edz
+61	LK210系列可编程控制器指令手册	6.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk210系列可编程控制器指令手册.pdf
+61	LK210系列可编程控制器系统手册202406	13.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk210系列可编程控制器系统手册202406.pdf
+61	PLC机柜布置及LK610LK710LK411LK511接线图	3.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/plc机柜布置及lk610lk710lk411lk511接线图.dwg
+61	LK616LK716LK432接线图	522.6KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk616lk716lk432接线图.dwg
+61	LK220系列模块及系统示意图	7.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk220系列模块及系统示意图.dwg
+61	LKS-CE_EMC证书	296.3KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lks-ce_emc证书.pdf
+61	LKS 系列安全认证_2025年	300.4KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lks 系列安全认证_2025年.pdf
+61	LKS例程	190.0KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lks例程.rar
+61	ABB PM803F与LK系列IO基于Profibus DP通讯	1.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/abb pm803f与lk系列io基于profibus dp通讯.zip
+62	AotuThink(V3.19B1)_ST语言示例程序(LK220)	4.1KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/aotuthink(v3.19b1)_st语言示例程序(lk220).zip
+62	LK238在LK207系统中的应用	88.2KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk238在lk207系统中的应用.zip
+62	LK239传递实数	305.1KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk239传递实数.zip
+62	LK210背板RS232串口应用	425.9KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk210背板rs232串口应用.7z
+62	LK255与西门子300通讯	550.8KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk255与西门子300通讯.rar
+62	LK210系列ModbusTCP应用	744.9KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk210系列modbustcp应用.rar
+62	LK255	995B	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk255.zip
+62	LT-pCM02	451.3KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-pcm02.zip
+62	HLS.HT8F32T	5.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.ht8f32t.edz
+62	HLS.HT8A32TE	26.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.ht8a32te.edz
+63	HLS.HT8A01TE	26.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.ht8a01te.edz
+63	HLS.HT8A01T	26.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hls.ht8a01t.edz
+63	HollyControl示例工程	641.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollycontrol示例工程.zip
+63	HollyView7.7示例工程	20.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollyview7.7示例工程.zip
+63	HollyView6.6示例工程	21.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollyview6.6示例工程.zip
+63	IODD软件和文件-20250216	8.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/iodd软件和文件-20250216.zip
+63	LT-pIM01-V1.1	36.6KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-pim01-v1.1.xml
+63	LT-pCM01-V1.1	170.1KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-pcm01-v1.1.xml
+63	26.HollySys_LKS_G3防腐证书	89.4KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/26.hollysys_lks_g3防腐证书.pdf
+63	和利时LK_LKS_LKC+PLC模块及系统示意图-	7.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时lk_lks_lkc+plc模块及系统示意图20210819.dwg
+64	Safety FA-AutoThink 用户手册202501	4.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/safety fa-autothink 用户手册202501.pdf
+64	Safety FA-AutoThink User Manual202501	4.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/safety fa-autothink user manual202501.pdf
+64	LKS安全型控制系统产品手册202501	12.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lks安全型控制系统产品手册202501.pdf
+64	LKS Safety Control System Product Manual202412	11.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lks safety control system product manual202412.pdf
+64	Safety FA-AutoThink V1.3.2	50.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/safety fa-autothink v1.3.2.zip
+64	HGE110精巧型变频器使用说明书(1)	4.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hge110精巧型变频器使用说明书(1).pdf
+64	HGE500设备描述文件	11.6KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hge500设备描述文件.zip
+64	ATStudio	30.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/atstudio.exe
+64	HGE530永磁同步驱动器使用说明书	5.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hge530永磁同步驱动器使用说明书.pdf
+65	HGD760高性能变频器用户指南	7.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hgd760高性能变频器用户指南.pdf
+65	GSDML-V2.33-HollySys-HSDQ70NA	48.7KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/gsdml-v2.33-hollysys-hsdq70na.xml
+65	HSD_Q70_CANopen	93.6KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hsd_q70_canopen.eds
+65	HSD_Q70_ECAT_V1.4_G	202.2KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hsd_q70_ecat_v1.4_g.xml
+65	HSD_Q71_CANopen_V0	77.6KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hsd_q71_canopen_v0.eds
+65	HSD_Q71-ECAT_Rev24	229.5KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hsd_q71-ecat_rev24.xml
+65	驱动器HSD-Q71	28.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/驱动器hsd-q71.zip
+65	驱动器HSD-Q70	189.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/驱动器hsd-q70.zip
+65	伺服电机3D图纸	326.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/伺服电机3d图纸.zip
+65	伺服电机2D图纸	72.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/伺服电机2d图纸.zip
+66	HSD-Q71系列伺服应用手册	26.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hsd-q71系列伺服应用手册.pdf
+66	HSD-Q71系列伺服EtherCAT通讯手册	18.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hsd-q71系列伺服ethercat通讯手册.pdf
+66	HSD系列伺服系统调试软件HSDSoft使用手册	1.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hsd系列伺服系统调试软件hsdsoft使用手册.pdf
+66	HSD-Q70系列伺服应用手册	19.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hsd-q70系列伺服应用手册.pdf
+66	HSD-Q70系列伺服PROFINET操作手册	4.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hsd-q70系列伺服profinet操作手册.pdf
+66	HSD-Q70系列伺服EtherCAT通讯手册	9.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hsd-q70系列伺服ethercat通讯手册.pdf
+66	DX50D_Servo_V110	296.9KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d_servo_v110.xml
+66	DXM-A1系列电机3D模型	153.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dxm-a1系列电机3d模型.zip
+66	DX50D系列驱动器3D模型	79.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d系列驱动器3d模型.zip
+66	DX50D系列驱动器2D图纸	5.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/dx50d系列驱动器2d图纸.zip
+67	EtherCAT伺服的ETG一致性认证证书	316.8KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/ethercat伺服的etg一致性认证证书.pdf
+67	HOLLiAS Config V3.9	20.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollias config v3.9.zip
+67	信号保护类3D模型	2.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/信号保护类3d模型.zip
+67	信号保护类2D图	2.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/信号保护类2d图.zip
+67	SIL证书-AM1000EX.SIL 隔离式安全栅	1.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/sil证书-am1000ex.sil 隔离式安全栅.pdf
+67	2020年浙江优秀工业产品（隔离式安全栅）	987.3KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/2020年浙江优秀工业产品（隔离式安全栅）.pdf
+68	2020年浙江优秀工业产品（隔离式安全栅）	987.3KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/2020年浙江优秀工业产品（隔离式安全栅）.pdf
+68	HOLLiAS Config V3.9	20.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollias config v3.9.zip
+68	信号保护类3D模型	2.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/信号保护类3d模型.zip
+68	信号保护类2D图	2.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/信号保护类2d图.zip
+68	SIL证书-AM1000EX.SIL 隔离式安全栅	1.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/sil证书-am1000ex.sil 隔离式安全栅.pdf
+68	APV400-智能阀门定位器-说明书	15.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/apv400-智能阀门定位器-说明书.pdf
+68	和利时阀门产品V1.0	4.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时阀门产品v1.0.pdf
+68	和利时液位计产品选型样本	19.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时液位计产品选型样本.pdf
+68	和利时物位开关选型样本	6.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时物位开关选型样本.pdf
+69	和利时AT5000系列压力变送器综合样本	25.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时at5000系列压力变送器综合样本.pdf
+69	和利时压力变送器V1.0	4.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时压力变送器v1.0.pdf
+69	外形尺寸图_V1.7	237.7KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/外形尺寸图_v1.7.zip
+69	CAD接线图_V2.2	757.7KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/cad接线图_v2.2.zip
+69	LT-pIM03产品使用手册	1.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-pim03产品使用手册.pdf
+69	LT-pIM02产品使用手册	1.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-pim02产品使用手册.pdf
+69	LT-pIM01产品使用手册	923.2KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-pim01产品使用手册.pdf
+69	LT-pDIO01、LT-pDIO02模块使用说明手册	4.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-pdio01、lt-pdio02模块使用说明手册.pdf
+69	LT-pCM03产品使用手册	3.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-pcm03产品使用手册.pdf
+69	LT-pCM02产品使用手册	2.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-pcm02产品使用手册.pdf
+71	和利时HolliTPM训推一体机使用手册	964.9KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时hollitpm训推一体机使用手册.pdf
+71	HT8A32T，HT8A32TE	466.5KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/ht8a32t，ht8a32te.dwg
+71	HT8732T，HT8732TE	175.5KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/ht8732t，ht8732te.dwg
+71	HT8F32T	160.0KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/ht8f32t.dwg
+71	HT8432T	122.4KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/ht8432t.dwg
+71	AT18230EC200944 HT系列触摸屏CE证书	2.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/at18230ec200944 ht系列触摸屏ce证书.pdf
+71	HT8001CN触摸屏医药行业FDA电子签名认证证书	659.0KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/ht8001cn触摸屏医药行业fda电子签名认证证书.pdf
+71	和利时触摸屏选型手册	3.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时触摸屏选型手册.pdf
+71	HiaLink_Setup	100.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hialink_setup.exe
+71	HiaGrad_Setup	15.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hiagrad_setup.exe
+70	LT-pCM01产品使用手册	2.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-pcm01产品使用手册.pdf
+70	PROFINET Manager v1.1.22.4 Setup	8.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/profinet manager v1.1.22.4 setup.exe
+70	LX系列IO	152.0KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx系列io.rar
+70	LX控制系统_安规_CE报告_智能_202509	3.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx控制系统_安规_ce报告_智能_202509.pdf
+70	LX控制系统_安规_CE证书_智能_202509	317.0KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx控制系统_安规_ce证书_智能_202509.pdf
+70	LX控制系统_电磁兼容_CE报告_智能_202509	3.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx控制系统_电磁兼容_ce报告_智能_202509.pdf
+70	LX控制系统_电磁兼容_CE证书_智能_202509	323.3KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx控制系统_电磁兼容_ce证书_智能_202509.pdf
+70	LX系列高端PLC选型手册20250902	13.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx系列高端plc选型手册20250902.pdf
+70	LX-CM026模块使用手册	3.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cm026模块使用手册.pdf
+70	和利时和言问答（HolliGPT）使用手册	704.2KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时和言问答（holligpt）使用手册.pdf
+72	Hiot204-4G图纸	198.4KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hiot204-4g图纸.pdf
+72	Hiot202C-4G图纸	197.8KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hiot202c-4g图纸.pdf
+72	Hiot204-4G	232.1KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hiot204-4g.pdf
+72	Hiot202C-4G	273.5KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hiot202c-4g.pdf
+72	PROFINET Manager v1.1.22.4 Setup	8.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/profinet manager v1.1.22.4 setup.exe
+72	LX-CM026_ESI	2.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cm026_esi.xml
+72	LX-CM206	70.7KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cm206.dwg
+72	LX-CM026模块使用手册	3.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cm026模块使用手册.pdf
+72	和利时C系列交换机选型样本 -	1.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时c系列交换机选型样本 - .pdf
+72	和利时C系列交换机配置手册	6.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时c系列交换机配置手册.pdf
+73	公安部信息安全检测	11.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/公安部信息安全检测.pdf
+73	和利时A系列交换机选型样本 -	2.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时a系列交换机选型样本 -.pdf
+73	和利时A系列三层交换机命令行配置手册	3.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时a系列三层交换机命令行配置手册.pdf
+73	和利时A系列三层交换机WEB手册	4.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时a系列三层交换机web手册.pdf
+73	和利时A系列二层以太网交换机命令行配置手册	2.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时a系列二层以太网交换机命令行配置手册.pdf
+73	和利时A系列二层交换机WEB手册	5.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时a系列二层交换机web手册.pdf
+73	APS软件下载	8.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/aps软件下载.zip
+73	HolliAPS+三折页	1.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/holliaps+三折页.pdf
+73	APS产品宣传册	14.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/aps产品宣传册.pdf
+73	HollyView7.5 SP6-2025.6.11	697.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollyview7.5 sp6-2025.6.11.zip
+74	HollyView6.6sp4安装包-2025.6.11	411.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollyview6.6sp4安装包-2025.6.11.zip
+74	HollyView软著证书	1.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollyview软著证书.pdf
+74	Hollyview7.5帮助文档	40.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollyview7.5帮助文档.pdf
+74	HollyView产品选型样本	1.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollyview产品选型样本.pdf
+74	HollyView6.60帮助文档(1)	34.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollyview6.60帮助文档(1).pdf
+74	和利时工业自动化行业解决方案	17.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时工业自动化行业解决方案.pdf
+75	和利时工业自动化行业解决方案	17.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时工业自动化行业解决方案.pdf
+75	和利时风电行业解决方案V202411	1.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时风电行业解决方案v202411.pdf
+75	和利时物流行业解决方案V202407	3.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时物流行业解决方案v202407.pdf
+75	和利时汽车行业解决方案V202506	14.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时汽车行业解决方案v202506.pdf
+75	和利时半导体行业解决方案V202407	3.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时半导体行业解决方案v202407.pdf
+75	HollyControl软著证书	1.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollycontrol软著证书.pdf
+75	HollyControl产品选型样本	1.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollycontrol产品选型样本.pdf
+75	HollyControl2.0用户帮助手册	44.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollycontrol2.0用户帮助手册.pdf
+75	【安装包】FA-AutoThink V4.1.2B1SP1	92.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/【安装包】fa-autothink v4.1.2b1sp1.rar
+75	【证书】适配中标麒麟（龙芯版）V5.0	1.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/【证书】适配中标麒麟（龙芯版）v5.0.pdf
+76	【证书】适配银河麒麟V10	559.4KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/【证书】适配银河麒麟v10.pdf
+76	【证书】31.2019SR1188478 和利时跨平台FA-AT组态软件V4.1	754.5KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/【证书】31.2019sr1188478 和利时跨平台fa-at组态软件v4.1.pdf
+76	【手册】AutoThink V4.1 用户手册_工程组态	9.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/【手册】autothink v4.1 用户手册_工程组态.pdf
+76	FA-AutoThink V3.2.4(1)	417.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/fa-autothink v3.2.4(1).7z
+76	【证书】和利时LX系列PLC编程组态软件V3.2.2 [简称：AutoThink]软著	1.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/【证书】和利时lx系列plc编程组态软件v3.2.2 [简称：autothink]软著 .pdf
+76	【证书】和利时LX系列PLC编程组态软件V3.2.1 (简称AutoThink)软著	605.9KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/【证书】和利时lx系列plc编程组态软件v3.2.1 (简称autothink)软著.pdf
+76	FA-AutoThinkV3.1.11B1	378.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/fa-autothinkv3.1.11b1.zip
+76	FA-AutoThinkV3.1.10B2	333.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/fa-autothinkv3.1.10b2.zip
+76	FA-AutoThinkV3.1.10B1SP1	326.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/fa-autothinkv3.1.10b1sp1.rar
+76	FA-AutoThinkV3.1.10B1	319.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/fa-autothinkv3.1.10b1.rar
+77	FA-AutoThinkV3.1.9B1SP2	323.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/fa-autothinkv3.1.9b1sp2.rar
+77	FA-AutoThinkV3.1.9B1	303.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/fa-autothinkv3.1.9b1.rar
+77	FA-AutoThinkV3.1.8B1	284.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/fa-autothinkv3.1.8b1.zip
+77	【证书】33.2021SR0924619 和利时LK系列可编程控制器系统 [简称：LK控制器]V2.0	1.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/【证书】33.2021sr0924619 和利时lk系列可编程控制器系统 [简称：lk控制器]v2.0.pdf
+77	【证书】33.2021SR0924619 和利时LK系列可编程控制器系统 [简称：LK控制器]V2.0	1.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/【证书】33.2021sr0924619 和利时lk系���可编程控制器系统 [简称：lk控制器]v2.0.pdf
+77	和利时PLC产品运动控制算法软件V3.1.6	752.3KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时plc产品运动控制算法软件v3.1.6.pdf
+77	LT系列RTU配置软件v1.7	440.7KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt系列rtu配置软件v1.7.rar
+77	LT系列RTU配置软件v1.7	440.7KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt系列rtu配置软���v1.7.rar
+77	groxy 服务器软件	3.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/groxy 服务器软件.rar
+77	LT-CU-102 A11检测报告	2.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-cu-102 a11检测报告.pdf
+78	LT-CU-101 A11检测报告	2.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt-cu-101 a11检测报告.pdf
+78	LT系列远程终端单元硬件手册	3.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt系列远程终端单元硬件手册.pdf
+78	LT系列RTU配置软件使用手册	3.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lt系列rtu配置软件使用手册.pdf
+78	FA-AutoThinkV3.1.11B1SP2	428.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/fa-autothinkv3.1.11b1sp2.zip
+78	MC系列——MC2008 环境试验报告	6.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/mc系列——mc2008 环境试验报告.pdf
+78	CE证书（MC2008 MC2008L MC2004 MC2004L）至2030.3.13	84.0KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/ce证书（mc2008 mc2008l mc2004 mc2004l）至2030.3.13.pdf
+78	MC系列CE报告——MC2008_MC2008L_MC2004_MC2004L	6.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/mc系列ce报告——mc2008_mc2008l_mc2004_mc2004l.pdf
+78	MC系列运动控制器指令手册	9.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/mc系列运动控制器指令手册.pdf
+78	MC系列运动控制器系统手册	7.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/mc系列运动控制器系统手册.pdf
+78	FA-AutoThinkV3.1.11B1	378.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/fa-autothinkv3.1.11b1.zip
+79	LE模块丝印图	15.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/le模块丝印图.dwg
+79	CE证书（LE5600  LE5601  LE5611  LE5621）至2030.3.13	84.0KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/ce证书（le5600  le5601  le5611  le5621）至2030.3.13.pdf
+79	E000500- EMC Type Examination Certificate	84.0KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/e000500- emc type examination certificate.pdf
+79	LE系列CE证书——LE5400	245.8KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/le系列ce证书——le5400.pdf
+79	CE证书（LE5342）至2030.3.13	83.9KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/ce证书（le5342）至2030.3.13.pdf
+79	CE证书（LE5311  LE5320）至2030.3.13	84.0KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/ce证书（le5311  le5320）至2030.3.13.pdf
+79	CE证书（LE5210  LE5221）至2030.3.13	84.0KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/ce证书（le5210  le5221）至2030.3.13.pdf
+79	CE证书（LE5109L）至2030.3.13	84.0KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/ce证书（le5109l）至2030.3.13.pdf
+79	CE证书（LE5107L）至2030.3.13	84.0KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/ce证书（le5107l）至2030.3.13.pdf
+79	CE证书（LE5107E）至2030.3.13	84.0KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/ce证书（le5107e）至2030.3.13.pdf
+80	LE系列CE证书——LE5106 LE5108 LE5211 LE5223 LE5224	2.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/le系列ce证书——le5106 le5108 le5211 le5223 le5224.pdf
+80	CE证书（LE5105）至2030.3.13	84.0KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/ce证书（le5105）至2030.3.13.pdf
+80	CE证书（LE5104）至2030.3.13	84.1KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/ce证书（le5104）至2030.3.13.pdf
+80	LE系列CE证书——LE5118LE5119LE5340LE5401	77.5KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/le系列ce证书——le5118le5119le5340le5401.pdf
+80	LE选型目录	3.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/le选型目录.pdf
+80	LE系列可编程控制器硬件手册	9.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/le系列可编程控制器硬件手册.pdf
+80	LE Series Programmable Logic Controller Hardware Manual	6.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/le series programmable logic controller hardware manual.pdf
+80	HollySys Programmable Logic Controller PLC Instruction Manual	10.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/hollysys programmable logic controller plc instruction manual.pdf
+80	LE系列可编程控制器PLC指令手册	12.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/le系列可编程控制器plc指令手册.pdf
+80	AutoThink V3.1用户手册_工程组态202501	18.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/autothink v3.1用户手册_工程组态202501.pdf
+81	FA-AT_V3.2.2	407.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/fa-at_v3.2.2.exe
+81	LXS_345_CENV_CNAS_TR_20250716	7.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lxs_345_cenv_cnas_tr_20250716.pdf
+81	LXS-机械振动CNAS报告	3.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lxs-机械振动cnas报告.pdf
+81	LXS-安全认证模块列表	392.7KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lxs-安全认证模块列表.pdf
+81	LXS功能安全认证-968_FSP_2730_02_25_en_el	678.5KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lxs功能安全认证-968_fsp_2730_02_25_en_el.pdf
+81	LXS-LVD证书	1.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lxs-lvd证书.pdf
+81	LXS-CE证书	1.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lxs-ce证书.pdf
+81	LX系列PLC选型手册	3.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx系列plc选型手册.pdf
+81	LXS Module Manual of LXS Control System-20241218	10.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lxs module manual of lxs control system-20241218.pdf
+81	LX-CU430-A外形尺寸图(1)	3.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cu430-a外形尺寸图(1).dwg
+82	LX-CU500-B外形尺寸图(1)	3.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cu500-b外形尺寸图(1).dwg
+82	LX系列高端PLC选型手册20250902(2)	13.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx系列高端plc选型手册20250902(2).pdf
+82	LX系列可编程控制器PLCopen指令手册(2)	6.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx系列可编程控制器plcopen指令手册(2).pdf
+82	LX系列可编程控制器PLCopen指令手册(3)	6.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx系列可编程控制器plcopen指令手册(3).pdf
+82	FA-AutoThink V4	101.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/fa-autothink v4.zip
+82	LKC设备描述文件	91.5KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lkc设备描述文件.zip
+82	和利时LK_LKS_LKC+PLC模块及系统示意图	7.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时lk_lks_lkc+plc模块及系统示意图20210819(1).dwg
+82	中标软件NC认证	1.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/中标软件nc认证.pdf
+82	冶金科学技术三等奖-基于自主可控PLC的冶金工控安全开发及应用研究-智能公司（排名第二）	3.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/冶金科学技术三等奖-基于自主可控plc的冶金工控安全开发及应用研究-智能公司（排名第二）.pdf
+82	LKC系列——电子元器件选用咨询报告	2.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lkc系列——电子元器件选用咨询报告.pdf
+83	GB40050	42.4KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/gb40050.png
+83	LKC系列——LK226CT1阿基里斯2级证书	276.9KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lkc系列——lk226ct1阿基里斯2级证书.pdf
+83	LKC系列——高海拔低气压试验	7.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lkc系列——高海拔低气压试验.pdf
+83	LKC系列UL证书——LK132C LK226CT1 LK921C	22.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lkc系列ul证书——lk132c lk226ct1 lk921c.pdf
+83	LKC系列——振动冲击试验报告	9.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lkc系列——振动冲击试验报告.pdf
+83	LKC系列——G3防腐试验报告	5.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lkc系列——g3防腐试验报告.pdf
+83	LKC系列——宽温环境可靠性试验报告	13.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lkc系列——宽温环境可靠性试验报告.pdf
+83	CE证书（LK130C,LK921C,LK221C,LK244C,LK249C,LK241C,LK232C.LK235CLK610C,LK710C,LK410C,LK411C,LK512C,LK430C,LK117C）至2030.3.13	84.4KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/ce证书（lk130c,lk921c,lk221c,lk244c,lk249c,lk241c,lk232c.lk235clk610c,lk710c,lk410c,lk411c,lk512c,lk430c,lk117c）至2030.3.13.pdf
+83	LKC产品列表	3.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lkc产品列表.pdf
+83	LKC系列可编程控制器系统手册2023.11.28	14.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lkc系列可编程控制器系统手册2023.11.28.pdf
+85	FA-AutoThinkV3.1.10B1SP1	326.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/fa-autothinkv3.1.10b1sp1.rar
+85	FA-AutoThinkV3.1.11B1	378.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/fa-autothinkv3.1.11b1.zip
+85	FA-AutoThinkV3.1.11B1SP2	428.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/fa-autothinkv3.1.11b1sp2.zip
+85	FA-AutoThinkV3.1.10B2	333.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/fa-autothinkv3.1.10b2.zip
+85	LK271配置工具PROFICfg v1.1.23	9.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk271配置工具proficfg v1.1.23.zip
+85	LK272配置工具	35.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk272配置工具-20240204.zip
+85	LM3401	3.4KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lm3401.gsd
+85	GSDML-V2.33-HOLY-LK272-20230316	81.8KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/gsdml-v2.33-holy-lk272-20230316.xml
+85	LK250	108.7KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk250.gsd
+85	LK220 EPLAN宏	2.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk220 eplan宏.7z
+84	PowerPro V4.3.1B_SP6安装盘	215.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/powerpro v4.3.1b_sp6安装盘.iso
+84	LK系列CE证书——通用模块	79.6KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk系列ce证书——通用模块.pdf
+84	LK系列CE证书——LK205、LK207	252.2KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk系列ce证书——lk205、lk207.pdf
+84	LK系列CE证书——LK202、LK210	255.9KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk系列ce证书——lk202、lk210.pdf
+84	LK系列CE证书——LK239	90.6KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk系列ce证书——lk239.pdf
+84	LK210系列可编程控制器编程手册	9.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk210系列可编程控制器编程手册.pdf
+84	FA-AutoThinkV3.1.8B1	284.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/fa-autothinkv3.1.8b1.zip
+84	FA-AutoThinkV3.1.9B1	303.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/fa-autothinkv3.1.9b1.rar
+84	FA-AutoThinkV3.1.9B1SP2	323.7MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/fa-autothinkv3.1.9b1sp2.rar
+84	FA-AutoThinkV3.1.10B1	319.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/fa-autothinkv3.1.10b1.rar
+87	LX-AO002-A	12.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ao002-a.stp
+87	LX-AI102-A外形尺寸图	2.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ai102-a外形尺寸图.dwg
+87	LX-AI102-A	12.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ai102-a.stp
+87	LX-AI003-A外形尺寸图	1.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ai003-a外形尺寸图.dwg
+87	LX-AI003-A	12.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ai003-a.stp
+87	LX-AI002-A外形尺寸图	2.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ai002-a外形尺寸图.dwg
+87	LX-AI002-A	12.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ai002-a.stp
+87	LX-AI001-A外形尺寸图	1.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ai001-a外形尺寸图.dwg
+87	LX-AI001-A	12.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ai001-a.stp
+87	LX-TC601-A外形尺寸图	2.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-tc601-a外形尺寸图.dwg
+86	LK220系列UL证书——LK220 LK249 LK240 LK130 LK921	239.4KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk220系列ul证书——lk220 lk249 lk240 lk130 lk921.pdf
+86	LK220系列——CSA证书	176.1KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk220系列——csa证书.pdf
+86	LK220系列——中国船级社欧盟互认型式认可证书	521.5KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk220系列——中国船级社欧盟互认型式认可证书.pdf
+86	LK220系列——G2防腐检测报告	1.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk220系列——g2防腐检测报告.pdf
+86	LK220系列——高海拔低温低气压试验CNAS报告	2.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk220系列——高海拔低温低气压试验cnas报告.pdf
+86	LK272使用手册202306	4.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk272使用手册202306.pdf
+86	和利时可编程控制器PLC指令手册202501	15.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/和利时可编程控制器plc指令手册202501.pdf
+86	LK220系列可编程控制器系统手册201512	16.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk220系列可编程控制器系统手册201512.pdf
+86	LK220 Series Programmable Logic Controller System Manual202412	17.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lk220 series programmable logic controller system manual202412.pdf
+86	AutoThink V3.1用户手册_工程组态202501	18.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/autothink v3.1用户手册_工程组态202501.pdf
+88	LX-TC601-A	12.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-tc601-a.stp
+88	LX-TC001-A外形尺寸图	2.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-tc001-a外形尺寸图.dwg
+88	LX-TC001-A	12.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-tc001-a.stp
+88	LX-SSI001-A外形尺寸图	2.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ssi001-a外形尺寸图.dwg
+88	LX-SSI001-A	17.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ssi001-a.stp
+88	LX-RTD001-A外形尺寸图	2.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-rtd001-a外形尺寸图.dwg
+88	LX-RTD001-A	12.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-rtd001-a.stp
+88	LX-PO001-A外形尺寸图	2.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-po001-a外形尺寸图.dwg
+88	LX-PO001-A	17.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-po001-a.stp
+88	LX-PM003-A外形尺寸图	1.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-pm003-a外形尺寸图.dwg
+89	LX-PM003-A	12.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-pm003-a.stp
+89	LX-IM002-A外形尺寸图	1.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-im002-a外形尺寸图.dwg
+89	LX-IM002-A	8.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-im002-a.stp
+89	LX-IM001-A外形尺寸图	2.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-im001-a外形尺寸图.dwg
+89	LX-IM001-A	21.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-im001-a.stp
+89	LX-HUB107-A外形尺寸图	1.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-hub107-a外形尺寸图.dwg
+89	LX-HUB107-A	9.4MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-hub107-a.stp
+89	LX-HUB106-A外形尺寸图	2.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-hub106-a外形尺寸图.dwg
+89	LX-HUB106-A	25.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-hub106-a.stp
+89	LX-ECI002-A外形尺寸图	2.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-eci002-a外形尺寸图.dwg
+90	LX-ECI002-A	17.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-eci002-a.stp
+90	LX-ECI001-A外形尺寸图	2.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-eci001-a外形尺寸图.dwg
+90	LX-ECI001-A	17.2MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-eci001-a.stp
+90	LX-DO005-A外形尺寸图	2.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-do005-a外形尺寸图.dwg
+90	LX-DO005-A	12.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-do005-a.stp
+90	LX-DO004-A外形尺寸图	2.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-do004-a外形尺寸图.dwg
+90	LX-DO004-A	12.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-do004-a.stp
+90	LX-DO003-A外形尺寸图	2.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-do003-a外形尺寸图.dwg
+90	LX-DO003-A	12.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-do003-a.stp
+90	LX-DI005-A外形尺寸图	2.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-di005-a外形尺寸图.dwg
+91	LX-DI005-A	12.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-di005-a.stp
+91	LX-DI002-A外形尺寸图	2.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-di002-a外形尺寸图.dwg
+91	LX-DI002-A	12.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-di002-a.stp
+91	LX-DI001-A外形尺寸图	2.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-di001-a外形尺寸图.dwg
+91	LX-DI001-A	12.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-di001-a.stp
+91	LX-CM020-A外形尺寸图	2.0MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cm020-a外形尺寸图.dwg
+91	LX-CM020-A	12.3MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cm020-a.stp
+91	LX-CM010-A外形尺寸图	2.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cm010-a外形尺寸图.dwg
+91	LX-CM010-A	41.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cm010-a.stp
+91	LX-CM006-A外形尺寸图	2.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cm006-a外形尺寸图.dwg
+92	LX-CM006-A	13.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cm006-a.stp
+92	LX-CM005-A外形尺寸图	2.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cm005-a外形尺寸图.dwg
+92	LX-CM005-A	13.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cm005-a.stp
+92	LX-CM004-A外形尺寸图	2.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cm004-a外形尺寸图.dwg
+92	LX-CM004-A	7.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cm004-a.stp
+92	LX-CM003-A外形尺寸图	2.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cm003-a外形尺寸图.dwg
+92	LX-CM003-A	12.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cm003-a.stp
+92	LX-CM002-A外形尺寸图	2.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cm002-a外形尺寸图.dwg
+92	LX-CM002-A	7.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cm002-a.stp
+92	LX-CM001-A外形尺寸图	1.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cm001-a外形尺寸图.dwg
+93	LX-CM001-A	12.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-cm001-a.stp
+93	LX-AUX102-A外形尺寸图	2.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-aux102-a外形尺寸图.dwg
+93	LX-AUX102-A	12.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-aux102-a.stp
+93	LX-AUX101-A外形尺寸图	2.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-aux101-a外形尺寸图.dwg
+93	LX-AUX101-A	12.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-aux101-a.stp
+93	LX-AUX004-外形尺寸图	1.5MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-aux004-外形尺寸图.dwg
+93	LX-AUX004	812.3KB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-aux004.stp
+93	LX-AUX002-A外形尺寸图	2.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-aux002-a外形尺寸图.dwg
+93	LX-AUX002-A	12.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-aux002-a.stp
+93	LX-AUX001-A外形尺寸图	2.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-aux001-a外形尺寸图.dwg
+94	LX-AUX001-A	12.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-aux001-a.stp
+94	LX-AO102-A外形尺寸图	2.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ao102-a外形尺寸图.dwg
+94	LX-AO102-A	12.8MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ao102-a.stp
+94	LX-AO003-A外形尺寸图	1.9MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ao003-a外形尺寸图.dwg
+94	LX-AO003-A	12.6MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ao003-a.stp
+94	LX-AO002-A外形尺寸图	2.1MB	https://omo-oss-file110.thefastfile.com/portal-saas/pg2024102318492727606/cms/file/lx-ao002-a外形尺寸图.dwg

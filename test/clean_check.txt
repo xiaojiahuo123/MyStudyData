@@ -1,0 +1,6 @@
+﻿clean_check.txt
+ocr_check.txt
+ocr_log.txt
+ocr_result.txt
+ocr_run.py
+pip_log.txt

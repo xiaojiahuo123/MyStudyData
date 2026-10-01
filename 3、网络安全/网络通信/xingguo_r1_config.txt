@@ -1,0 +1,231 @@
+﻿[BEGIN] 2025/8/22 11:50:13
+<xingguo_r1>dis cur
+[V200R009C00SPC600]
+#
+ sysname xingguo_r1
+#
+ drop illegal-mac alarm
+#
+ clock timezone EST add 08:00:00
+#
+authentication-profile name default_authen_profile
+authentication-profile name dot1x_authen_profile
+authentication-profile name mac_authen_profile
+authentication-profile name portal_authen_profile
+authentication-profile name dot1xmac_authen_profile
+authentication-profile name multi_authen_profile
+#
+dhcp enable
+#
+radius-server template default
+#
+pki realm default
+#
+ssl policy default_policy type server
+ pki-realm default
+ version tls1.0 tls1.1 
+ ciphersuite rsa_aes_128_cbc_sha          
+#
+acl number 2002  
+ rule 5 permit source 192.20.27.0 0.0.0.255 
+ rule 10 permit source 192.20.28.0 0.0.0.255 
+acl number 2003  
+ rule 5 permit source 173.20.1.0 0.0.0.255 
+ rule 10 permit source 173.21.1.0 0.0.0.255 
+acl number 2004  
+ rule 5 permit source 192.20.27.0 0.0.0.255 
+acl number 2005  
+ rule 5 permit source 192.20.102.0 0.0.0.255 
+#
+ike proposal default
+ encryption-algorithm aes-256 
+ dh group14 
+ authentication-algorithm sha2-256 
+ authentication-method pre-share
+ integrity-algorithm hmac-sha2-256 
+ prf hmac-sha2-256 
+#
+free-rule-template name default_free_rule
+#
+portal-access-profile name portal_access_profile
+#                                         
+aaa
+ authentication-scheme default
+ authentication-scheme radius
+  authentication-mode radius
+ authorization-scheme default
+ accounting-scheme default
+ domain default
+  authentication-scheme default
+ domain default_admin
+  authentication-scheme default
+ local-user admin password irreversible-cipher $1a$Wm!,K%/0J.$yroKE@'#YPZcg3@]z"2N[Nn8&5ZM.53M[m7-/,&C$
+ local-user admin privilege level 15
+ local-user admin service-type telnet http
+ local-user jxtrq password irreversible-cipher $1a$)8lSSg_TR0$''aY!`'|8U<_*$<_VpnE|pOCWqH8E/fmjN(YEM/-$
+ local-user jxtrq privilege level 3
+ local-user jxtrq service-type terminal ssh ftp
+#
+firewall zone Local
+#
+interface GigabitEthernet0/0/0
+#
+interface GigabitEthernet0/0/1
+ description to nanchang zhu
+#                                         
+interface GigabitEthernet0/0/2
+ undo portswitch
+ description to LAN A
+ ip address 192.20.27.18 255.255.255.0
+ vrrp vrid 10 virtual-ip 192.20.27.20
+ vrrp vrid 10 priority 120
+#
+interface GigabitEthernet0/0/3
+ undo portswitch
+ description to LAN B
+ ip address 192.20.28.18 255.255.255.0
+ vrrp vrid 11 virtual-ip 192.20.28.20
+ vrrp vrid 11 priority 120
+#
+interface GigabitEthernet0/0/4
+ undo portswitch
+ description Connect to xingguo_r2
+ ip address 10.10.1.53 255.255.255.252
+#
+interface GigabitEthernet0/0/5
+#
+interface GigabitEthernet0/0/6
+#
+interface GigabitEthernet0/0/7            
+#
+interface GigabitEthernet0/0/8
+#
+interface GigabitEthernet0/0/9
+#
+interface GigabitEthernet0/0/10
+ description to nanchang zhu
+ ip address 192.80.1.54 255.255.255.0
+#
+interface GigabitEthernet0/0/11
+ description To_NingDu-DDN-2M
+ ip address 192.80.106.1 255.255.255.252
+#
+interface GigabitEthernet0/0/12
+#
+interface GigabitEthernet0/0/13
+ description VirtualPort
+#
+interface Cellular0/0/0
+#
+interface Cellular0/0/1
+#
+interface NULL0
+#                                         
+interface LoopBack0
+ ip address 10.10.30.53 255.255.255.255
+#
+bgp 2014
+ router-id 10.10.30.53
+ timer keepalive 5 hold 15
+ peer 10.10.30.54 as-number 2014
+ peer 10.10.30.54 connect-interface LoopBack0
+ peer 192.80.1.1 as-number 1001
+ peer 192.80.106.2 as-number 3002
+ #
+ ipv4-family unicast
+  undo synchronization
+  network 192.20.27.0
+  network 192.20.28.0
+  peer 10.10.30.54 enable
+  peer 10.10.30.54 next-hop-local
+  peer 10.10.30.54 route-update-interval 5
+  peer 192.80.1.1 enable
+  peer 192.80.1.1 filter-policy 2003 import
+  peer 192.80.1.1 filter-policy 2002 export
+  peer 192.80.1.1 route-policy lp01 import
+  peer 192.80.1.1 route-update-interval 5
+  peer 192.80.106.2 enable                
+  peer 192.80.106.2 filter-policy 2005 import
+  peer 192.80.106.2 filter-policy 2004 export
+#
+ospf 1 router-id 10.10.30.53
+ area 0.0.0.0
+  network 10.10.1.53 0.0.0.0
+  network 10.10.30.53 0.0.0.0
+#
+route-policy lp01 permit node 10
+ if-match acl 2003
+ apply local-preference 400
+#
+route-policy lp01 permit node 20
+#
+ snmp-agent local-engineid 800007DB038446FE3D5453
+ snmp-agent community read %^%#yHC(I9(!g):.IX27rS+ZVdQBJ&XruY.%qVVj9QEFIfE<9N6lZ.Qm8_/Op*'PrI*D0`q.HBPtBb:dL(81%^%# mib-view iso 
+ snmp-agent sys-info contact call tel at 13986101665
+ snmp-agent sys-info location XingGuo-R1
+ snmp-agent sys-info version v2c
+ snmp-agent target-host trap-hostname imc address 173.20.1.178 udp-port 162 trap-paramsname imc
+ snmp-agent target-host trap-paramsname imc v2c securityname %^%#1fYV,bw#l2$_6w;yvM!)JX&F$A%Dd2>"'yDtEgIL%^%#
+ snmp-agent mib-view iso include iso 
+ snmp-agent trap source GigabitEthernet0/0/2
+ snmp-agent trap enable                   
+ snmp-agent 
+#
+ ssh client first-time enable 
+ stelnet server enable 
+#
+ http secure-server ssl-policy default_policy
+ http secure-server enable
+ http server permit interface GigabitEthernet0/0/9
+#
+fib regularly-refresh disable
+#
+user-interface con 0
+ authentication-mode password
+ set authentication password cipher %^%#i/[&C:aP@(_52@&M>zkQ[i[6ZT>|F2j"!0=J:2S:3(h7;,/SSRC8XP*WW;rX%^%#
+user-interface vty 0
+ authentication-mode aaa
+ user privilege level 15
+user-interface vty 1 4
+ authentication-mode aaa
+#
+wlan ac
+ traffic-profile name default
+ security-profile name default
+ security-profile name default-wds        
+  security wpa2 psk pass-phrase %^%#y]5mB7S=,Q4\JTMUXb\Y%H>A40VL\GZCPLK|::#J%^%# aes
+ ssid-profile name default
+ vap-profile name default
+ wds-profile name default
+ regulatory-domain-profile name default
+ air-scan-profile name default
+ rrm-profile name default
+ radio-2g-profile name default
+ radio-5g-profile name default
+ wids-spoof-profile name default
+ wids-profile name default
+ ap-system-profile name default
+ port-link-profile name default
+ wired-port-profile name default
+ ap-group name default
+#
+dot1x-access-profile name dot1x_access_profile
+#
+mac-access-profile name mac_access_profile
+#
+ ntp-service source-interface LoopBack0
+ ntp-service unicast-server 192.20.27.30
+#
+ops                                       
+#
+autostart
+#
+secelog
+#
+return
+<xingguo_r1>Admin@123
+            ^
+Error: Unrecognized command found at '^' position.
+<xingguo_r1>
+
+[END] 2025/8/22 11:51:10

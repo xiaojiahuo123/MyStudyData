@@ -1,0 +1,12 @@
+FAIL attachment-management/manifest.json <urlopen error Tunnel connection failed: 502 Bad Gateway>
+FAIL attachment-management/main.js <urlopen error Tunnel connection failed: 502 Bad Gateway>
+FAIL attachment-management/styles.css <urlopen error Tunnel connection failed: 502 Bad Gateway>
+FAIL obsidian-image-toolkit/manifest.json <urlopen error Tunnel connection failed: 502 Bad Gateway>
+FAIL obsidian-image-toolkit/main.js <urlopen error Tunnel connection failed: 502 Bad Gateway>
+FAIL obsidian-image-toolkit/styles.css <urlopen error Tunnel connection failed: 502 Bad Gateway>
+FAIL dataview/manifest.json <urlopen error Tunnel connection failed: 502 Bad Gateway>
+FAIL dataview/main.js <urlopen error Tunnel connection failed: 502 Bad Gateway>
+FAIL dataview/styles.css <urlopen error Tunnel connection failed: 502 Bad Gateway>
+FAIL obsidian-editing-toolbar/manifest.json <urlopen error Tunnel connection failed: 502 Bad Gateway>
+FAIL obsidian-editing-toolbar/main.js <urlopen error Tunnel connection failed: 502 Bad Gateway>
+FAIL obsidian-editing-toolbar/styles.css Remote end closed connection without response

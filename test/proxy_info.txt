@@ -1,0 +1,28 @@
+﻿
+
+AbsolutePath   : /
+AbsoluteUri    : http://127.0.0.1:7892/
+LocalPath      : /
+Authority      : 127.0.0.1:7892
+HostNameType   : IPv4
+IsDefaultPort  : False
+IsFile         : False
+IsLoopback     : True
+PathAndQuery   : /
+Segments       : {/}
+IsUnc          : False
+Host           : 127.0.0.1
+Port           : 7892
+Query          : 
+Fragment       : 
+Scheme         : http
+OriginalString : http://127.0.0.1:7892
+DnsSafeHost    : 127.0.0.1
+IdnHost        : 127.0.0.1
+IsAbsoluteUri  : True
+UserEscaped    : False
+UserInfo       : 
+
+
+
+no_proxy=

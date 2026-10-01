@@ -26,3 +26,28 @@ build/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# 本地运行环境 / 缓存 / 临时文件（不入库）
+.pylibs/
+.tmp/
+.npm-cache/
+.ssh-tool/
+
+# 敏感凭据：SSH 私钥等，绝不入库
+.dsh-ssh/
+*.pem
+id_rsa*
+id_ed25519*
+
+# 依赖与缓存产物
+node_modules/
+.npmcache/
+
+# 超大二进制：超过 GitHub 单文件 100MB 上限，无法推送
+*.iso
+8、追逐/408--master.zip
+8、追逐/KaoYanZhenTi-PDF-main.zip
+
+# 工具诊断报告输出目录
+_acl-recovery/
+.dsh-acl-recovery/

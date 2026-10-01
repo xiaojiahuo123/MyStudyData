@@ -1,0 +1,7 @@
+{
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "./images",
+  "newLinkFormat": "shortest",
+  "useMarkdownLinks": false,
+  "restrictedMode": false
+}

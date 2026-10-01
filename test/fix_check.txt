@@ -1,0 +1,1 @@
+﻿img=True|oldimg=False|md=False

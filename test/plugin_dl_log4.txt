@@ -1,0 +1,46 @@
+== attachment-management
+  manifest.json exists ok 344B
+  main.js exists ok 105371B
+  styles.css exists ok 327B
+== obsidian-image-toolkit
+  manifest.json exists ok 279B
+  main.js fake/exists-bad 149B, redownload
+  main.js OK via https://gh-proxy.com/ 419014B
+  styles.css exists ok 24216B
+== dataview
+  manifest.json exists ok 357B
+  main.js fake/exists-bad 149B, redownload
+  main.js OK via https://gh-proxy.com/ 2377634B
+  styles.css exists ok 2965B
+== obsidian-editing-toolbar
+  https://gh-proxy.com/ err HTTPError
+  https://ghfast.top/ err URLError
+  https://gh.llkk.cc/ err URLError
+  https://gh-proxy.com/ err HTTPError
+  https://ghfast.top/ err URLError
+  https://gh.llkk.cc/ err URLError
+  https://gh-proxy.com/ err HTTPError
+  https://ghfast.top/ err URLError
+  https://gh.llkk.cc/ err URLError
+  manifest.json FAILED
+  main.js fake/exists-bad 149B, redownload
+  https://gh-proxy.com/ err HTTPError
+  https://ghfast.top/ err URLError
+  https://gh.llkk.cc/ err URLError
+  https://gh-proxy.com/ err HTTPError
+  https://ghfast.top/ err URLError
+  https://gh.llkk.cc/ err URLError
+  https://gh-proxy.com/ err HTTPError
+  https://ghfast.top/ err URLError
+  https://gh.llkk.cc/ err URLError
+  main.js FAILED
+  https://gh-proxy.com/ err HTTPError
+  https://ghfast.top/ err URLError
+  https://gh.llkk.cc/ err URLError
+  https://gh-proxy.com/ err HTTPError
+  https://ghfast.top/ err URLError
+  https://gh.llkk.cc/ err URLError
+  https://gh-proxy.com/ err HTTPError
+  https://ghfast.top/ err URLError
+  https://gh.llkk.cc/ err URLError
+  styles.css FAILED

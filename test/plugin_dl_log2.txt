@@ -1,0 +1,9 @@
+OK obsidian-image-toolkit/manifest.json via https://gh-proxy.com/https://github.com/sissilab/obsidian-image-toolkit/releases/latest/download/manifest.json 
+OK obsidian-image-toolkit/main.js via https://ghps.cc/https://github.com/sissilab/obsidian-image-toolkit/releases/latest/download/main.js 
+OK obsidian-image-toolkit/styles.css via https://gh-proxy.com/https://github.com/sissilab/obsidian-image-toolkit/releases/latest/download/styles.css 
+OK dataview/manifest.json via https://gh-proxy.com/https://github.com/blacksmithgu/obsidian-dataview/releases/latest/download/manifest.json 
+OK dataview/main.js via https://ghps.cc/https://github.com/blacksmithgu/obsidian-dataview/releases/latest/download/main.js 
+OK dataview/styles.css via https://gh-proxy.com/https://github.com/blacksmithgu/obsidian-dataview/releases/latest/download/styles.css 
+FAIL obsidian-editing-toolbar/manifest.json via  <urlopen error Tunnel connection failed: 502 Bad Gateway>
+OK obsidian-editing-toolbar/main.js via https://ghps.cc/https://github.com/cumany/obsidian-editing-toolbar/releases/latest/download/main.js 
+FAIL obsidian-editing-toolbar/styles.css via  <urlopen error Tunnel connection failed: 502 Bad Gateway>

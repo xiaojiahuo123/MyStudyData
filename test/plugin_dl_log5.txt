@@ -1,0 +1,3 @@
+  manifest.json OK via https://gh-proxy.com/ 405B
+  main.js OK via https://gh-proxy.com/ 1704116B
+  styles.css OK via https://gh-proxy.com/ 83500B

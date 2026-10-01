@@ -1,0 +1,1 @@
+﻿1vs2=True 2vs3=True 1vs3=True
