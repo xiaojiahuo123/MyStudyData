@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "积累.md",
-                "mode": "source",
+                "file": "言语.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "积累"
+              "title": "言语"
             }
           }
         ]
@@ -113,10 +113,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "积累.md",
+                "file": "言语.md",
                 "followCursor": false,
                 "showSearch": true,
-                "searchQuery": ""
+                "searchQuery": "南辕北辙"
               },
               "icon": "lucide-list",
               "title": "大纲"
@@ -143,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "积累.md",
+                "file": "言语.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -157,7 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "积累.md",
+                "file": "言语.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -168,6 +168,18 @@
               },
               "icon": "links-coming-in",
               "title": "反向链接"
+            }
+          },
+          {
+            "id": "4b9497f90e8f68ad",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "言语.md"
+              },
+              "icon": "lucide-info",
+              "title": "笔记属性"
             }
           }
         ],
@@ -188,30 +200,32 @@
       "bases:新建数据库": false
     }
   },
-  "active": "17b0d485f767c0d6",
+  "active": "7c0e91a0458dee64",
   "lastOpenFiles": [
+    "言语笔记/images/言语_语境分析_对应关系_例2.png",
+    "言语笔记/images/言语_语境分析_并列_例2.png",
+    "言语笔记/images/言语_语境分析_因果.png",
+    "言语笔记/images/言语_语境分析_转折_例2.png",
+    "言语笔记/images/言语_语境分析_转折.png",
+    "言语笔记/images/言语_逻辑填空_语境分析.png",
+    "积累.md",
+    "言语笔记/精讲精练-言语8（笔记）.pdf",
+    "时政热点/2026-10-03 国内时政热点汇总.md",
+    "言语.md",
+    "时政热点/_模板与约定.md",
+    "时政热点",
+    "言语笔记/images/言语_感情色彩.png",
+    "言语笔记/images/言语_程度轻重.png",
+    "言语笔记/images/言语_词义侧重_例题.png",
+    "言语笔记/images/言语_逻辑填空_词的辨析.png",
+    "言语笔记/精讲精练-言语7（笔记）.pdf",
+    "言语笔记/精讲精练-言语6（笔记）.pdf",
+    "未命名.base",
+    "未命名 1.base",
     "%SystemDrive%/ProgramData/Microsoft/Windows/Caches/{DDF571F2-BE98-426D-8288-1A9A39C3FDA2}.2.ver0x0000000000000001.db",
     "%SystemDrive%/ProgramData/Microsoft/Windows/Caches/{6AF0698E-D558-4F6E-9B3C-3716689AF493}.2.ver0x0000000000000001.db",
     "%SystemDrive%/ProgramData/Microsoft/Windows/Caches/cversions.2.db",
     "%SystemDrive%/ProgramData/Microsoft/Windows/Caches",
-    "%SystemDrive%/ProgramData/Microsoft/Windows",
-    "%SystemDrive%/ProgramData/Microsoft",
-    "%SystemDrive%/ProgramData",
-    "%SystemDrive%",
-    "言语.md",
-    "积累.md",
-    "言语笔记/images/言语_语句排序题思维导图.png",
-    "言语笔记/精讲精练-言语6（笔记）.pdf",
-    "言语笔记/images/言语_语句填空_例4.png",
-    "言语笔记/images/言语_语句填空题思维导图.png",
-    "言语笔记/images/言语_语句填空题.png",
-    "言语笔记/images/言语_接语_例7.png",
-    "未命名 2.base",
-    "未命名 1.base",
-    "言语笔记/images/言语_转折关系.png",
-    "言语笔记/images/言语_细节判断题错误选项.png",
-    "言语笔记/images/言语_细节判断题提问方式.png",
-    "言语笔记/images/言语_细节判断题技巧.png",
-    "言语笔记/images/言语_细节判断题思维导图.jpg"
+    "言语笔记/images/言语_语句排序题思维导图.png"
   ]
 }

@@ -51,3 +51,6 @@ node_modules/
 # 工具诊断报告输出目录
 _acl-recovery/
 .dsh-acl-recovery/
+
+# 工具生成的备份快照（内容已在正文中）
+_dsh-backup/

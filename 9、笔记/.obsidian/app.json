@@ -3,5 +3,6 @@
   "attachmentFolderPath": "./images",
   "newLinkFormat": "shortest",
   "useMarkdownLinks": false,
-  "restrictedMode": false
+  "restrictedMode": false,
+  "promptDelete": false
 }
