@@ -54,3 +54,7 @@ _acl-recovery/
 
 # 工具生成的备份快照（内容已在正文中）
 _dsh-backup/
+
+# 工具写权限自检产生的残留文件
+_wtest.txt
+.wtest.tmp
