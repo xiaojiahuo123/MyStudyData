@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7c0e91a0458dee64",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "积累.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "积累"
-            }
-          },
-          {
             "id": "95dcfdbde062fab0",
             "type": "leaf",
             "state": {
@@ -41,16 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "言语例题.md",
-                "mode": "preview",
+                "file": "判断推理.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "言语例题"
+              "title": "判断推理"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -142,10 +128,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "言语例题.md",
+                "file": "判断推理.md",
                 "followCursor": false,
                 "showSearch": true,
-                "searchQuery": "南辕北辙"
+                "searchQuery": ""
               },
               "icon": "lucide-list",
               "title": "大纲"
@@ -186,8 +172,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "言语.md",
-                "collapseAll": false,
+                "file": "判断推理.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -205,7 +191,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "言语.md"
+                "file": "判断推理.md"
               },
               "icon": "lucide-info",
               "title": "笔记属性"
@@ -231,34 +217,51 @@
   },
   "active": "da8d9a5ed8f03667",
   "lastOpenFiles": [
-    "images/言语_例题_AI电车难题.png",
     "言语.md",
-    "判断推理.md",
-    "积累.md",
     "言语例题.md",
-    "images/言语_例题_第二个百年奋斗目标.png",
-    "言语例题.md~RF19690a0.TMP",
-    "积累.md~RF1930f69.TMP",
-    "images/言语_例题_知敬畏.png",
-    "images/言语_例题_网络空间命运共同体.png",
+    "README.md",
+    "判断推理.md",
+    "例题图片文件/言语/言语_例题_网络空间命运共同体.png",
+    "例题图片文件/言语/言语_例题_临渴掘井.png",
+    "例题图片文件/言语/言语_例题_AI电车难题.png",
+    "例题图片文件/言语/言语_例题_第二个百年奋斗目标.png",
+    "例题图片文件/言语/IMG-20261015180725034.png",
+    "例题图片文件/言语/言语_例题_知敬畏.png",
+    "例题图片文件/言语/IMG-20261007150025149.png",
+    "例题图片文件/言语/IMG-20261007150743995.png",
+    "例题图片文件/言语/IMG-20261015171117150.png",
+    "例题图片文件/言语/IMG-20261006162419432.png",
+    "例题图片文件/言语",
+    "例题图片文件/判断",
+    "例题图片文件",
+    "时政热点/2026-10-16 国内时政热点汇总.md",
+    "积累.md",
+    "时政热点/2026-10-15 国内时政热点汇总.md",
+    "analysis/data/curated_names.md",
+    "维抢修数据分析/周报速览.md",
+    "时政热点/2026-10-13 国内时政热点汇总.md",
+    "国考岗位筛选/tmp/lead_check_out.txt",
+    "国考岗位筛选/tmp/lead_check_xlsx.py",
+    "国考岗位筛选/tmp/lead_audit.json",
+    "国考岗位筛选/tmp/lead_audit_out.txt",
+    "国考岗位筛选/tmp/lead_audit.py",
+    "国考岗位筛选/tmp/accept_out.txt",
+    "国考岗位筛选/tmp/accept.py",
+    "国考岗位筛选/2027国考-湖北省-通信工程可报岗位（本科团员非应届）.md",
+    "国考岗位筛选/2026-2027国考-武汉恩施-通信工程可报岗位（非应届）.md",
+    "省考岗位筛选/2026湖北省考-武汉恩施-通信工程可报岗位（往届生版）.md",
+    "省考岗位筛选/2026湖北省考-武汉恩施-通信工程可报岗位.md",
+    "clear/goals/plans/p-mv67ox46nncm.md",
+    "analysis/report.md",
+    "analysis/candidates.md",
+    "analysis/data/week_news.md",
+    "clear/goals/g-mv67nplc4tc0.md",
+    "clear/ontology/verification-loop.md",
+    "时政热点/2026-10-12 国内时政热点汇总.md",
+    "时政热点/2026-10-07 国内时政热点汇总.md",
+    "时政热点/2026-10-06 国内时政热点汇总.md",
     "时政热点/2026-10-05 国内时政热点汇总.md",
     "时政热点/2026-10-04 国内时政热点汇总.md",
-    "时政热点/2026-10-03 国内时政热点汇总.md",
-    "images/言语_例题_临渴掘井.png",
-    "images",
-    "言语笔记/images/_wtest.txt",
-    "判断推理笔记",
-    "言语笔记/images/言语_语境分析_对应关系_前后呼应_例6.png",
-    "言语笔记/images/言语_语境分析_对应关系_前后呼应_例3.png",
-    "言语笔记/images/言语_语境分析_对应关系_前后呼应.png",
-    "言语笔记/images/言语_语境分析_对应关系_形象表达.png",
-    "言语笔记/精讲精练-言语9（笔记）.pdf",
-    "时政热点/_模板与约定.md",
-    "言语笔记/images/言语_语境分析_对应关系_例2.png",
-    "言语笔记/images/言语_语境分析_并列_例2.png",
-    "言语笔记/精讲精练-言语8（笔记）.pdf",
-    "时政热点",
-    "言语笔记/精讲精练-言语7（笔记）.pdf",
-    "言语笔记/精讲精练-言语6（笔记）.pdf"
+    "时政热点/2026-10-03 国内时政热点汇总.md"
   ]
 }
