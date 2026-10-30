@@ -19,6 +19,12 @@ build/
 .claude/
 .workbuddy/
 
+# AI 记忆工具运行时数据（本地）
+.mnemon/
+
+# Obsidian 回收站（本地已删除笔记）
+.trash/
+
 # Word 临时文件
 ~$*
 
